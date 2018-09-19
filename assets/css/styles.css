@@ -12,9 +12,8 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     background-color: var(--main-bg-color);
-    max-width: var(--main-max-width);
 }
 
 #main-header {
@@ -22,14 +21,19 @@ body {
     top: -160px;
 }
 
-.main-page-bottom {
+img{
+    width: 100vw;
+    height: auto;
+}
+
+.main-page-bottom{
     position: absolute;
     top: 330px;
 }
 
 .main {
     width: 100vw;
-    max-width: var(--main-max-width);
+  
 }
 
 /* Positioning Name, Lastname, and Subtitle */
@@ -85,7 +89,7 @@ body {
 .bio {
     width: 100vw;
     height: 667px;
-    max-width: var(--main-max-width);
+  
     background-color: #B5C1DB;
 
 }
@@ -95,7 +99,18 @@ body {
 .skills {
     width: 100vw;
     height: 667px;
-    max-width: var(--main-max-width);
+  
+    background-color: #B5C1DB;
+
+}
+
+
+/* stack section */
+
+.stack {
+    width: 100vw;
+    height: 667px;
+  
     background-color: #B5C1DB;
 
 }
@@ -105,7 +120,7 @@ body {
 .contact {
     width: 100vw;
     height: 667px;
-    max-width: var(--main-max-width);
+  
     background-color: #B5C1DB;
 
 }
