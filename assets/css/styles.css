@@ -1,11 +1,20 @@
 :root {
-    --main-bg-color: #B5C1DB;
-    /*  Assuming iphone 8 >> 379px x 667px */
-    --main-max-width: 379px;
+    
+    --main-dark-color: #2B2525;
+
+    --main-light-blue-color:#D8DFED;
+    --main-medium-blue-color: #B5C1DB;
+    --main-dark-blue-color:#2E7F96;
+
+    --main-bg-color: var(--main-medium-blue-color);
+
+
 }
 
-body {
+html,body {
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -21,57 +30,81 @@ body {
     top: -160px;
 }
 
-img{
+
+/* main section of website */
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-bg-color);  
+}
+
+/* svg image at main bottom */
+.main-page-bottom{
+    position: absolute;
+    bottom: 0%;
+}
+
+.main-page-bottom img{
     width: 100vw;
     height: auto;
 }
 
-.main-page-bottom{
-    position: absolute;
-    top: 330px;
-}
-
-.main {
-    width: 100vw;
-  
-}
 
 /* Positioning Name, Lastname, and Subtitle */
 
 .first-name{
-    position: absolute;
-    top: 230px;
-    left: 60px;
     font-family: 'Cinzel', serif;
     font-size: 32px;
-    color: #2B2525;
+    color: var(--main-dark-color);
+    
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-90%)
+    
 }
 
 .last-name{
-    position: absolute;
-    top: 340px;
-    left: 60px;
-    font-family: 'Cinzel', serif;
     font-size: 32px;
-    color: #B5C1DB;
+    color:var(--main-medium-blue-color);
+    font-family: 'Cinzel', serif;
+    
+    position: absolute;
+    
+    top: 45%;
+
+    left: 50%;
+    transform: translateX(-40%);
+
 }
 
 .sub-heading{
-    position: relative;
-    top:450px;
-    left: 80px;
-    color: #B5C1DB;
+
+
+    color:var(--main-light-blue-color);
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 80%;
+    
+    position: absolute;
+    
+    top:66%;
+    
+    left: 50%;
+    transform: translateX(-20%); 
+
+
 }
 
 .to-bio-page{
-    position: absolute;
-    left: 175px;
-    top: 580px;
-    color: #1389AA;
-    font-size: 30px;
 
+    position: absolute;
+    color: #1389AA;
+    
+    font-size: 30px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5%;
 }
 
 .to-bio-page a{
@@ -84,7 +117,10 @@ img{
 }
 
 
-/* bio section */
+/* bio section     width: 100vw;
+    height: 667px;
+  
+    background-color: #B5C1DB;*/
 
 .bio {
     width: 100vw;
