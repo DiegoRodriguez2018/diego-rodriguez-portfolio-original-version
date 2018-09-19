@@ -40,6 +40,31 @@ html,body {
     background-color: var(--main-bg-color);  
 }
 
+/* svg background image */
+
+
+.background{
+    position: relative;
+    /* transform: translateX(-50%); */
+
+    animation: spin 60s infinite;
+    
+}
+
+@keyframes spin {
+    0%{
+        /* transform: translateX(-50%); */
+
+        transform: rotate(0deg);
+
+    }
+    100%{
+        /* transform: translateX(-50%); */
+
+        transform: rotate(360deg);
+    }
+}
+
 /* svg image at main bottom */
 .main-page-bottom{
     position: absolute;
