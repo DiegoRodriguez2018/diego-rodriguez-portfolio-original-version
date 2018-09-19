@@ -60,7 +60,7 @@ html,body {
     color: var(--main-dark-color);
     
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translateX(-90%)
     
@@ -73,7 +73,7 @@ html,body {
     
     position: absolute;
     
-    top: 45%;
+    top: 35%;
 
     left: 50%;
     transform: translateX(-40%);
@@ -89,7 +89,7 @@ html,body {
     
     position: absolute;
     
-    top:66%;
+    top:55%;
     
     left: 50%;
     transform: translateX(-20%); 
