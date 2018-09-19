@@ -1,0 +1,127 @@
+:root {
+    --main-bg-color: #B5C1DB;
+    /*  Assuming iphone 8 >> 379px x 667px */
+    --main-max-width: 379px;
+}
+
+body {
+    margin: 0;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: var(--main-bg-color);
+    max-width: var(--main-max-width);
+}
+
+#main-header {
+    position: fixed;
+    top: -160px;
+}
+
+.main-page-bottom {
+    position: absolute;
+    top: 330px;
+}
+
+.main {
+    width: 100vw;
+    max-width: var(--main-max-width);
+}
+
+/* Positioning Name, Lastname, and Subtitle */
+
+.first-name{
+    position: absolute;
+    top: 230px;
+    left: 60px;
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    color: #2B2525;
+}
+
+.last-name{
+    position: absolute;
+    top: 340px;
+    left: 60px;
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    color: #B5C1DB;
+}
+
+.sub-heading{
+    position: relative;
+    top:450px;
+    left: 80px;
+    color: #B5C1DB;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.to-bio-page{
+    position: absolute;
+    left: 175px;
+    top: 580px;
+    color: #1389AA;
+    font-size: 30px;
+
+}
+
+.to-bio-page a{
+    text-decoration:none;
+}
+
+
+.link-to-bio-page:visited{
+    color: #1389AA;
+}
+
+
+/* bio section */
+
+.bio {
+    width: 100vw;
+    height: 667px;
+    max-width: var(--main-max-width);
+    background-color: #B5C1DB;
+
+}
+
+/* skills section */
+
+.skills {
+    width: 100vw;
+    height: 667px;
+    max-width: var(--main-max-width);
+    background-color: #B5C1DB;
+
+}
+
+/* contact section */
+
+.contact {
+    width: 100vw;
+    height: 667px;
+    max-width: var(--main-max-width);
+    background-color: #B5C1DB;
+
+}
+
+/* .logo {
+    transform: translate(-50%, -50%);
+    animation: pulse 5s infinite;
+
+    }
+    
+@keyframes pulse {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(270deg);        
+    }
+}
+*/
