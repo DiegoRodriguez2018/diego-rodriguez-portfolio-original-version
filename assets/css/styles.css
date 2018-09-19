@@ -1,15 +1,16 @@
 :root {
     
-    --main-dark-color: #2B2525;
+    --main-black-color: #0D0D0D;
+    --main-white-color:#F5ECEC;
 
-    --main-light-blue-color:#D8DFED;
-    --main-medium-blue-color: #B5C1DB;
-    --main-dark-blue-color:#2E7F96;
+    --main-light-blue-color:#B8D6E5;
+    --main-medium-blue-color:#03BFFE;
+    --main-dark-blue-color:#005DAC;
 
-    --main-bg-color: var(--main-medium-blue-color);
-
-
+    --main-bg-color: var(--main-light-blue-color);
 }
+
+
 
 html,body {
     margin: 0;
@@ -35,6 +36,7 @@ html,body {
 .main {
     width: 100vw;
     height: 100vh;
+
     background-color: var(--main-bg-color);  
 }
 
@@ -66,7 +68,7 @@ html,body {
 
 .last-name{
     font-size: 32px;
-    color:var(--main-medium-blue-color);
+    color:var(--main-light-blue-color);
     font-family: 'Cinzel', serif;
     
     position: absolute;
@@ -117,17 +119,13 @@ html,body {
 }
 
 
-/* bio section     width: 100vw;
-    height: 667px;
-  
-    background-color: #B5C1DB;*/
+/* bio section */
 
 .bio {
     width: 100vw;
     height: 667px;
   
-    background-color: #B5C1DB;
-
+    background-color:var(--main-light-blue-color);
 }
 
 /* skills section */
@@ -136,7 +134,7 @@ html,body {
     width: 100vw;
     height: 667px;
   
-    background-color: #B5C1DB;
+      background-color:var(--main-light-blue-color);
 
 }
 
@@ -147,7 +145,7 @@ html,body {
     width: 100vw;
     height: 667px;
   
-    background-color: #B5C1DB;
+      background-color:var(--main-light-blue-color);
 
 }
 
@@ -157,7 +155,7 @@ html,body {
     width: 100vw;
     height: 667px;
   
-    background-color: #B5C1DB;
+      background-color:var(--main-light-blue-color);
 
 }
 
@@ -176,3 +174,10 @@ html,body {
     }
 }
 */
+
+
+@media screen and (min-width:400px){
+    .first-name{
+        color:var(--main-light-blue-color);        
+    }
+}
