@@ -22,7 +22,7 @@ html,body {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     background-color: var(--main-bg-color);
 }
 
@@ -35,7 +35,7 @@ html,body {
 /* main section of website */
 .main {
     width: 100vw;
-    height: 100vh;
+    height: auto;
 
     background-color: var(--main-bg-color);  
 }
@@ -201,9 +201,8 @@ html,body {
 
 .contact {
     width: 100vw;
-    height: 667px;
-  
-      background-color:var(--main-light-blue-color);
+    background: blue;
+    /* background-color:var(--main-light-blue-color); */
 
 }
 

@@ -202,18 +202,23 @@
         <section class="contact" id="contact-page">
         Would you like ask something or just have a chat?  	
         Please get in contact!
-            
 
-
-
+        <form name="contact" method="POST" netlify>
+                <p>
+                  <label>Name: <input type="text" name="name" /></label>   
+                </p>
+                <p>
+                  <label>Subject: <input type="text" name="subject" /></label>
+                </p>
+                <p>
+                  <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+            </form>
         </section>
-
     </div>
-
-
-
-
-
     </div>
     <footer>
         Github,LinkedIn Diego Rodriguez 2018
