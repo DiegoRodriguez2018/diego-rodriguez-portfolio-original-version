@@ -43,27 +43,24 @@ html,body {
 /* svg background image */
 
 
-.background{
-    position: relative;
-    /* transform: translateX(-50%); */
-
-    animation: spin 60s infinite;
-    
+/* .background{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 25%;
+   
 }
 
 @keyframes spin {
     0%{
-        /* transform: translateX(-50%); */
 
         transform: rotate(0deg);
 
     }
     100%{
-        /* transform: translateX(-50%); */
 
         transform: rotate(360deg);
     }
-}
+} */
 
 /* svg image at main bottom */
 .main-page-bottom{
@@ -159,8 +156,21 @@ html,body {
     width: 100vw;
     height: 667px;
   
-      background-color:var(--main-light-blue-color);
+    background-color:var(--main-light-blue-color);
 
+}
+
+.skillset{
+    padding: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skillset ul{
+    min-width: 100px;
+    padding: 0;
 }
 
 
@@ -169,10 +179,23 @@ html,body {
 .stack {
     width: 100vw;
     height: 667px;
-  
-      background-color:var(--main-light-blue-color);
+    background-color:var(--main-light-blue-color);
 
 }
+
+.githublinks{
+    padding: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.githublinks a{
+    padding: 0;
+}
+
 
 /* contact section */
 
