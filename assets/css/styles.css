@@ -1,31 +1,5 @@
-/* svg background image */
-
-
-/* .background{
-    position: absolute;
-    transform: translateX(-50%);
-    left: 25%;
-   
-}
-
-@keyframes spin {
-    0%{
-
-        transform: rotate(0deg);
-
-    }
-    100%{
-
-        transform: rotate(360deg);
-    }
-} */
-
-
 /* Positioning Name, Lastname, and Subtitle */
-
-
 :root {
-    
     --main-title-font:  'Cinzel', serif;
     --main-content-font: 'Raleway', sans-serif;
 
@@ -39,24 +13,20 @@
     --main-bg-color: var(--main-black-color);
 }
 
-
-
-
-
-html,body {
+html,body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-
-
 h3{
     font-family: var(--main-title-font);
+    font-size: 1.2rem;
 }
 
 p,ul{
     font-family: var(--main-content-font);
+    font-size: 1rem;
 }
 
 .wrapper {
@@ -65,51 +35,41 @@ p,ul{
 
     background-color: var(--main-bg-color);
     color: var(--main-light-blue-color);
-
 }
 
-
-
 /* main section of website */
-.main {
+#main-page {
     width: 100vw;
     height: 100vh;
     background:var(--main-black-color);
 }
 
-
 .first-name{
-    font-family: 'Cinzel', serif;
-    font-size: 32px;
+    font-family: var(--main-title-font);
+    font-size: 2rem;
     color: var(--main-light-blue-color);
     
     position: absolute;
     top: 20%;
     left: 50%;
-    transform: translateX(-90%)
-    
+    transform: translateX(-90%)    
 }
 
 .last-name{
-    font-size: 32px;
+    font-family: var(--main-title-font);
+    font-size: 2rem;
     color:var(--main-light-blue-color);
-    font-family: 'Cinzel', serif;
     
     position: absolute;
-    
     top: 35%;
-
     left: 50%;
     transform: translateX(-40%);
-
 }
 
 .sub-heading{
-
-
     color:var(--main-light-blue-color);
-    font-family: 'Raleway', sans-serif;
-    font-size: 80%;
+    font-family: var(--main-content-font);
+    font-size: .8rem;
     
     position: absolute;
     
@@ -233,26 +193,32 @@ p,ul{
 /* contact section */
 
 .contact {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
+    height: auto;
     margin: 10% 10% 10% 10%;
 }
 
-/* .logo {
-    transform: translate(-50%, -50%);
-    animation: pulse 5s infinite;
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 
-    }
-    
-@keyframes pulse {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(270deg);        
-    }
 }
-*/
 
+input,textarea{
+    box-sizing: border-box;
+    font-family: var(--main-content-font);
+    padding: 2% 2% 5% 2%;
+}
+
+textarea {
+    height: 40%;
+    padding: 2% 2% 30% 2%;
+
+}
 
 @media screen and (min-width:400px){
     .first-name{
