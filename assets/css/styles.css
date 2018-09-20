@@ -1,45 +1,3 @@
-:root {
-    
-    --main-black-color: #0D0D0D;
-    --main-white-color:#F5ECEC;
-
-    --main-light-blue-color:#B8D6E5;
-    --main-medium-blue-color:#03BFFE;
-    --main-dark-blue-color:#005DAC;
-
-    --main-bg-color: var(--main-light-blue-color);
-}
-
-
-
-html,body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    background-color: var(--main-bg-color);
-}
-
-#main-header {
-    position: fixed;
-    top: -160px;
-}
-
-
-/* main section of website */
-.main {
-    width: 100vw;
-    height: auto;
-
-    background-color: var(--main-bg-color);  
-}
-
 /* svg background image */
 
 
@@ -62,24 +20,58 @@ html,body {
     }
 } */
 
-/* svg image at main bottom */
-.main-page-bottom{
-    position: absolute;
-    bottom: 0%;
-}
-
-.main-page-bottom img{
-    width: 100vw;
-    height: auto;
-}
-
 
 /* Positioning Name, Lastname, and Subtitle */
+
+
+:root {
+    
+    --main-title-font:  'Cinzel', serif;
+
+    --main-black-color: #0D0D0D;
+    --main-white-color:#F5ECEC;
+
+    --main-light-blue-color:#B8D6E5;
+    --main-medium-blue-color:#03BFFE;
+    --main-dark-blue-color:#005DAC;
+
+    --main-bg-color: var(--main-black-color);
+}
+
+
+
+
+
+html,body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.wrapper {
+    display: flex;  
+    flex-wrap: wrap;
+
+    background-color: var(--main-bg-color);
+    color: var(--main-light-blue-color);
+
+}
+
+
+
+/* main section of website */
+.main {
+    width: 100vw;
+    height: 100vh;
+    background:var(--main-black-color);
+}
+
 
 .first-name{
     font-family: 'Cinzel', serif;
     font-size: 32px;
-    color: var(--main-dark-color);
+    color: var(--main-light-blue-color);
     
     position: absolute;
     top: 20%;
@@ -140,23 +132,54 @@ html,body {
     color: #1389AA;
 }
 
+#output{
+    position:fixed;
+    top:0;
+}
+
+
+/* header */
+
+#header{
+    position: fixed;
+    top:-100px;
+
+    background: grey;
+    width: 100vw;
+    font-family: var(--main-title-font);
+    font-size: 20px;
+    text-align: center;
+    transition: 1s;
+    
+}
+
+.headertop{
+    background: var(--main-black-color);
+    color: var(--main-light-blue-color);
+}
+
+.headerbottom{
+    background:var(--main-dark-blue-color);
+    color: var(--main-light-blue-color);
+}
+
+
 
 /* bio section */
 
+
+
+
 .bio {
     width: 100vw;
-    height: 667px;
-  
-    background-color:var(--main-light-blue-color);
 }
+
 
 /* skills section */
 
 .skills {
     width: 100vw;
-    height: 667px;
-  
-    background-color:var(--main-light-blue-color);
+      
 
 }
 
@@ -178,8 +201,7 @@ html,body {
 
 .stack {
     width: 100vw;
-    height: 667px;
-    background-color:var(--main-light-blue-color);
+      
 
 }
 
@@ -201,8 +223,7 @@ html,body {
 
 .contact {
     width: 100vw;
-    background: blue;
-    /* background-color:var(--main-light-blue-color); */
+    /*    */
 
 }
 
