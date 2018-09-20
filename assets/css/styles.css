@@ -27,6 +27,7 @@
 :root {
     
     --main-title-font:  'Cinzel', serif;
+    --main-content-font: 'Raleway', sans-serif;
 
     --main-black-color: #0D0D0D;
     --main-white-color:#F5ECEC;
@@ -48,6 +49,15 @@ html,body {
     overflow-x: hidden;
 }
 
+
+
+h3{
+    font-family: var(--main-title-font);
+}
+
+p,ul{
+    font-family: var(--main-content-font);
+}
 
 .wrapper {
     display: flex;  
@@ -163,13 +173,13 @@ html,body {
     color: var(--main-light-blue-color);
 }
 
+#bio-page{
+    height: 60px;
+
+}
 
 
 /* bio section */
-
-
-
-
 .bio {
     width: 100vw;
 }
