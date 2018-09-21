@@ -3,6 +3,15 @@
 /* add @import and other css files  */
 /* for desktop version: main page on left, info on right, maybe with grid. hide header.  */
 /* maybe display flex column for skills and background */
+
+
+/* next commit;
+1. add nav bar  
+2. fix footer with socials
+3. add photo or at least holder
+4. fix skillsets and background.
+5. Final Check out of content */
+
 /* Positioning Name, Lastname, and Subtitle */
 :root {
     --main-title-font:  'Cinzel', serif;
@@ -32,11 +41,70 @@ p,ul{
     font-family: var(--main-content-font);
     font-size: 1rem;
 }
-.wrapper {
+
+nav{
+    font-family:var(--main-content-font);
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+
+nav li{
+    list-style: none;
+    color: var(--main-dark-blue-color);
+    background: var(--main-light-blue-color); 
+    border: 1px solid var(--main-black-color); 
+}
+
+
+
+nav a{
+    display:block;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    background: var(--main-dark-blue-color);
+    color: var(--main-light-blue-color);
+    
+}
+
+
+
+
+
+
+
+nav visited{
+    color: var(--main-dark-blue-color);
+}
+
+
+
+main, footer{
     display: flex;  
     flex-wrap: wrap;
     background-color: var(--main-bg-color);
     color: var(--main-light-blue-color);
+}
+
+footer{
+    display: block;
+    text-align: center;
+
+    width: 100%;
+
+
+    font-family: var(--main-content-font);
+    font-size: 0.9rem;
+
 }
 /* main section of website */
 #main-page {
@@ -74,7 +142,7 @@ p,ul{
     left: 50%;
     transform: translateX(-20%); 
 }
-.to-bio-page{
+.to-about-page{
     position: absolute;
     color: rgb(90, 123, 133);
     font-size: 2rem;    
@@ -82,14 +150,14 @@ p,ul{
     transform: translateX(-50%);
     bottom: -5%;
 }
-.to-bio-page a{
+.to-about-page a{
     text-decoration:none;
 }
-.to-bio-page a:visited{
+.to-about-page a:visited{
     color: #1389AA;
 }
 /* header */
-#header{
+header{
     position: fixed;
     top:-100px;
     width: 100vw;
@@ -107,7 +175,7 @@ p,ul{
     color: var(--main-light-blue-color);
 }
 /* formating sections */
-.bio, .skills,.stack,.contact {
+.about, .skills,.stack,.contact,.background-interest{
     width: 80%;
     height: auto;
     /* no margin top and bottom, 10% right and left */
