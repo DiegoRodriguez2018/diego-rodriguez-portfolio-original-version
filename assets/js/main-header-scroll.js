@@ -1,3 +1,8 @@
+function toggleNavBar(){
+  document.getElementById("navBar").classList.toggle("show");
+
+}
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -7,3 +12,5 @@ function scrollFunction() {
     document.getElementById("header").style.top = "-100px";
   }
 }
+
+

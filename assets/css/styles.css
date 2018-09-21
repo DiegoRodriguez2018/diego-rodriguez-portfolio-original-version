@@ -43,16 +43,32 @@ p,ul{
 }
 
 nav{
-    font-family:var(--main-content-font);
+    display: flex;    
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-  
+    font-family:var(--main-content-font);
+
     width: auto;
     height: auto;
     z-index: 1;
 }
 
+.nav-bar-button{
+
+    width: auto;
+    height: 7rem;
+    background: var(--main-dark-blue-color);
+    color: var(--main-light-blue-color);
+    border:none;
+}
+.nav-bar-content{
+    visibility: hidden;
+}
+
+.show{
+visibility: visible;
+}
 
 nav li{
     list-style: none;
@@ -144,7 +160,7 @@ footer{
 }
 .to-about-page{
     position: absolute;
-    color: rgb(90, 123, 133);
+    color: var(--main-dark-blue-color);
     font-size: 2rem;    
     left: 50%;
     transform: translateX(-50%);
@@ -154,7 +170,7 @@ footer{
     text-decoration:none;
 }
 .to-about-page a:visited{
-    color: #1389AA;
+    color: var(--main-dark-blue-color);
 }
 /* header */
 header{
@@ -181,8 +197,7 @@ header{
     /* no margin top and bottom, 10% right and left */
     margin: 0% 10%;  
     
-    background: grey;   
-    opacity: 50%; 
+
 }
 /* adding empty space on link class so header fits nicely */
 .link{
