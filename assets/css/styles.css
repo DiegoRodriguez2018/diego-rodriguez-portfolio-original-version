@@ -16,11 +16,18 @@
 :root {
     --main-title-font:  'Cinzel', serif;
     --main-content-font: 'Raleway', sans-serif;
-    --main-black-color: #0D0D0D;
+
     --main-white-color:#F5ECEC;
+    /* original colors */
+    /* --main-black-color: #0D0D0D; */
+    /* --main-dark-blue-color:#005DAC; */
+    
+    /* second version */
+    --main-black-color: #1C3346;
     --main-light-blue-color:#B8D6E5;
-    --main-medium-blue-color:#03BFFE;
+    /* --main-light-blue-color:#8AACAA; */
     --main-dark-blue-color:#005DAC;
+
     --main-bg-color: var(--main-black-color);
 }
 html,body{
@@ -57,7 +64,7 @@ nav{
 .nav-bar-button{
 
     width: auto;
-    height: 7rem;
+    height: 7.8rem;
     background: var(--main-dark-blue-color);
     color: var(--main-light-blue-color);
     border:none;
@@ -93,11 +100,6 @@ nav a:hover{
 }
 
 
-
-
-
-
-
 nav visited{
     color: var(--main-dark-blue-color);
 }
@@ -122,12 +124,7 @@ footer{
     font-size: 0.9rem;
 
 }
-/* main section of website */
-#main-page {
-    width: 100vw;
-    height: 100vh;
-    background:var(--main-black-color);
-}
+
 .first-name{
     font-family: var(--main-title-font);
     font-size: 2rem;
@@ -190,14 +187,18 @@ header{
     background:var(--main-dark-blue-color);
     color: var(--main-light-blue-color);
 }
+
+/* main section of website */
+#main-page {
+    width: 100vw;
+    height: 100vh;
+}
 /* formating sections */
 .about, .skills,.stack,.contact,.background-interest{
     width: 80%;
     height: auto;
     /* no margin top and bottom, 10% right and left */
     margin: 0% 10%;  
-    
-
 }
 /* adding empty space on link class so header fits nicely */
 .link{
