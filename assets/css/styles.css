@@ -50,6 +50,7 @@ html,body{
     padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    line-height: 2rem;
 }
 h3{
     font-family: var(--main-title-font);
@@ -97,7 +98,6 @@ footer a:visited{
     height: auto;
     margin: 0% 10%;
     background: var(--main-light-blue-color);  
-    /* color: var(--main-dark-blue-color); */
     color: var(--main-font-shadow);
 }
 /* end formating seccions */
@@ -105,15 +105,20 @@ footer a:visited{
 
 /* skills section */
 .skillset{
-    padding-left: 10%; 
     width: 100%;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.skillset ul{
+.skillset li{
+    font-family: var(--main-content-font);
+    list-style: none;
+    font-size: 1rem;
     min-width: auto;
-    padding: 0;
+}
+
+.skillset li i{
+    font-size: 2rem;
 }
 
 /* stack section */
