@@ -10,11 +10,7 @@
 2. fix footer with socials
 3. add photo or at least holder
 4. add icons to skillset 
- fix background
- fix width of form
 
-
- add modules 
  */
 
 
@@ -74,7 +70,7 @@ main, footer{
     flex-wrap: wrap;
     background-color: var(--main-light-blue-color);
     opacity: 20%;
-    color: var(--main-light-blue-color);
+    color: var(--main-font-shadow);
 }
 
 footer{
@@ -82,7 +78,11 @@ footer{
     text-align: center;
     width: 100%;
     font-family: var(--main-content-font);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+}
+
+footer a:visited{
+    color: var(--main-font-shadow);
 }
 
 #main-page {
@@ -97,7 +97,8 @@ footer{
     height: auto;
     margin: 0% 10%;
     background: var(--main-light-blue-color);  
-    color: var(--main-dark-blue-color);
+    /* color: var(--main-dark-blue-color); */
+    color: var(--main-font-shadow);
 }
 /* end formating seccions */
 
@@ -124,11 +125,25 @@ footer{
     flex-wrap: wrap;
     text-align: center;
 }
+
+
 .projectbox{
-    border: 1px solid var(--main-light-blue-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0%;
+    margin: 0;
+}
+.projectbox img{
+    border: 1px solid rgb(158, 155, 155);    
 }
 .projectbox a{
     padding: 0;
+    text-decoration: none;
+}
+
+.projectbox a:visited{
+    color: var(--main-font-shadow);
 }
 
 
@@ -138,17 +153,32 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-form{
+.contact form{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
+
 input,textarea{
     box-sizing: border-box;
     font-family: var(--main-content-font);
     padding: 2% 2% 5% 2%;
+    width: 15rem;
 }
 textarea {
     height: 40%;
     padding: 2% 2% 30% 2%;
+}
+
+.contact button{
+    font-family: var(--main-content-font);
+    font-size: 1.2rem;
+    border: none;
+    background: var(--main-dark-blue-color);
+    color: var(--main-light-blue-color);
+    transition: 0.5s;
+}
+
+.contact button:hover{
+    font-size: 1.5rem;
 }
