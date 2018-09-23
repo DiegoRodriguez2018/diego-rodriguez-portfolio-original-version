@@ -1,9 +1,8 @@
-function toggleNavBar(){
+function toggleNavBar() {
   document.getElementById("navBar").classList.toggle("show");
-
 }
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {

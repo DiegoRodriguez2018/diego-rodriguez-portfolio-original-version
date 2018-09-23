@@ -6,13 +6,28 @@
 
 
 /* next commit;
-1. add nav bar  
+
 2. fix footer with socials
 3. add photo or at least holder
-4. fix skillsets and background.
-5. Final Check out of content */
+4. add icons to skillset 
+ fix background
+ fix width of form
 
-/* Positioning Name, Lastname, and Subtitle */
+
+ add modules 
+ */
+
+
+/* nav-bar.css deals with navigation bar on left styling and animation */
+@import "nav-bar.css";
+
+/* header.css deals with top header styling */
+@import "header.css";
+
+/* main-page-style.css deals with styling of main page.  */
+@import "main-page-style.css";
+
+
 :root {
     --main-title-font:  'Cinzel', serif;
     --main-content-font: 'Raleway', sans-serif;
@@ -29,10 +44,11 @@
     /* second version */
     --main-black-color: #1C3346;
     --main-light-blue-color:#B8D6E5;
-    /* --main-light-blue-color:#8AACAA; */
     --main-dark-blue-color:#005DAC;
 
 }
+
+
 html,body{
     margin: 0;
     padding: 0;
@@ -52,134 +68,7 @@ p,ul{
     font-size: 1rem;
 }
 
-nav{
-    display: flex;    
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family:var(--main-content-font);
-    font-size: 1.25rem;
-    width: auto;
-    height: auto;
-    z-index: 1;
-}
-
-.nav-bar-button{
-    padding: 0;
-    width: 1rem;
-    height: 9.7rem;
-    background: var(--main-dark-blue-color);
-    color: var(--main-light-blue-color);
-    border:none;
-}
-.nav-bar-content{
-    visibility: hidden;
-}
-
-.show{
-visibility: visible;
-}
-
-nav li{
-    list-style: none;
-    color: var(--main-dark-blue-color);
-    background: var(--main-light-blue-color); 
-    border: 1px solid var(--main-black-color); 
-}
-
-
-
-nav a{
-    display:block;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-decoration:none;
-}
-
-nav a:hover{
-    background: var(--main-dark-blue-color);
-    color: var(--main-light-blue-color);
-    
-}
-
-
-nav visited{
-    color: var(--main-dark-blue-color);
-}
-
-
-
-
-
-.first-name{
-    font-family: var(--main-title-font);
-    font-size: 2rem;
-    color: var(--main-light-blue-color);
-    text-shadow: -1px 0 var(--main-font-shadow), 0 1px var(--main-font-shadow), 1px 0 var(--main-font-shadow), 0 -1px var(--main-font-shadow);
-
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-90%)    
-}
-.last-name{
-    font-family: var(--main-title-font);
-    font-size: 2rem;
-    color:var(--main-light-blue-color);
-    
-    position: absolute;
-    top: 33%;
-    left: 50%;
-    transform: translateX(-40%);
-}
-.sub-heading{
-    color:var(--main-light-blue-color);
-    font-family: var(--main-content-font);
-    font-size: .8rem;
-    
-    position: absolute;
-    top:55%;
-    left: 50%;
-    transform: translateX(-20%); 
-}
-.to-about-page{
-    position: absolute;
-    color: var(--main-dark-blue-color);
-    font-size: 2rem;    
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -5%;
-}
-.to-about-page a{
-    text-decoration:none;
-}
-.to-about-page a:visited{
-    color: var(--main-dark-blue-color);
-}
-/* header */
-header{
-    position: fixed;
-    top:-100px;
-    width: 100vw;
-    font-family: var(--main-title-font);
-    font-size: 1.25rem;
-    text-align: center;
-    transition: 1s;    
-}
-.headertop{
-    background: var(--main-black-color);
-    color: var(--main-light-blue-color);
-}
-.headerbottom{
-    background:var(--main-dark-blue-color);
-    color: var(--main-light-blue-color);
-}
-
-
-
 /* formating seccions */
-
-
 main, footer{
     display: flex;  
     flex-wrap: wrap;
@@ -191,13 +80,9 @@ main, footer{
 footer{
     display: block;
     text-align: center;
-
     width: 100%;
-
-
     font-family: var(--main-content-font);
     font-size: 0.9rem;
-
 }
 
 #main-page {
@@ -206,10 +91,10 @@ footer{
     background: var(--main-black-color);
     opacity: 100;
 }
+
 .about, .skills,.stack,.contact,.background-interest{
     width: 80%;
     height: auto;
-    /* no margin top and bottom, 10% right and left */
     margin: 0% 10%;
     background: var(--main-light-blue-color);  
     color: var(--main-dark-blue-color);
@@ -217,12 +102,6 @@ footer{
 /* end formating seccions */
 
 
-
-/* adding empty space on link class so header fits nicely */
-.link{
-    height: 60px;
-    width: 100%;
-}
 /* skills section */
 .skillset{
     padding-left: 10%; 
@@ -235,6 +114,7 @@ footer{
     min-width: auto;
     padding: 0;
 }
+
 /* stack section */
 .projectslinks{
     padding: 0;
@@ -250,6 +130,8 @@ footer{
 .projectbox a{
     padding: 0;
 }
+
+
 /* contact section */
 .contact {
     display:flex;
@@ -270,8 +152,3 @@ textarea {
     height: 40%;
     padding: 2% 2% 30% 2%;
 }
-/* @media screen and (min-width:400px){
-    .first-name{
-        color:var(--main-light-blue-color);        
-    }
-} */

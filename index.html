@@ -14,21 +14,22 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-    <!-- Really small script for the scroll effect -->
+    <!-- Javascript for navigation bar and header scroll effect. -->
     <script type="text/javascript" src="assets/js/main-header-scroll.js"></script>
 </head>
 
 <body>
 
     <nav>
-        <button  onclick="toggleNavBar()" class="nav-bar-button">&#9658</button>
+        <button  onclick="toggleNavBar()" class="nav-bar-button" id="test">&#9658</button>
+
         <div class="nav-bar-content" id="navBar">
-            <li><a href="#main-page">Main</a></li>
-            <li><a href="#about-page">About</a></li>
-            <li><a href="#skills-page">Skillset</a></li>
-            <li><a href="#background-interest-page">Education</a></li>
-            <li><a href="#stack-page">Stack</a></li>
-            <li><a href="#contact-page">Contact</a></li>
+            <li><a href="#main-page" onclick="toggleNavBar()">Main</a></li>
+            <li><a href="#about-page" onclick="toggleNavBar()">About</a></li>
+            <li><a href="#skills-page" onclick="toggleNavBar()">Skillset</a></li>
+            <li><a href="#background-interest-page" onclick="toggleNavBar()">Education</a></li>
+            <li><a href="#stack-page" onclick="toggleNavBar()">Stack</a></li>
+            <li><a href="#contact-page" onclick="toggleNavBar()">Contact</a></li>
         </div>
 
     </nav>
