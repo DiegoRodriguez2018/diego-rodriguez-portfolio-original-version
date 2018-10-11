@@ -2,10 +2,10 @@
     font-family: var(--main-title-font);
     font-size: 2rem;
     color: var(--main-light-blue-color);
-    text-shadow: -1px 0 var(--main-font-shadow), 0 1px var(--main-font-shadow), 1px 0 var(--main-font-shadow), 0 -1px var(--main-font-shadow);
+    /* text-shadow: -1px 0 var(--main-font-shadow), 0 1px var(--main-font-shadow), 1px 0 var(--main-font-shadow), 0 -1px var(--main-font-shadow); */
 
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translateX(-90%)    
 }
@@ -13,9 +13,9 @@
     font-family: var(--main-title-font);
     font-size: 2rem;
     color:var(--main-light-blue-color);
-    text-shadow: -1px 0 var(--main-font-shadow), 0 1px var(--main-font-shadow), 1px 0 var(--main-font-shadow), 0 -1px var(--main-font-shadow);
+    /* text-shadow: -1px 0 var(--main-font-shadow), 0 1px var(--main-font-shadow), 1px 0 var(--main-font-shadow), 0 -1px var(--main-font-shadow); */
     position: absolute;
-    top: 33%;
+    top: 40%;
     left: 50%;
     transform: translateX(-40%);
 }
@@ -31,9 +31,9 @@
 }
 .to-about-page{
     position: absolute;
-    color: var(--main-dark-blue-color);
+    color: var(--main-light-blue-color);
     font-size: 2rem;    
-    left: 50%;
+    left: 54%;
     transform: translateX(-50%);
     bottom: -5%;
 }
@@ -41,5 +41,20 @@
     text-decoration:none;
 }
 .to-about-page a:visited{
-    color: var(--main-dark-blue-color);
+    color: var(--main-light-blue-color);
 }
+
+.socials {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 2rem;
+    color:var(--main-light-blue-color);
+}
+
+.socials a:visited{
+    color:var(--main-light-blue-color);
+}
+
