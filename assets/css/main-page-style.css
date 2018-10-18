@@ -29,13 +29,20 @@
     left: 50%;
     transform: translateX(-20%); 
 }
-.to-about-page{
+
+ /* links to about page, and socials */
+
+.section-below {
     position: absolute;
+    left:50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    display:flex;
+}
+
+.to-about-page{
     color: var(--main-light-blue-color);
     font-size: 2rem;    
-    left: 54%;
-    transform: translateX(-50%);
-    bottom: -5%;
 }
 .to-about-page a{
     text-decoration:none;
@@ -45,11 +52,6 @@
 }
 
 .socials {
-    position: absolute;
-    bottom: 1%;
-    left: 50%;
-    transform: translateX(-50%);
-
     font-size: 2rem;
     color:var(--main-light-blue-color);
 }
