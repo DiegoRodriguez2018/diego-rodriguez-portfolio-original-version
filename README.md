@@ -25,22 +25,18 @@ The main feature this website displays is a interactive navigation bar on the le
 Please click/tap the following link to view some screenshots of the website:
 [Screenshots](docs/Screenshots.md)
 
-### Target audience
-The target audience for this website are potential employers, recruiting agents, technology students, or anyone interested in the projects I have developed. 
-
 ### Tech stack
 
-For this project the main techonologies applied were HTML5, CSS3 and Javascript.
-
+For this project the main technologies applied were HTML5, CSS3 and Javascript.
 
 ---
 ## Design Process
 
-From the begining of the design process several digital tools were used including:
+From the beginning of the design process several digital tools were used including:
 
 * [ Trello Boards ](docs/Trello.md):
     
-    Trello Boards were very useful to plan the whole portfolio plannig and deployment. Please click/tap to the link above to view screenshots of the Trello board as it evolved through the project. 
+    Trello Boards were very useful to plan the whole portfolio planning and deployment. Please click/tap to the link above to view screenshots of the Trello board as it evolved through the project. 
 
 
 * [Figma](docs/Figma.md)
@@ -64,7 +60,7 @@ After developing the moodboard, I proceed to work on the [wireframes](docs/Figma
     1. Mobile Design First
     2. Test of different color combinations
     3. Test of different typographies
-    4. Test of constrast
+    4. Test of contrast
     5. Experimenting with lines and angles
 3. Coding of basic HTML structure
     1. Main Page
@@ -80,15 +76,15 @@ After developing the moodboard, I proceed to work on the [wireframes](docs/Figma
     4. Adding main page svg images. 
     5. Adding fonts from Google Fonts. 
     6. Adding topography. Censil for Titles and Raleway for Subtitles and Paragraphs. 
-    7. Adding a small js file to add a scrool effect to the header. 
+    7. Adding a small js file to add a scroll effect to the header. 
 5. Adding Portfolio Content:
-    1. About me section; brief introuction. 
+    1. About me section; brief introduction. 
     2. Skills; current and future technologies and interests. 
-    3. Stack; liks to github and previous projects. 
-    4. Concact Form
+    3. Stack; links to github and previous projects. 
+    4. Contact Form
 6. Adding some CSS animations.
 7. Adding some Javascript functions.
 8. Push portfolio to GitHub
 9. Upload to Netlify
-    1. Check that form seccion is working.
+    1. Check that form secction is working.
 10. Redesign for Desktop.
