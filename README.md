@@ -4,9 +4,7 @@ URL: https://diegorodriguez.netlify.com/
 
 Github Repository: https://github.com/DiegoRodriguez2018/diego-rodriguez-portfolio-website
 
-
 ---
-
 ### Purpose
 The main purpose of this website is to display a brief introuction of myself, the technologies I am confident with, some projects I have done in the last years, a brief summary of my education background and a contact form in case someone desires to get in touch. 
 
@@ -26,12 +24,10 @@ Please click/tap the following link to view some screenshots of the website:
 [Screenshots](docs/Screenshots.md)
 
 ### Tech stack
-
 For this project the main technologies applied were HTML5, CSS3 and Javascript.
 
 ---
 ## Design Process
-
 From the beginning of the design process several digital tools were used including:
 
 * [ Trello Boards ](docs/Trello.md):
@@ -86,5 +82,5 @@ After developing the moodboard, I proceed to work on the [wireframes](docs/Figma
 7. Adding some Javascript functions.
 8. Push portfolio to GitHub
 9. Upload to Netlify
-    1. Check that form secction is working.
+    1. Test form functionality.
 10. Redesign for Desktop.
