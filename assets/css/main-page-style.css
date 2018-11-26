@@ -46,6 +46,8 @@
 }
 .to-about-page a{
     text-decoration:none;
+    color: var(--main-light-blue-color);
+
 }
 .to-about-page a:visited{
     color: var(--main-light-blue-color);
