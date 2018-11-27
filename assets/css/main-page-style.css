@@ -58,6 +58,10 @@
     color:var(--main-light-blue-color);
 }
 
+.socials a {
+    color:var(--main-light-blue-color);
+}
+
 .socials a:visited{
     color:var(--main-light-blue-color);
 }
