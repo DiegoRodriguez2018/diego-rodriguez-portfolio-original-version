@@ -5,8 +5,6 @@ nav{
     /* transform: translateY(-50%); */
     font-family:var(--main-content-font);
     font-size: 1.25rem;
-
-
     width: auto;
     height: auto;
     z-index: 1;
@@ -31,8 +29,6 @@ nav li{
     border: 1px solid var(--main-font-shadow); 
 }
 
-
-
 nav a{
     display:block;
     padding-left: 5px;
@@ -44,9 +40,7 @@ nav a{
 nav a:hover{
     background: var(--main-dark-blue-color);
     color: var(--main-light-blue-color);
-    
 }
-
 
 nav visited{
     color: var(--main-dark-blue-color);

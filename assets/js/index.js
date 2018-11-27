@@ -1,7 +1,6 @@
 const navBarButton = document.querySelector("#navBarButton")
-
-console.log('navBarButton',': ', navBarButton);
-
+const navBar = document.querySelector("#navBar")
+navBar.style.visibility = "hidden"
 navBarButton.addEventListener('click',toggleNavBar)
 
 function toggleNavBar(e) {
@@ -24,5 +23,3 @@ function scrollFunction() {
     document.getElementById("header").style.top = "-100px";
   }
 }
-
-
