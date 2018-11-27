@@ -29,9 +29,7 @@
     left: 52%;
     transform: translateX(-20%); 
 }
-
  /* links to about page, and socials */
-
 .section-below {
     position: absolute;
     left:50%;
@@ -39,7 +37,6 @@
     transform: translateX(-50%);
     display:flex;
 }
-
 .to-about-page{
     color: var(--main-light-blue-color);
     font-size: 2rem;    
@@ -52,39 +49,25 @@
 .to-about-page a:visited{
     color: var(--main-light-blue-color);
 }
-
 .socials {
     font-size: 2rem;
     color:var(--main-light-blue-color);
 }
-
 .socials a {
     color:var(--main-light-blue-color);
 }
-
 .socials a:visited{
     color:var(--main-light-blue-color);
 }
-
 /* button  animation */
 .section-below div {
-    animation: shake 500ms 1 linear ;
+    animation: zoom 800ms 1 ease;
 }
-
-@keyframes shake {
+@keyframes zoom {
   0% {
-    transform: translate(0px, 0px);
-  }
-  25%{
-    transform: translate(0px, -3px);
-  }
-  50% {
-    transform: translate(0px, -5px);
-  }
-  75%{
-    transform: translate(0px, -3px);
+    font-size: 1rem;
   }
   100% {
-    transform: translate(0px, 0px);
+    font-size: 2rem;
   }
 }
