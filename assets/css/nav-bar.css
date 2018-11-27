@@ -55,7 +55,6 @@ nav visited{
     height: 200%;
     opacity: 0;
     transform: rotate(30deg);
-    
     background: rgba(255, 255, 255, 0.13);
     background: linear-gradient(
       to right, 
@@ -66,24 +65,23 @@ nav visited{
     );
 }
 /* Hover state - trigger effect */
-  #navBarButton:hover:after {
-    opacity: 1;
-    top: 30%;
-    left: -30%;
-    transition-property: left, top, opacity;
-    transition-duration: 0.7s, 0.7s, 0.15s;
-    transition-timing-function: ease;
-  }
-/* Active state */
-#navBarButton:active:after {
-    opacity: 0;
-}
-/* On focus */  
-/* #navBarButton:focus:after {
-    opacity: 1;
-    top: 30%;
-    left: -30%;
-    transition-property: left, top, opacity;
-    transition-duration: 0.7s, 0.7s, 0.15s;
-    transition-timing-function: ease;
+/* #navBarButton:hover:after {
+    animation: shine 600ms 1 ease-out;
 } */
+/* On focus */  
+#navBarButton:focus:after {
+    animation: shine 600ms 1 ease-out;
+    animation-delay: 1.5s;
+}
+@keyframes shine {
+    0% {
+        opacity: 1;
+        top: -110%;
+        left: -210%;
+    }
+    100% {
+        opacity: 1;
+        top: 30%;
+        left: -30%;
+    }
+}
