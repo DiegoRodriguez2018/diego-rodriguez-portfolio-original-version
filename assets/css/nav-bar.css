@@ -24,10 +24,6 @@ nav{
     visibility: hidden;
 }
 
-.show{
-visibility: visible;
-}
-
 nav li{
     list-style: none;
     color: var(--main-dark-blue-color);
