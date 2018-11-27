@@ -3,6 +3,7 @@ header{
     position: fixed;
     top:-100px;
     width: 100vw;
+    z-index: 1;
     font-family: var(--main-title-font);
     font-size: 1.25rem;
     text-align: center;
