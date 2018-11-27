@@ -9,26 +9,12 @@ nav{
     height: auto;
     z-index: 1;
 }
-
-.nav-bar-button{
-    padding: 0;
-    width: 1rem;
-    height: 9.7rem;
-    background: var(--main-dark-blue-color);
-    color: var(--main-light-blue-color);
-    border:none;
-}
-.nav-bar-content{
-    visibility: hidden;
-}
-
 nav li{
     list-style: none;
     color: var(--main-dark-blue-color);
     background: var(--main-light-blue-color); 
     border: 1px solid var(--main-font-shadow); 
 }
-
 nav a{
     display:block;
     padding-left: 5px;
@@ -36,12 +22,68 @@ nav a{
     text-decoration:none;
     color: var(--main-font-shadow);
 }
-
 nav a:hover{
     background: var(--main-dark-blue-color);
     color: var(--main-light-blue-color);
 }
-
 nav visited{
     color: var(--main-dark-blue-color);
 }
+#navBarButton {
+    padding: 0;
+    width: 1rem;
+    height: 9.7rem;
+    background: var(--main-dark-blue-color);
+    color: var(--main-light-blue-color);
+    border:none;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+/* Shine effect */
+#navBarButton:after {
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+}
+/* Hover state - trigger effect */
+  #navBarButton:hover:after {
+    opacity: 1;
+    top: 30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+/* Active state */
+#navBarButton:active:after {
+    opacity: 0;
+}
+/* On focus */  
+/* #navBarButton:focus:after {
+    opacity: 1;
+    top: 30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+} */

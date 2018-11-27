@@ -17,7 +17,6 @@ header{
     background:var(--main-dark-blue-color);
     color: var(--main-light-blue-color);
 }
-
 /* adding empty space on link class so header fits nicely */
 .link{
     height: 60px;

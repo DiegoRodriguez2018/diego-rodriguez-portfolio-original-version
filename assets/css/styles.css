@@ -1,13 +1,9 @@
 /* nav-bar.css deals with navigation bar on left styling and animation */
 @import "nav-bar.css";
-
 /* header.css deals with top header styling */
 @import "header.css";
-
 /* main-page-style.css deals with styling of main page.  */
 @import "main-page-style.css";
-
-
 :root {
     --main-title-font:  'Cinzel', serif;
     --main-content-font: 'Raleway', sans-serif;
@@ -17,8 +13,6 @@
     --main-light-blue-color:#B8D6E5;
     --main-dark-blue-color:#005DAC;
 }
-
-
 html,body{
     margin: 0;
     padding: 0;
@@ -38,7 +32,6 @@ p,ul{
     font-family: var(--main-content-font);
     font-size: 1rem;
 }
-
 /* formating seccions */
 main, footer{
     display: flex;  
@@ -47,7 +40,6 @@ main, footer{
     opacity: 20%;
     color: var(--main-font-shadow);
 }
-
 footer{
     display: block;
     text-align: center;
@@ -59,14 +51,12 @@ footer{
 footer a:visited{
     color: var(--main-font-shadow);
 }
-
 #main-page {
     width: 100vw;
     height: 100vh;
     background: var(--main-black-color);
     opacity: 100;
 }
-
 .about, .skills,.stack,.contact,.background-interest{
     width: 80%;
     height: auto;
@@ -75,8 +65,6 @@ footer a:visited{
     color: var(--main-font-shadow);
 }
 /* end formating seccions */
-
-
 /* skills section */
 .skillset{
     width: 100%;
@@ -90,11 +78,9 @@ footer a:visited{
     font-size: 1rem;
     min-width: auto;
 }
-
 .skillset li i{
     font-size: 2rem;
 }
-
 /* stack section */
 .projectslinks{
     font-family: var(--main-content-font);
@@ -104,13 +90,10 @@ footer a:visited{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
-
 .projectbox{
     width: auto;
     height: auto;
     text-align: center;
-
     background: var(--main-dark-blue-color);
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -118,23 +101,17 @@ footer a:visited{
     padding-right: 1rem;
     margin: 0;
     transition: 0.5s;
-
 }
-
 .projectbox a:hover{
     font-weight: bold;
 }
-
 .projectbox a{
     padding: 0;
     text-decoration: none;
 }
-
 .projectbox a:visited{
     color: var(--main-light-blue-color);
 }
-
-
 /* contact section */
 .contact {
     display:flex;
@@ -157,7 +134,6 @@ textarea {
     height: 40%;
     padding: 2% 2% 30% 2%;
 }
-
 .contact button{
     font-family: var(--main-content-font);
     font-size: 1.2rem;
@@ -166,7 +142,6 @@ textarea {
     color: var(--main-light-blue-color);
     transition: 0.5s;
 }
-
 .contact button:hover{
     font-size: 1.5rem;
 }
