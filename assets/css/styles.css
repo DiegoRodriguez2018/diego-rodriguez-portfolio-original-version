@@ -91,9 +91,11 @@ footer a:visited{
     flex-wrap: wrap;
 }
 .projectbox{
+    border-radius: .5rem;
     width: auto;
     height: auto;
     text-align: center;
+    color: var(--main-light-blue-color);
     background: var(--main-dark-blue-color);
     padding-top: .5rem;
     padding-bottom: .5rem;
