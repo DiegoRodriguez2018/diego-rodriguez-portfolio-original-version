@@ -101,7 +101,7 @@ footer a:visited{
     padding-bottom: .5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin: 0;
+    margin: .5rem;
     transition: 0.5s;
 }
 .projectbox a:hover{
