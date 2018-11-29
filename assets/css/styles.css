@@ -95,7 +95,6 @@ footer a:visited{
     width: auto;
     height: auto;
     text-align: center;
-    color: var(--main-light-blue-color);
     background: var(--main-dark-blue-color);
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -108,6 +107,7 @@ footer a:visited{
     font-weight: bold;
 }
 .projectbox a{
+    color: var(--main-light-blue-color);
     padding: 0;
     text-decoration: none;
 }
