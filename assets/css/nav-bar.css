@@ -1,8 +1,8 @@
 nav{
+    opacity: 0.95;
     display: flex;    
     position: fixed;
     bottom: 0%;
-    /* transform: translateY(-50%); */
     font-family:var(--main-content-font);
     font-size: 1.25rem;
     width: auto;
@@ -10,10 +10,17 @@ nav{
     z-index: 1;
 }
 nav li{
+    opacity: 0.95;
     list-style: none;
     color: var(--main-dark-blue-color);
     background: var(--main-light-blue-color); 
-    border: 1px solid var(--main-font-shadow); 
+    border: 0.8px groove var(--main-font-shadow); 
+}
+nav li:first-child{
+    border-top-right-radius: .5rem;
+}
+nav li:last-child {
+    border-bottom-right-radius: .5rem;
 }
 nav a{
     display:block;
@@ -25,6 +32,12 @@ nav a{
 nav a:hover{
     background: var(--main-dark-blue-color);
     color: var(--main-light-blue-color);
+}
+nav li:first-child a{
+    border-top-right-radius: .5rem;
+}
+nav li:last-child a{
+    border-bottom-right-radius: .5rem;
 }
 nav visited{
     color: var(--main-dark-blue-color);
@@ -39,7 +52,6 @@ nav visited{
     position: relative;
     overflow: hidden;
     display: inline-block;
-    border-radius: 5px;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -64,10 +76,6 @@ nav visited{
       rgba(255, 255, 255, 0.0) 100%
     );
 }
-/* Hover state - trigger effect */
-/* #navBarButton:hover:after {
-    animation: shine 600ms 1 ease-out;
-} */
 /* On focus */  
 #navBarButton:focus:after {
     animation: shine 600ms 1 ease-out;
