@@ -28,13 +28,13 @@
 /* Media query for mobile */
 @media only screen and (max-height: 400px) {
     .first-name{
-        top: 15%;
+        top: 10%;
     }
     .last-name{
-        top: 30%;
+        top: 26%;
     }
     .sub-heading{
-        top:50%;
+        top:46%;
     }
 }
  /* links to about page, and socials */
