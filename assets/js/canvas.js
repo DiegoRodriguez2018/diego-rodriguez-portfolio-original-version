@@ -26,7 +26,7 @@ mouse = {
 };
 ctx = canvas.getContext('2d');
 if (!ctx) {
-  alert("Ooops! Your browser does not support canvas :'(");
+  alert("Sorry your browser does not support html5 canvas.");
 }
 
 function Node(x, y) {
@@ -63,22 +63,22 @@ Node.prototype.drawConnections = function() {
 };
 
 Node.prototype.moveNode = function() {
-  this.energy -= 2;
+  this.energy -= 1;
   if (this.energy < 1) {
     this.energy = Math.random() * 100;
     if (this.x - this.anchorX < -ANCHOR_LENGTH) {
-      this.vx = Math.random() * 2;
+      this.vx = Math.random() * 1;
     } else if (this.x - this.anchorX > ANCHOR_LENGTH) {
-      this.vx = Math.random() * -2;
+      this.vx = Math.random() * -1;
     } else {
-      this.vx = Math.random() * 4 - 2;
+      this.vx = Math.random() * 2 - 1;
     }
     if (this.y - this.anchorY < -ANCHOR_LENGTH) {
-      this.vy = Math.random() * 2;
+      this.vy = Math.random() * 1;
     } else if (this.y - this.anchorY > ANCHOR_LENGTH) {
-      this.vy = Math.random() * -2;
+      this.vy = Math.random() * -1;
     } else {
-      this.vy = Math.random() * 4 - 2;
+      this.vy = Math.random() * 2 - 1;
     }
   }
   this.x += this.vx * this.energy / 100;
