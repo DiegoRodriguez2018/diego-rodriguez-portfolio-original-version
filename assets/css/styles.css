@@ -55,7 +55,9 @@ footer{
     font-family: var(--main-content-font);
     font-size: 1.2rem;
 }
-
+footer a{
+    color: var(--main-font-shadow);
+}
 footer a:visited{
     color: var(--main-font-shadow);
 }
