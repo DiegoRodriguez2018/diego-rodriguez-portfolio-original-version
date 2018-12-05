@@ -150,14 +150,11 @@ textarea {
     font-family: var(--main-content-font);
     font-size: 1.2rem;
     border: none;
+    border-radius: .3rem;
     background: var(--main-dark-blue-color);
     color: var(--main-light-blue-color);
     transition: 0.5s;
 }
 .contact button:hover{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
-/* 
-first name 15
-last name 30
-subheading 50 */
