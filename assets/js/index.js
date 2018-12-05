@@ -12,6 +12,10 @@ function toggleNavBar(e) {
   }
 }
 
+function hideNavBar(e){
+  navBar.style.visibility = "hidden"
+}
+
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {  
   const headerTop =  document.documentElement.scrollTop
