@@ -101,11 +101,15 @@ footer a:visited{
     flex-wrap: wrap;
 }
 .projectbox{
+    border: 1px solid var(--main-black-color);
+    /* font-weight: bold; */
     border-radius: .5rem;
     width: auto;
     height: auto;
     text-align: center;
-    background: var(--main-dark-blue-color);
+    
+    color: var(--main-black-color);
+    
     padding-top: .5rem;
     padding-bottom: .5rem;
     padding-left: 1rem;
@@ -117,12 +121,13 @@ footer a:visited{
     font-weight: bold;
 }
 .projectbox a{
-    color: var(--main-light-blue-color);
+    color: var(--main-black-color);
     padding: 0;
     text-decoration: none;
 }
 .projectbox a:visited{
-    color: var(--main-light-blue-color);
+    color: var(--main-black-color);
+
 }
 /* contact section */
 .contact {
@@ -135,7 +140,6 @@ footer a:visited{
     flex-direction: column;
     align-items: center;
 }
-
 input,textarea{
     box-sizing: border-box;
     font-family: var(--main-content-font);
