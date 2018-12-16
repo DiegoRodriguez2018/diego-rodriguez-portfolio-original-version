@@ -1,44 +1,86 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Diego Rodriguez Personal Portfolio
 
-## Available Scripts
+URL: https://diegorodriguez.netlify.com/ 
 
-In the project directory, you can run:
+Github Repository: https://github.com/DiegoRodriguez2018/diego-rodriguez-portfolio-website
 
-### `npm start`
+---
+### Purpose
+The main purpose of this website is to display a brief introuction of myself, the technologies I am confident with, some projects I have done in the last years, a brief summary of my education background and a contact form in case someone desires to get in touch. 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Features
+The main feature this website displays is a interactive navigation bar on the left side of the screen. Basically consisting of buttons and links it allows the user to easily navigate the website. Another features include the contact form at the bottom of the website and the social links inside the footer.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Sitemap
+    1. Main 
+    2. About me
+    3. Skillset
+    4. Education
+    5. Projects
+    6. Contact
 
-### `npm test`
+### Screenshots
+Please click/tap the following link to view some screenshots of the website:
+[Screenshots](docs/Screenshots.md)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tech stack
+For this project the main technologies applied were HTML5, CSS3 and Javascript.
 
-### `npm run build`
+---
+## Design Process
+From the beginning of the design process several digital tools were used including:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [ Trello Boards ](docs/Trello.md):
+    
+    Trello Boards were very useful to plan the whole portfolio planning and deployment. Please click/tap to the link above to view screenshots of the Trello board as it evolved through the project. 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [Figma](docs/Figma.md)
+    
+    Figma was used to develop the Wireframe of the website and also to explore and design a few logos for the portfolio. Please click/tap the link above to see screenshots of the process. 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [Inkscape](https://inkscape.org/en/)
+    
+    Inkscape is an open source professional vector graphics editor. Inkscape was used in this project to perform adjustments to svg files as required. Please click/tap the link above to redirect to the official Inkscape website.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The designing process started by developing a [moodboard](docs/Moodboard.md), which you can check by following this [link](docs/Moodboard.md). This moodboard was somehow broad but it helped me to gain a good insight of how the final product was going to look like. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+After developing the moodboard, I proceed to work on the [wireframes](docs/Figma.md) of the website on Figma, where a few designs and color patterns were analysed. To have a look to this wireframes plese follow this [link](docs/Figma.md)
+ 
+---
+### Project plan & timeline
+1. Moodboard
+2. Figma
+    1. Mobile Design First
+    2. Test of different color combinations
+    3. Test of different typographies
+    4. Test of contrast
+    5. Experimenting with lines and angles
+3. Coding of basic HTML structure
+    1. Main Page
+    2. About Me page
+    3. Academic background and Skills page
+    4. Stack page
+    5. Contact page
+    6. Footer
+4. Adding CSS style sheet
+    1. Creating a grid model for displaying different sections (1 column, 6 rows)
+    2. Adding background colour according to figma design.
+    3. Adding text colour according to figma design.
+    4. Adding main page svg images. 
+    5. Adding fonts from Google Fonts. 
+    6. Adding topography. Censil for Titles and Raleway for Subtitles and Paragraphs. 
+    7. Adding a small js file to add a scroll effect to the header. 
+5. Adding Portfolio Content:
+    1. About me section; brief introduction. 
+    2. Skills; current and future technologies and interests. 
+    3. Stack; links to github and previous projects. 
+    4. Contact Form
+6. Adding some CSS animations.
+7. Adding some Javascript functions.
+8. Push portfolio to GitHub
+9. Upload to Netlify
+    1. Test form functionality.
+10. Redesign for Desktop.
