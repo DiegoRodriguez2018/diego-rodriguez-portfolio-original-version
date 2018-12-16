@@ -153,7 +153,7 @@ class App extends Component {
             <h3>Contact</h3>
             <p>
               Would you like ask something or just have a chat? <br /> Please get in touch!
-                <form name="contact" method="POST" netlify>
+                <form name="contact" method="POST" data-netlify="true">
                 <p>
                   <input type="text" name="name" placeholder="Name" />
                 </p>
