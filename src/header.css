@@ -1,0 +1,25 @@
+/* header */
+header{
+    position: fixed;
+    top:-100px;
+    width: 100vw;
+    z-index: 1;
+    font-family: var(--main-title-font);
+    font-size: 1.25rem;
+    text-align: center;
+    transition: 1s;    
+}
+.headertop{
+    background: var(--main-black-color);
+    color: var(--main-light-blue-color);
+}
+.headerbottom{
+    background:var(--main-dark-blue-color);
+    color: var(--main-light-blue-color);
+}
+/* adding empty space on link class so header fits nicely */
+.link{
+    height: 60px;
+    width: 100%;
+}
+
