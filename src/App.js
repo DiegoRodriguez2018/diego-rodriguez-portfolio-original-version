@@ -7,27 +7,38 @@ class App extends Component {
 
   projects = [
     {
-      name: "Ruby on Rails Two-Sided Marketplace",
+      name: "Bubblesort Algorithm Animation",
+      techstack: "React.js",
+      url: "https://github.com/DiegoRodriguez2018/bubble-sort",
+    },
+    { 
+      name: "A Two-Sided Marketplace",
+      techstack: "Ruby on Rails",
       url: "https://github.com/DiegoRodriguez2018/market-place-rails-project"
     },
     {
-      name: "Ruby on Rails URL-shortener",
+      name: "A URL-shortener",
+      techstack: "Ruby on Rails ",
       url: "https://github.com/DiegoRodriguez2018/simple-rails-url-shortener-exercise"
     },
     {
-      name: "Rails Blog with authentication",
+      name: "Blog with authentication",
+      techstack: "Ruby on Rails",
       url: "https://github.com/DiegoRodriguez2018/rails-blog-with-authentication"
     },
     {
-      name: "Blog website written on Django",
+      name: "Simple blog website",
+      techstack: "Django",
       url: "https://github.com/DiegoRodriguez2018/django-blog"
     },
     {
       name: "This website repository",
+      techstack: "React.js, SASS",
       url: "https://github.com/DiegoRodriguez2018/diego-rodriguez-portfolio-website-netlify"
     },
     {
       name: "Forex Terminal App",
+      techstack: "Ruby",
       url: "https://github.com/DiegoRodriguez2018/real-time-currency-converter-terminal-app"
     }
   ]
@@ -149,7 +160,8 @@ class App extends Component {
                 <div class="projectslinks">
                 {
                   this.projects.map(project => {
-                    return <ProjectButton label={project.name} url={project.url} />
+                    
+                    return <ProjectButton label={project.name} techstack={project.techstack} url={project.url} />
                   })
                 }
               </div>
