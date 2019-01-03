@@ -1,19 +1,19 @@
-/* nav-bar.css deals with navigation bar on left styling and animation */
-@import "nav-bar";
-/* header.css deals with top header styling */
-@import "header";
-/* main-page-style.css deals with styling of main page.  */
-@import "main-page-style";
+//Variables:
+$main-title-font: "Cinzel", serif;
+$main-content-font: "Raleway", sans-serif;
 
-:root {
-  --main-title-font: "Cinzel", serif;
-  --main-content-font: "Raleway", sans-serif;
-  --main-font-shadow: #0d0d0d;
-  --main-white-color: #f5ecec;
-  --main-black-color: #1c3346;
-  --main-light-blue-color: #b8d6e5;
-  --main-dark-blue-color: #005dac;
-}
+
+
+
+//Modules:
+// colors.scss stores the main colors for the website
+@import "colors";
+/* nav-bar.scss deals with navigation bar on left styling and animation */
+@import "nav-bar";
+/* header.scss deals with top header styling */
+@import "header";
+/* main-page-style.scss deals with styling of main page.  */
+@import "main-page-style";
 
 html,
 body {
@@ -32,13 +32,13 @@ canvas {
   overflow: hidden;
 }
 h3 {
-  font-family: var(--main-title-font);
+  font-family: $main-title-font;
   font-size: 1.2rem;
 }
 h4,
 p,
 ul {
-  font-family: var(--main-content-font);
+  font-family: $main-content-font;
   font-size: 1rem;
 }
 
@@ -47,27 +47,27 @@ main,
 footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--main-light-blue-color);
+  background-color: $light-blue;
   opacity: 20%;
-  color: var(--main-font-shadow);
+  color: $font-shadow;
 }
 footer {
   display: block;
   text-align: center;
   width: 100%;
-  font-family: var(--main-content-font);
+  font-family: $main-content-font;
   font-size: 1.2rem;
   a {
-    color: var(--main-font-shadow);
+    color: $font-shadow;
     &:visited {
-      color: var(--main-font-shadow);
+      color: $font-shadow;
     }
   }
 }
 #main-page {
   width: 100vw;
   height: 100vh;
-  background: var(--main-black-color);
+  background: $dark-blue;
   opacity: 100;
 }
 .about,
@@ -78,8 +78,8 @@ footer {
   width: 80%;
   height: auto;
   margin: 0% 10%;
-  background: var(--main-light-blue-color);
-  color: var(--main-font-shadow);
+  background: $light-blue;
+  color: $font-shadow;
 }
 /* end formating seccions */
 /* skills section */
@@ -89,7 +89,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   li {
-    font-family: var(--main-content-font);
+    font-family: $main-content-font;
     list-style: none;
     font-size: 1rem;
     min-width: auto;
@@ -101,7 +101,7 @@ footer {
 
 /* stack section */
 .projectslinks {
-  font-family: var(--main-content-font);
+  font-family: $main-content-font;
   font-size: 1rem;
   padding: 0;
   display: flex;
@@ -109,9 +109,9 @@ footer {
   flex-wrap: wrap;
 }
 .projectbox {
-  border: 1px solid var(--main-black-color);
+  border: 1px solid $dark-blue;
   border-radius: 0.5rem;
-  background: var(--main-light-blue-color);
+  background: $light-blue;
   width: auto;
   height: auto;
   text-align: center;
@@ -122,15 +122,15 @@ footer {
   margin: 0.5rem;
   transition: 0.5s;
   a {
-    color: var(--main-black-color);
+    color: $dark-blue;
     padding: 0;
     text-decoration: none;
     &:hover {
-      color: var(--main-black-color);
+      color: $dark-blue;
       font-weight: bold;
     }
     &:visited {
-      color: var(--main-black-color);
+      color: $dark-blue;
     }
   }
 }
@@ -146,12 +146,12 @@ footer {
     align-items: center;
   }
   button {
-    font-family: var(--main-content-font);
+    font-family: $main-content-font;
     font-size: 1.2rem;
     border: none;
     border-radius: 0.3rem;
-    background: var(--main-dark-blue-color);
-    color: var(--main-light-blue-color);
+    background: $button-blue;
+    color: $light-blue;
     transition: 0.5s;
     &:hover {
       font-size: 1.4rem;
@@ -162,7 +162,7 @@ footer {
 input,
 textarea {
   box-sizing: border-box;
-  font-family: var(--main-content-font);
+  font-family: $main-content-font;
   padding: 2% 2% 5% 2%;
   width: 15rem;
 }

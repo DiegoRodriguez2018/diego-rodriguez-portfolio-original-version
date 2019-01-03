@@ -3,7 +3,7 @@ nav {
   display: flex;
   position: fixed;
   bottom: 0%;
-  font-family: var(--main-content-font);
+  font-family: $main-content-font;
   font-size: 1.25rem;
   width: auto;
   height: auto;
@@ -11,9 +11,9 @@ nav {
   li {
     opacity: 0.95;
     list-style: none;
-    color: var(--main-dark-blue-color);
-    background: var(--main-light-blue-color);
-    border: 0.8px groove var(--main-font-shadow);
+    color: $button-blue;
+    background: $light-blue;
+    border: 0.8px groove $font-shadow;
     &:first-child {
       border-top-right-radius: 0.5rem;
       a {
@@ -32,13 +32,13 @@ nav {
     padding-left: 5px;
     padding-right: 5px;
     text-decoration: none;
-    color: var(--main-font-shadow);
+    color: $font-shadow;
     &:hover {
-      background: var(--main-dark-blue-color);
-      color: var(--main-light-blue-color);
+      background: $button-blue;
+      color: $light-blue;
     }
     &:visited {
-      color: var(--main-dark-blue-color);
+      color: $button-blue;
     }
   }
 }
@@ -47,9 +47,9 @@ nav {
   padding: 0;
   width: 1rem;
   height: 9.7rem;
-  background: var(--main-dark-blue-color);
-  color: var(--main-light-blue-color);
-  border: none;
+  background: $button-blue;
+  color: $light-blue;
+  border:none;
   position: relative;
   overflow: hidden;
   display: inline-block;

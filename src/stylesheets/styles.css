@@ -1,10 +1,10 @@
-/* nav-bar.css deals with navigation bar on left styling and animation */
+/* nav-bar.scss deals with navigation bar on left styling and animation */
 nav {
   opacity: 0.95;
   display: flex;
   position: fixed;
   bottom: 0%;
-  font-family: var(--main-content-font);
+  font-family: "Raleway", sans-serif;
   font-size: 1.25rem;
   width: auto;
   height: auto;
@@ -12,9 +12,9 @@ nav {
   nav li {
     opacity: 0.95;
     list-style: none;
-    color: var(--main-dark-blue-color);
-    background: var(--main-light-blue-color);
-    border: 0.8px groove var(--main-font-shadow); }
+    color: #004179;
+    background: #c6d8e8;
+    border: 0.8px groove #0d0d0d; }
     nav li:first-child {
       border-top-right-radius: 0.5rem; }
       nav li:first-child a {
@@ -28,19 +28,19 @@ nav {
     padding-left: 5px;
     padding-right: 5px;
     text-decoration: none;
-    color: var(--main-font-shadow); }
+    color: #0d0d0d; }
     nav a:hover {
-      background: var(--main-dark-blue-color);
-      color: var(--main-light-blue-color); }
+      background: #004179;
+      color: #c6d8e8; }
     nav a:visited {
-      color: var(--main-dark-blue-color); }
+      color: #004179; }
 
 #navBarButton {
   padding: 0;
   width: 1rem;
   height: 9.7rem;
-  background: var(--main-dark-blue-color);
-  color: var(--main-light-blue-color);
+  background: #004179;
+  color: #c6d8e8;
   border: none;
   position: relative;
   overflow: hidden;
@@ -75,53 +75,53 @@ nav {
     opacity: 1;
     top: 30%;
     left: -30%; } }
-/* header.css deals with top header styling */
+/* header.scss deals with top header styling */
 /* header */
 header {
   position: fixed;
   top: -100px;
   width: 100vw;
   z-index: 1;
-  font-family: var(--main-title-font);
+  font-family: "Cinzel", serif;
   font-size: 1.25rem;
   text-align: center;
   transition: 1s; }
 
 .headertop {
-  background: var(--main-black-color);
-  color: var(--main-light-blue-color); }
+  background: #1c3346;
+  color: #c6d8e8; }
 
 .headerbottom {
-  background: var(--main-dark-blue-color);
-  color: var(--main-light-blue-color); }
+  background: #004179;
+  color: #c6d8e8; }
 
 /* adding empty space on link class so header fits nicely */
 .link {
   height: 60px;
   width: 100%; }
 
-/* main-page-style.css deals with styling of main page.  */
+/* main-page-style.scss deals with styling of main page.  */
 .first-name {
-  font-family: var(--main-title-font);
+  font-family: "Cinzel", serif;
   font-size: 2rem;
-  color: var(--main-light-blue-color);
+  color: #c6d8e8;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translateX(-90%); }
 
 .last-name {
-  font-family: var(--main-title-font);
+  font-family: "Cinzel", serif;
   font-size: 2rem;
-  color: var(--main-light-blue-color);
+  color: #c6d8e8;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translateX(-40%); }
 
 .sub-heading {
-  color: var(--main-light-blue-color);
-  font-family: var(--main-content-font);
+  color: #c6d8e8;
+  font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
   position: absolute;
   top: 55%;
@@ -140,22 +140,22 @@ header {
     top: 46%; } }
 /* links to about page, and socials */
 .to-about-page {
-  color: var(--main-light-blue-color);
+  color: #c6d8e8;
   font-size: 2rem; }
   .to-about-page a {
     text-decoration: none;
-    color: var(--main-light-blue-color); }
+    color: #c6d8e8; }
     .to-about-page a:visited {
-      color: var(--main-light-blue-color); }
+      color: #c6d8e8; }
 
 .socials {
   font-size: 2rem;
-  color: var(--main-light-blue-color); }
+  color: #c6d8e8; }
   .socials a {
-    color: var(--main-light-blue-color);
+    color: #c6d8e8;
     margin: 0.3rem; }
     .socials a:visited {
-      color: var(--main-light-blue-color); }
+      color: #c6d8e8; }
 
 .section-below {
   position: absolute;
@@ -172,15 +172,6 @@ header {
     font-size: 1rem; }
   100% {
     font-size: 2rem; } }
-:root {
-  --main-title-font: "Cinzel", serif;
-  --main-content-font: "Raleway", sans-serif;
-  --main-font-shadow: #0d0d0d;
-  --main-white-color: #f5ecec;
-  --main-black-color: #1c3346;
-  --main-light-blue-color: #b8d6e5;
-  --main-dark-blue-color: #005dac; }
-
 html,
 body {
   margin: 0;
@@ -198,13 +189,13 @@ canvas {
   overflow: hidden; }
 
 h3 {
-  font-family: var(--main-title-font);
+  font-family: "Cinzel", serif;
   font-size: 1.2rem; }
 
 h4,
 p,
 ul {
-  font-family: var(--main-content-font);
+  font-family: "Raleway", sans-serif;
   font-size: 1rem; }
 
 /* formating seccions */
@@ -212,25 +203,25 @@ main,
 footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--main-light-blue-color);
+  background-color: #c6d8e8;
   opacity: 20%;
-  color: var(--main-font-shadow); }
+  color: #0d0d0d; }
 
 footer {
   display: block;
   text-align: center;
   width: 100%;
-  font-family: var(--main-content-font);
+  font-family: "Raleway", sans-serif;
   font-size: 1.2rem; }
   footer a {
-    color: var(--main-font-shadow); }
+    color: #0d0d0d; }
     footer a:visited {
-      color: var(--main-font-shadow); }
+      color: #0d0d0d; }
 
 #main-page {
   width: 100vw;
   height: 100vh;
-  background: var(--main-black-color);
+  background: #1c3346;
   opacity: 100; }
 
 .about,
@@ -241,8 +232,8 @@ footer {
   width: 80%;
   height: auto;
   margin: 0% 10%;
-  background: var(--main-light-blue-color);
-  color: var(--main-font-shadow); }
+  background: #c6d8e8;
+  color: #0d0d0d; }
 
 /* end formating seccions */
 /* skills section */
@@ -252,7 +243,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap; }
   .skillset li {
-    font-family: var(--main-content-font);
+    font-family: "Raleway", sans-serif;
     list-style: none;
     font-size: 1rem;
     min-width: auto; }
@@ -261,7 +252,7 @@ footer {
 
 /* stack section */
 .projectslinks {
-  font-family: var(--main-content-font);
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   padding: 0;
   display: flex;
@@ -269,9 +260,9 @@ footer {
   flex-wrap: wrap; }
 
 .projectbox {
-  border: 1px solid var(--main-black-color);
+  border: 1px solid #1c3346;
   border-radius: 0.5rem;
-  background: var(--main-light-blue-color);
+  background: #c6d8e8;
   width: auto;
   height: auto;
   text-align: center;
@@ -282,14 +273,14 @@ footer {
   margin: 0.5rem;
   transition: 0.5s; }
   .projectbox a {
-    color: var(--main-black-color);
+    color: #1c3346;
     padding: 0;
     text-decoration: none; }
     .projectbox a:hover {
-      color: var(--main-black-color);
+      color: #1c3346;
       font-weight: bold; }
     .projectbox a:visited {
-      color: var(--main-black-color); }
+      color: #1c3346; }
 
 /* contact section */
 .contact {
@@ -301,12 +292,12 @@ footer {
     flex-direction: column;
     align-items: center; }
   .contact button {
-    font-family: var(--main-content-font);
+    font-family: "Raleway", sans-serif;
     font-size: 1.2rem;
     border: none;
     border-radius: 0.3rem;
-    background: var(--main-dark-blue-color);
-    color: var(--main-light-blue-color);
+    background: #004179;
+    color: #c6d8e8;
     transition: 0.5s; }
     .contact button:hover {
       font-size: 1.4rem; }
@@ -314,7 +305,7 @@ footer {
 input,
 textarea {
   box-sizing: border-box;
-  font-family: var(--main-content-font);
+  font-family: "Raleway", sans-serif;
   padding: 2% 2% 5% 2%;
   width: 15rem; }
 

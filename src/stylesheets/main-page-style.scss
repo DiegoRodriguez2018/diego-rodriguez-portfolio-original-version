@@ -1,24 +1,24 @@
 .first-name {
-  font-family: var(--main-title-font);
+  font-family: $main-title-font;
   font-size: 2rem;
-  color: var(--main-light-blue-color);
+  color: $light-blue;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translateX(-90%);
 }
 .last-name {
-  font-family: var(--main-title-font);
+  font-family: $main-title-font;
   font-size: 2rem;
-  color: var(--main-light-blue-color);
+  color: $light-blue;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translateX(-40%);
 }
 .sub-heading {
-  color: var(--main-light-blue-color);
-  font-family: var(--main-content-font);
+  color: $light-blue;
+  font-family: $main-content-font;
   font-size: 0.8rem;
   position: absolute;
   top: 55%;
@@ -40,25 +40,25 @@
 /* links to about page, and socials */
 
 .to-about-page {
-  color: var(--main-light-blue-color);
+  color: $light-blue;
   font-size: 2rem;
   a {
     text-decoration: none;
-    color: var(--main-light-blue-color);
+    color: $light-blue;
     &:visited {
-      color: var(--main-light-blue-color);
+      color: $light-blue;
     }
   }
 }
 
 .socials {
   font-size: 2rem;
-  color: var(--main-light-blue-color);
+  color: $light-blue;
   a {
-    color: var(--main-light-blue-color);
+    color: $light-blue;
     margin: 0.3rem;
     &:visited {
-      color: var(--main-light-blue-color);
+      color: $light-blue;
     }
   }
 }
