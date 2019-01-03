@@ -1,9 +1,10 @@
 /* nav-bar.css deals with navigation bar on left styling and animation */
-@import "nav-bar.css";
+@import "nav-bar";
 /* header.css deals with top header styling */
-@import "header.css";
+@import "header";
 /* main-page-style.css deals with styling of main page.  */
-@import "main-page-style.css";
+@import "main-page-style";
+
 :root {
     --main-title-font:  'Cinzel', serif;
     --main-content-font: 'Raleway', sans-serif;
@@ -13,6 +14,7 @@
     --main-light-blue-color:#B8D6E5;
     --main-dark-blue-color:#005DAC;
 }
+
 html,body{
     margin: 0;
     padding: 0;
@@ -32,14 +34,11 @@ h3{
     font-family: var(--main-title-font);
     font-size: 1.2rem;
 }
-h4{
+h4,p,ul{
     font-family: var(--main-content-font);
     font-size: 1rem;
 }
-p,ul{
-    font-family: var(--main-content-font);
-    font-size: 1rem;
-}
+
 /* formating seccions */
 main, footer{
     display: flex;  

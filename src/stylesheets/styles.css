@@ -1,0 +1,341 @@
+/* nav-bar.css deals with navigation bar on left styling and animation */
+nav {
+  opacity: 0.95;
+  display: flex;
+  position: fixed;
+  bottom: 0%;
+  font-family: var(--main-content-font);
+  font-size: 1.25rem;
+  width: auto;
+  height: auto;
+  z-index: 1; }
+
+nav li {
+  opacity: 0.95;
+  list-style: none;
+  color: var(--main-dark-blue-color);
+  background: var(--main-light-blue-color);
+  border: 0.8px groove var(--main-font-shadow); }
+
+nav li:first-child {
+  border-top-right-radius: .5rem; }
+
+nav li:last-child {
+  border-bottom-right-radius: .5rem; }
+
+nav a {
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  color: var(--main-font-shadow); }
+
+nav a:hover {
+  background: var(--main-dark-blue-color);
+  color: var(--main-light-blue-color); }
+
+nav li:first-child a {
+  border-top-right-radius: .5rem; }
+
+nav li:last-child a {
+  border-bottom-right-radius: .5rem; }
+
+nav visited {
+  color: var(--main-dark-blue-color); }
+
+#navBarButton {
+  padding: 0;
+  width: 1rem;
+  height: 9.7rem;
+  background: var(--main-dark-blue-color);
+  color: var(--main-light-blue-color);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px; }
+
+/* Shine effect */
+#navBarButton:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%); }
+
+/* On focus */
+#navBarButton:focus:after {
+  animation: shine 600ms 1 ease-out;
+  animation-delay: 1.5s; }
+
+@keyframes shine {
+  0% {
+    opacity: 1;
+    top: -110%;
+    left: -210%; }
+  100% {
+    opacity: 1;
+    top: 30%;
+    left: -30%; } }
+/* header.css deals with top header styling */
+/* header */
+header {
+  position: fixed;
+  top: -100px;
+  width: 100vw;
+  z-index: 1;
+  font-family: var(--main-title-font);
+  font-size: 1.25rem;
+  text-align: center;
+  transition: 1s; }
+
+.headertop {
+  background: var(--main-black-color);
+  color: var(--main-light-blue-color); }
+
+.headerbottom {
+  background: var(--main-dark-blue-color);
+  color: var(--main-light-blue-color); }
+
+/* adding empty space on link class so header fits nicely */
+.link {
+  height: 60px;
+  width: 100%; }
+
+/* main-page-style.css deals with styling of main page.  */
+.first-name {
+  font-family: var(--main-title-font);
+  font-size: 2rem;
+  color: var(--main-light-blue-color);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-90%); }
+
+.last-name {
+  font-family: var(--main-title-font);
+  font-size: 2rem;
+  color: var(--main-light-blue-color);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-40%); }
+
+.sub-heading {
+  color: var(--main-light-blue-color);
+  font-family: var(--main-content-font);
+  font-size: .8rem;
+  position: absolute;
+  top: 55%;
+  left: 52%;
+  transform: translateX(-20%); }
+
+/* Media query for mobile */
+@media only screen and (max-height: 400px) {
+  .first-name {
+    top: 10%; }
+
+  .last-name {
+    top: 26%; }
+
+  .sub-heading {
+    top: 46%; } }
+/* links to about page, and socials */
+.section-below {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-50%);
+  display: flex; }
+
+.to-about-page {
+  color: var(--main-light-blue-color);
+  font-size: 2rem; }
+
+.to-about-page a {
+  text-decoration: none;
+  color: var(--main-light-blue-color); }
+
+.to-about-page a:visited {
+  color: var(--main-light-blue-color); }
+
+.socials {
+  font-size: 2rem;
+  color: var(--main-light-blue-color); }
+
+.socials a {
+  color: var(--main-light-blue-color);
+  margin: 0.3rem; }
+
+.socials a:visited {
+  color: var(--main-light-blue-color); }
+
+/* button  animation */
+.section-below div {
+  animation: zoom 800ms 1 ease; }
+
+@keyframes zoom {
+  0% {
+    font-size: 1rem; }
+  100% {
+    font-size: 2rem; } }
+:root {
+  --main-title-font: 'Cinzel', serif;
+  --main-content-font: 'Raleway', sans-serif;
+  --main-font-shadow: #0D0D0D;
+  --main-white-color:#F5ECEC;
+  --main-black-color: #1C3346;
+  --main-light-blue-color:#B8D6E5;
+  --main-dark-blue-color:#005DAC; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  line-height: 2rem; }
+
+canvas {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+h3 {
+  font-family: var(--main-title-font);
+  font-size: 1.2rem; }
+
+h4, p, ul {
+  font-family: var(--main-content-font);
+  font-size: 1rem; }
+
+/* formating seccions */
+main, footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--main-light-blue-color);
+  opacity: 20%;
+  color: var(--main-font-shadow); }
+
+footer {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-family: var(--main-content-font);
+  font-size: 1.2rem; }
+
+footer a {
+  color: var(--main-font-shadow); }
+
+footer a:visited {
+  color: var(--main-font-shadow); }
+
+#main-page {
+  width: 100vw;
+  height: 100vh;
+  background: var(--main-black-color);
+  opacity: 100; }
+
+.about, .skills, .stack, .contact, .background-interest {
+  width: 80%;
+  height: auto;
+  margin: 0% 10%;
+  background: var(--main-light-blue-color);
+  color: var(--main-font-shadow); }
+
+/* end formating seccions */
+/* skills section */
+.skillset {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.skillset li {
+  font-family: var(--main-content-font);
+  list-style: none;
+  font-size: 1rem;
+  min-width: auto; }
+
+.skillset li i {
+  font-size: 2rem; }
+
+/* stack section */
+.projectslinks {
+  font-family: var(--main-content-font);
+  font-size: 1rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.projectbox {
+  border: 1px solid var(--main-black-color);
+  border-radius: .5rem;
+  background: var(--main-light-blue-color);
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: .5rem;
+  transition: 0.5s; }
+
+.projectbox a:hover {
+  color: var(--main-black-color);
+  font-weight: bold; }
+
+.projectbox a {
+  color: var(--main-black-color);
+  padding: 0;
+  text-decoration: none; }
+
+.projectbox a:visited {
+  color: var(--main-black-color); }
+
+/* contact section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+input, textarea {
+  box-sizing: border-box;
+  font-family: var(--main-content-font);
+  padding: 2% 2% 5% 2%;
+  width: 15rem; }
+
+textarea {
+  height: 40%;
+  padding: 2% 2% 30% 2%; }
+
+.contact button {
+  font-family: var(--main-content-font);
+  font-size: 1.2rem;
+  border: none;
+  border-radius: .3rem;
+  background: var(--main-dark-blue-color);
+  color: var(--main-light-blue-color);
+  transition: 0.5s; }
+
+.contact button:hover {
+  font-size: 1.4rem; }
+
+/*# sourceMappingURL=styles.css.map */

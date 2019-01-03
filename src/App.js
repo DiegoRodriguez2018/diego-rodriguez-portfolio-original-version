@@ -1,8 +1,38 @@
 import React, { Component } from 'react';
-import './styles.css';
+import './stylesheets/styles.css';
 import './index';
+import ProjectButton from './ProjectButton'
 
 class App extends Component {
+
+  projects = [
+    {
+      name: "Ruby on Rails Two-Sided Marketplace",
+      url: "https://github.com/DiegoRodriguez2018/market-place-rails-project"
+    },
+    {
+      name: "Ruby on Rails URL-shortener",
+      url: "https://github.com/DiegoRodriguez2018/simple-rails-url-shortener-exercise"
+    },
+    {
+      name: "Rails Blog with authentication",
+      url: "https://github.com/DiegoRodriguez2018/rails-blog-with-authentication"
+    },
+    {
+      name: "Blog website written on Django",
+      url: "https://github.com/DiegoRodriguez2018/django-blog"
+    },
+    {
+      name: "This website repository",
+      url: "https://github.com/DiegoRodriguez2018/diego-rodriguez-portfolio-website-netlify"
+    },
+    {
+      name: "Forex Terminal App",
+      url: "https://github.com/DiegoRodriguez2018/real-time-currency-converter-terminal-app"
+    }
+  ]
+
+
   render() {
     return (
       <div>
@@ -113,38 +143,15 @@ class App extends Component {
           <div class="link" id="stack-page"></div>
           <section class="stack">
             <h3>Projects</h3>
+
             <p>
               Please check out some of my projects on Github:
                 <div class="projectslinks">
-                <div class="projectbox">
-                  <a target="blank" href="https://github.com/DiegoRodriguez2018/market-place-rails-project">
-                    Ruby on Rails Two-Sided Marketplace
-                        </a>
-                </div>
-                <div class="projectbox">
-                  <a target="blank" href="https://github.com/DiegoRodriguez2018/simple-rails-url-shortener-exercise">
-                    Ruby on Rails URL-shortener
-                        </a>
-                </div>
-                <div class="projectbox">
-                  <a target="blank" href="https://github.com/DiegoRodriguez2018/rails-blog-with-authentication">
-                    Rails Blog with authentication.
-                        </a>
-                </div>
-                <div class="projectbox">
-                  <a target="blank" href="https://github.com/DiegoRodriguez2018/django-blog">
-                    Blog website written on Django </a>
-                </div>
-                <div class="projectbox">
-                  <a target="blank" href="https://github.com/DiegoRodriguez2018/diego-rodriguez-portfolio-website-netlify">
-                    This website repository
-                        </a>
-                </div>
-                <div class="projectbox">
-                  <a target="blank" href="https://github.com/DiegoRodriguez2018/real-time-currency-converter-terminal-app">
-                    Forex Terminal App
-                        </a>
-                </div>
+                {
+                  this.projects.map(project => {
+                    return <ProjectButton label={project.name} url={project.url} />
+                  })
+                }
               </div>
             </p>
           </section>
