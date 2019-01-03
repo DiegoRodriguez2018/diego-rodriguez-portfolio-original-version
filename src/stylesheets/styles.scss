@@ -6,155 +6,167 @@
 @import "main-page-style";
 
 :root {
-    --main-title-font:  'Cinzel', serif;
-    --main-content-font: 'Raleway', sans-serif;
-    --main-font-shadow: #0D0D0D;
-    --main-white-color:#F5ECEC;
-    --main-black-color: #1C3346;
-    --main-light-blue-color:#B8D6E5;
-    --main-dark-blue-color:#005DAC;
+  --main-title-font: "Cinzel", serif;
+  --main-content-font: "Raleway", sans-serif;
+  --main-font-shadow: #0d0d0d;
+  --main-white-color: #f5ecec;
+  --main-black-color: #1c3346;
+  --main-light-blue-color: #b8d6e5;
+  --main-dark-blue-color: #005dac;
 }
 
-html,body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    line-height: 2rem;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  line-height: 2rem;
 }
 canvas {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-h3{
-    font-family: var(--main-title-font);
-    font-size: 1.2rem;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-h4,p,ul{
-    font-family: var(--main-content-font);
-    font-size: 1rem;
+h3 {
+  font-family: var(--main-title-font);
+  font-size: 1.2rem;
+}
+h4,
+p,
+ul {
+  font-family: var(--main-content-font);
+  font-size: 1rem;
 }
 
 /* formating seccions */
-main, footer{
-    display: flex;  
-    flex-wrap: wrap;
-    background-color: var(--main-light-blue-color);
-    opacity: 20%;
-    color: var(--main-font-shadow);
+main,
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--main-light-blue-color);
+  opacity: 20%;
+  color: var(--main-font-shadow);
 }
-footer{
-    display: block;
-    text-align: center;
-    width: 100%;
-    font-family: var(--main-content-font);
-    font-size: 1.2rem;
-}
-footer a{
+footer {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-family: var(--main-content-font);
+  font-size: 1.2rem;
+  a {
     color: var(--main-font-shadow);
-}
-footer a:visited{
-    color: var(--main-font-shadow);
+    &:visited {
+      color: var(--main-font-shadow);
+    }
+  }
 }
 #main-page {
-    width: 100vw;
-    height: 100vh;
-    background: var(--main-black-color);
-    opacity: 100;
+  width: 100vw;
+  height: 100vh;
+  background: var(--main-black-color);
+  opacity: 100;
 }
-.about, .skills,.stack,.contact,.background-interest{
-    width: 80%;
-    height: auto;
-    margin: 0% 10%;
-    background: var(--main-light-blue-color);  
-    color: var(--main-font-shadow);
+.about,
+.skills,
+.stack,
+.contact,
+.background-interest {
+  width: 80%;
+  height: auto;
+  margin: 0% 10%;
+  background: var(--main-light-blue-color);
+  color: var(--main-font-shadow);
 }
 /* end formating seccions */
 /* skills section */
-.skillset{
-    width: 100%;
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.skillset li{
+.skillset {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li {
     font-family: var(--main-content-font);
     list-style: none;
     font-size: 1rem;
     min-width: auto;
+    i {
+      font-size: 2rem;
+    }
+  }
 }
-.skillset li i{
-    font-size: 2rem;
-}
+
 /* stack section */
-.projectslinks{
-    font-family: var(--main-content-font);
-    font-size: 1rem;
-    padding: 0;
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.projectslinks {
+  font-family: var(--main-content-font);
+  font-size: 1rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.projectbox{
-    border: 1px solid var(--main-black-color);
-    border-radius: .5rem;
-    background: var(--main-light-blue-color);
-    width: auto;
-    height: auto;
-    text-align: center;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: .5rem;
-    transition: 0.5s;
-}
-.projectbox a:hover{
-    color: var(--main-black-color);
-    font-weight: bold;
-}
-.projectbox a{
+.projectbox {
+  border: 1px solid var(--main-black-color);
+  border-radius: 0.5rem;
+  background: var(--main-light-blue-color);
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0.5rem;
+  transition: 0.5s;
+  a {
     color: var(--main-black-color);
     padding: 0;
     text-decoration: none;
+    &:hover {
+      color: var(--main-black-color);
+      font-weight: bold;
+    }
+    &:visited {
+      color: var(--main-black-color);
+    }
+  }
 }
-.projectbox a:visited{
-    color: var(--main-black-color);
-}
+
 /* contact section */
 .contact {
-    display:flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  form {
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
-.contact form{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-input,textarea{
-    box-sizing: border-box;
-    font-family: var(--main-content-font);
-    padding: 2% 2% 5% 2%;
-    width: 15rem;
-}
-textarea {
-    height: 40%;
-    padding: 2% 2% 30% 2%;
-}
-.contact button{
+  }
+  button {
     font-family: var(--main-content-font);
     font-size: 1.2rem;
     border: none;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     background: var(--main-dark-blue-color);
     color: var(--main-light-blue-color);
     transition: 0.5s;
+    &:hover {
+      font-size: 1.4rem;
+    }
+  }
 }
-.contact button:hover{
-    font-size: 1.4rem;
+
+input,
+textarea {
+  box-sizing: border-box;
+  font-family: var(--main-content-font);
+  padding: 2% 2% 5% 2%;
+  width: 15rem;
+}
+textarea {
+  height: 40%;
+  padding: 2% 2% 30% 2%;
 }
