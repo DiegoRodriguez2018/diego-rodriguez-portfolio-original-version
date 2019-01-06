@@ -174,20 +174,7 @@ class App extends Component {
             <p>
               Would you like ask something or just have a chat? <br /> Please get in touch!
                 <Form />
-                {/* <form name="contact" method="POST" data-netlify="true">
-                <p>
-                  <input type="text" name="name" placeholder="Name" />
-                </p>
-                <p>
-                  <input type="text" name="subject" placeholder="Subject" />
-                </p>
-                <p>
-                  <textarea name="message" placeholder="Message"></textarea>
-                </p>
-                <p>
-                  <button type="submit">Send</button>
-                </p>
-              </form> */}
+
      
             </p>
           </section>
