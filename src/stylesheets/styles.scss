@@ -108,23 +108,28 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.projectbox {
+.project-button {
+  background:darken($light-blue,5%);
   border: 1px solid $dark-blue;
   border-radius: 0.5rem;
-  background: $light-blue;
-  width: auto;
-  height: auto;
-  text-align: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+
   margin: 0.5rem;
   transition: 0.5s;
+  
   a {
-    color: $dark-blue;
-    padding: 0;
+    display:block;
+    width: auto;
+    height: auto;
+    text-align: center;
     text-decoration: none;
+    color: $dark-blue;
+    padding: {
+      top: 0.5rem;
+      bottom: 0.5rem;
+      left: 1rem;
+      right: 0.5rem;
+    }
+    
     &:hover {
       color: $dark-blue;
       font-weight: bold;

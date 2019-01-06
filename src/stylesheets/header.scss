@@ -10,11 +10,11 @@ header{
     transition: 1s;    
 }
 .headertop{
-    background: $dark-blue;
+    background: lighten($dark-blue, 2%);
     color: $light-blue;
 }
 .headerbottom{
-    background:$button-blue;
+    background:lighten($button-blue, 8%);
     color: $light-blue;
 }
 /* adding empty space on link class so header fits nicely */

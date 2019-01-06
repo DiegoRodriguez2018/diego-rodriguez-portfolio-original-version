@@ -6,11 +6,11 @@ class ProjectButton extends Component {
         console.log('this.props',': ', this.props);
         
         return (
-            <div className="projectbox">
+            <div className="project-button">
                 <a target="blank" href={this.props.url}> 
                 {this.props.label}
                 <br></br> 
-                Build on: {this.props.techstack}
+                Tech Stack: {this.props.techstack}
                 </a>
             </div>
         )

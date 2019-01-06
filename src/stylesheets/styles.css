@@ -88,11 +88,11 @@ header {
   transition: 1s; }
 
 .headertop {
-  background: #1c3346;
+  background: #1f384d;
   color: #c6d8e8; }
 
 .headerbottom {
-  background: #004179;
+  background: #0057a2;
   color: #c6d8e8; }
 
 /* adding empty space on link class so header fits nicely */
@@ -259,27 +259,27 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap; }
 
-.projectbox {
+.project-button {
+  background: #b3cce1;
   border: 1px solid #1c3346;
   border-radius: 0.5rem;
-  background: #c6d8e8;
-  width: auto;
-  height: auto;
-  text-align: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   margin: 0.5rem;
   transition: 0.5s; }
-  .projectbox a {
+  .project-button a {
+    display: block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
     color: #1c3346;
-    padding: 0;
-    text-decoration: none; }
-    .projectbox a:hover {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem; }
+    .project-button a:hover {
       color: #1c3346;
       font-weight: bold; }
-    .projectbox a:visited {
+    .project-button a:visited {
       color: #1c3346; }
 
 /* contact section */
