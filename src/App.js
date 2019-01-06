@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './stylesheets/styles.css';
 import './index';
 import ProjectButton from './ProjectButton'
+import Form from './Form'
 
 class App extends Component {
 
@@ -172,7 +173,8 @@ class App extends Component {
             <h3>Contact</h3>
             <p>
               Would you like ask something or just have a chat? <br /> Please get in touch!
-                <form name="contact" method="POST" data-netlify="true">
+                <Form />
+                {/* <form name="contact" method="POST" data-netlify="true">
                 <p>
                   <input type="text" name="name" placeholder="Name" />
                 </p>
@@ -185,7 +187,8 @@ class App extends Component {
                 <p>
                   <button type="submit">Send</button>
                 </p>
-              </form>
+              </form> */}
+     
             </p>
           </section>
         </main>
