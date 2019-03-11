@@ -14,6 +14,8 @@ $main-content-font: "Raleway", sans-serif;
 @import "header";
 /* main-page-style.scss deals with styling of main page.  */
 @import "main-page-style";
+/* main-page-style.scss deals with styling of main page.  */
+@import "ProjectCard";
 
 html,
 body {
@@ -95,47 +97,6 @@ footer {
     min-width: auto;
     i {
       font-size: 2rem;
-    }
-  }
-}
-
-/* stack section */
-.projectslinks {
-  font-family: $main-content-font;
-  font-size: 1rem;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.project-button {
-  background:darken($light-blue,5%);
-  border: 1px solid $dark-blue;
-  border-radius: 0.5rem;
-
-  margin: 0.5rem;
-  transition: 0.5s;
-  
-  a {
-    display:block;
-    width: auto;
-    height: auto;
-    text-align: center;
-    text-decoration: none;
-    color: $dark-blue;
-    padding: {
-      top: 0.5rem;
-      bottom: 0.5rem;
-      left: 1rem;
-      right: 0.5rem;
-    }
-    
-    &:hover {
-      color: $dark-blue;
-      font-weight: bold;
-    }
-    &:visited {
-      color: $dark-blue;
     }
   }
 }

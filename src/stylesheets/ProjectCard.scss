@@ -1,0 +1,58 @@
+/* stack section */
+.projects-carousel-container {
+  margin-top: 1rem;
+  display:flex;
+  justify-content: center;
+  .projects-carousel {
+    font-family: $main-content-font;
+    font-size: 1rem;
+    background: $light-blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vh;
+    height: 60vh;
+    border: 1px solid $dark-blue;
+    border-radius: 5px;
+    .project-card {
+      transition: 0.5s;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: $dark-blue;      
+        &:hover {
+          color: $dark-blue;
+          font-weight: bold;
+        }
+        &:visited {
+          color: $dark-blue;
+        }
+      }
+    }
+    .carousel-button {
+      padding-left: 2vh;
+      padding-right: 2vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:lighten($dark-blue, 2%);
+      color: $light-blue;
+      font-size: 1.3rem;
+      width: 2vh;
+      height: 60vh;
+      transition: .3s;
+      &.left {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      &.right {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      &:hover{
+        background:$dark-blue;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
