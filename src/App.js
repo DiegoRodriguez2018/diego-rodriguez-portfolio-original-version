@@ -1,46 +1,46 @@
 import React, { Component } from 'react';
 import './stylesheets/styles.css';
 import './index';
-import ProjectCard from './Components/ProjectCard';
 import Form from './Form'
 import ProjectCarousel from './Components/ProjectCarousel';
+import Skillset from './Sections/Skillset';
 
 class App extends Component {
   state = {
     projects: [
       {
         name: "Bubblesort Algorithm Animation",
-        techstack: "React.js",
+        techstack: ["React.js"],
         url: "https://github.com/DiegoRodriguez2018/bubble-sort",
       },
       { 
         name: "A Two-Sided Marketplace",
-        techstack: "Ruby on Rails",
+        techstack: ["Ruby on Rails"],
         url: "https://github.com/DiegoRodriguez2018/market-place-rails-project"
       },
       {
         name: "A URL-shortener",
-        techstack: "Ruby on Rails ",
+        techstack: ["Ruby on Rails"],
         url: "https://github.com/DiegoRodriguez2018/simple-rails-url-shortener-exercise"
       },
       {
         name: "Blog with authentication",
-        techstack: "Ruby on Rails",
+        techstack: ["Ruby on Rails"],
         url: "https://github.com/DiegoRodriguez2018/rails-blog-with-authentication"
       },
       {
         name: "Simple blog website",
-        techstack: "Django",
+        techstack: ["Django"],
         url: "https://github.com/DiegoRodriguez2018/django-blog"
       },
       {
         name: "This website repository",
-        techstack: "React.js, SASS",
+        techstack: ["React.js" , "SASS"],
         url: "https://github.com/DiegoRodriguez2018/diego-rodriguez-portfolio-website-netlify"
       },
       {
         name: "Forex Terminal App",
-        techstack: "Ruby",
+        techstack: ["Ruby"],
         url: "https://github.com/DiegoRodriguez2018/real-time-currency-converter-terminal-app"
       }
     ],
@@ -101,44 +101,7 @@ class App extends Component {
             </p>
           </section>
           <div class="link" id="skills-page"></div>
-          <section class="skills">
-            <h3>Skillset: </h3>
-            <div class="skillset">
-              <ul>
-                <li><i class="devicons devicons-postgresql"></i> PostgreSQL</li>
-                <li><i class="devicons devicons-sqllite"></i>SQLite</li>
-                <li><i class="devicons devicons-mongodb"></i>MongoDB</li>
-              </ul>
-              <ul>
-                <li><i class="devicons devicons-github_badge"></i>Github</li>
-                <li><i class="devicons devicons-python"></i>Python</li>
-                <li><i class="devicons devicons-java"></i>Java</li>
-              </ul>
-              <ul>
-                <li> <i class="devicons devicons-ruby"></i>Ruby
-                    </li>
-                <li> <i class="devicons devicons-ruby_on_rails"></i>Ruby on Rails
-                    </li>
-                <li><i class="devicons devicons-javascript"></i>Javascript</li>
-              </ul>
-              <ul>
-                <li><i class="devicons devicons-javascript"></i>React.js</li>
-                <li><i class="devicons devicons-javascript"></i>Node.js </li>
-                <li><i class="devicons devicons-javascript"></i>Express.js </li>
-              </ul>
-              <ul>
-                <li><i class="devicons devicons-javascript"></i>Vue.js </li>
-                <li><i class="devicons devicons-css3"></i>CSS3/4 </li>
-                <li> <i class="devicons devicons-html5"></i>HTML5
-                    </li>
-              </ul>
-            </div>
-            <br />
-            <p> I love coding and technology in general, and some of the areas I would like to expand in the future
-                include;
-                Data Science , Artificial Intelligence, Mobile Development and 3D Modelling.
-            </p>
-          </section>
+          <Skillset />
           <div class="link" id="background-interest-page"></div>
           <section class="background-interest">
             <h3>
@@ -158,7 +121,6 @@ class App extends Component {
           <div class="link" id="stack-page"></div>
           <section class="stack">
             <h3>Projects</h3>
-
             <p>
               Please check out some of my projects on Github:
               <ProjectCarousel projects={this.state.projects} />

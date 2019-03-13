@@ -196,10 +196,11 @@ header {
         text-decoration: none;
         color: #1c3346; }
         .projects-carousel-container .projects-carousel .project-card a:hover {
-          color: #1c3346;
-          font-weight: bold; }
+          color: #1c3346; }
         .projects-carousel-container .projects-carousel .project-card a:visited {
           color: #1c3346; }
+        .projects-carousel-container .projects-carousel .project-card a .project-name:hover {
+          font-weight: bold; }
     .projects-carousel-container .projects-carousel .carousel-button {
       padding-left: 2vh;
       padding-right: 2vh;
@@ -221,6 +222,12 @@ header {
       .projects-carousel-container .projects-carousel .carousel-button:hover {
         background: #1c3346;
         font-size: 1.5rem; }
+
+.language-tag {
+  margin: 6px;
+  padding: 6px;
+  border: 1px solid #1c3346;
+  border-radius: 5px; }
 
 html,
 body {

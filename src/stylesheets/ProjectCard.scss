@@ -22,10 +22,14 @@
         color: $dark-blue;      
         &:hover {
           color: $dark-blue;
-          font-weight: bold;
         }
         &:visited {
           color: $dark-blue;
+        }
+        .project-name{
+          &:hover{
+            font-weight: bold;
+          }
         }
       }
     }
