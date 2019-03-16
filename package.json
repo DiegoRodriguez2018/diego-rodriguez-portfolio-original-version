@@ -4,12 +4,13 @@
   "private": true,
   "dependencies": {
     "@octokit/rest": "^16.17.1",
+    "concurrently": "^4.1.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "^2.1.8"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"sass --watch src/stylesheets/styles.scss\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

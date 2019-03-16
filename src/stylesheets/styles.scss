@@ -3,8 +3,6 @@ $main-title-font: "Cinzel", serif;
 $main-content-font: "Raleway", sans-serif;
 
 
-
-
 //Modules:
 // colors.scss stores the main colors for the website
 @import "colors";
@@ -17,6 +15,8 @@ $main-content-font: "Raleway", sans-serif;
 /* main-page-style.scss deals with styling of main page.  */
 @import "ProjectCard";
 @import "LanguageTag";
+@import "nodeGarden";
+
 
 
 html,
@@ -24,26 +24,21 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  scroll-behavior: smooth;
-  line-height: 2rem;
-}
-canvas {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 h3 {
   font-family: $main-title-font;
   font-size: 1.2rem;
 }
+
 h4,
 p,
 ul {
   font-family: $main-content-font;
   font-size: 1rem;
+}
+
+p{
+  line-height: 2rem;
 }
 
 /* formating seccions */
@@ -54,6 +49,10 @@ footer {
   background-color: $light-blue;
   opacity: 20%;
   color: $font-shadow;
+}
+main{
+  justify-content: center;
+  align-items: center;
 }
 footer {
   display: block;
@@ -74,21 +73,21 @@ footer {
   background: $dark-blue;
   opacity: 100;
 }
-.about,
-.skills,
+.about-container,
 .stack,
+.skills,
 .contact,
-.background-interest {
-  width: 80%;
-  height: auto;
-  margin: 0% 10%;
+.education-container {
+  width: 80vh;
+  max-height: 80vh;
   background: $light-blue;
+  opacity: .8;
   color: $font-shadow;
+  padding: 2rem;
+  position:absolute;
 }
 /* end formating seccions */
-/* skills section */
 .skillset {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -102,7 +101,6 @@ footer {
     }
   }
 }
-
 /* contact section */
 .contact {
   display: flex;

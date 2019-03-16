@@ -1,15 +1,20 @@
 import React from 'react';
 
+const languages = {
+  PostgreSQL: <span><i class="devicons devicons-postgresql"></i> PostgreSQL</span>,
+  SQLite: <span><i class="devicons devicons-sqllite"></i>SQLite</span>,
+  MongoDB: <span><i class="devicons devicons-mongodb"></i>MongoDB</span>
+}
+
 export default function Skillset () {
   return (
     <section class="skills">
-    <div class="link" id="skills-page"></div>
     <h3>Skillset: </h3>
     <div class="skillset">
       <ul>
-        <li><i class="devicons devicons-postgresql"></i> PostgreSQL</li>
-        <li><i class="devicons devicons-sqllite"></i>SQLite</li>
-        <li><i class="devicons devicons-mongodb"></i>MongoDB</li>
+        <li> { languages.PostgreSQL } </li>
+        <li> { languages.SQLite } </li>
+        <li> { languages.MongoDB } </li>
       </ul>
       <ul>
         <li><i class="devicons devicons-github_badge"></i>Github</li>

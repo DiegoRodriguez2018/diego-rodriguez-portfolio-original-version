@@ -185,8 +185,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70vh;
-    height: 60vh;
+    width: 100%;
     border: 1px solid #1c3346;
     border-radius: 5px; }
     .projects-carousel-container .projects-carousel .project-card {
@@ -229,21 +228,21 @@ header {
   border: 1px solid #1c3346;
   border-radius: 5px; }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  line-height: 2rem; }
-
 canvas {
   position: relative;
   top: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: #1c3346;
+  opacity: 100; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
 
 h3 {
   font-family: "Cinzel", serif;
@@ -255,6 +254,9 @@ ul {
   font-family: "Raleway", sans-serif;
   font-size: 1rem; }
 
+p {
+  line-height: 2rem; }
+
 /* formating seccions */
 main,
 footer {
@@ -263,6 +265,10 @@ footer {
   background-color: #c6d8e8;
   opacity: 20%;
   color: #0d0d0d; }
+
+main {
+  justify-content: center;
+  align-items: center; }
 
 footer {
   display: block;
@@ -281,21 +287,21 @@ footer {
   background: #1c3346;
   opacity: 100; }
 
-.about,
-.skills,
+.about-container,
 .stack,
+.skills,
 .contact,
-.background-interest {
-  width: 80%;
-  height: auto;
-  margin: 0% 10%;
+.education-container {
+  width: 80vh;
+  max-height: 80vh;
   background: #c6d8e8;
-  color: #0d0d0d; }
+  opacity: .8;
+  color: #0d0d0d;
+  padding: 2rem;
+  position: absolute; }
 
 /* end formating seccions */
-/* skills section */
 .skillset {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
