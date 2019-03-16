@@ -4,7 +4,6 @@ import Form from '../Form'
 export default function Contact () {
   return (
     <section class="contact">
-    <div class="link" id="contact-page"></div>
       <h3>Contact</h3>
       <p>
         Would you like ask something or just have a chat? <br /> Please get in touch!
