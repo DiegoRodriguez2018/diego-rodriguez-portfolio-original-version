@@ -1,8 +1,7 @@
-.section-below {
+.socials-section {
     position: absolute;
-    left: 50%;
-    bottom: 2%;
-    transform: translateX(-50%);
+    right: 2%;
+    top: 2%;
     display: flex;
     animation: zoom 800ms 1 ease;
     .socials {
@@ -10,7 +9,7 @@
       color: $light-blue;
       a {
         color: $light-blue;
-        margin: 0.3rem;
+        margin: 0.2rem;
         &:visited {
           color: $light-blue;
         }

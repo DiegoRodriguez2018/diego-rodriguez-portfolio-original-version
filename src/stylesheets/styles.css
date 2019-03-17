@@ -8,20 +8,19 @@ canvas {
   background: #1c3346;
   opacity: 100; }
 
-.section-below {
+.socials-section {
   position: absolute;
-  left: 50%;
-  bottom: 2%;
-  transform: translateX(-50%);
+  right: 2%;
+  top: 2%;
   display: flex;
   animation: zoom 800ms 1 ease; }
-  .section-below .socials {
+  .socials-section .socials {
     font-size: 1.8rem;
     color: #c6d8e8; }
-    .section-below .socials a {
+    .socials-section .socials a {
       color: #c6d8e8;
-      margin: 0.3rem; }
-      .section-below .socials a:visited {
+      margin: 0.2rem; }
+      .socials-section .socials a:visited {
         color: #c6d8e8; }
 
 /* button  animation */
@@ -94,7 +93,7 @@ canvas {
   opacity: 0.95;
   position: absolute;
   display: flex;
-  bottom: 10%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Raleway", sans-serif;
@@ -223,9 +222,12 @@ footer {
 /* end formating seccions */
 .skillset {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0; }
   .skillset li {
+    margin: 1rem;
+    width: 8.5rem;
     font-family: "Raleway", sans-serif;
     list-style: none;
     font-size: 1rem;

@@ -4,7 +4,7 @@ Error: Undefined variable: "$main-content-font".
 
 5:   position: absolute;
 6:   display: flex;
-7:   bottom: 10%;
+7:   bottom: 5%;
 8:   left: 50%;
 9:   transform: translateX(-50%);
 10:   font-family: $main-content-font;
@@ -69,4 +69,4 @@ src/Components/NavBar.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$main-content-font\".\A         on line 10 of src/Components/NavBar.scss\A \A 5:   position: absolute;\A 6:   display: flex;\A 7:   bottom: 10%;\A 8:   left: 50%;\A 9:   transform: translateX(-50%);\A 10:   font-family: $main-content-font;\A 11:   font-size: 1.25rem;\A 12:   width: auto;\A 13:   height: auto;\A 14:   z-index: 1;  \A 15: "; }
+  content: "Error: Undefined variable: \"$main-content-font\".\A         on line 10 of src/Components/NavBar.scss\A \A 5:   position: absolute;\A 6:   display: flex;\A 7:   bottom: 5%;\A 8:   left: 50%;\A 9:   transform: translateX(-50%);\A 10:   font-family: $main-content-font;\A 11:   font-size: 1.25rem;\A 12:   width: auto;\A 13:   height: auto;\A 14:   z-index: 1;  \A 15: "; }
