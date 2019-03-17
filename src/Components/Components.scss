@@ -1,4 +1,6 @@
 @import 'Socials';
+@import 'DiegoRodriguez';
+@import 'NavBar';
 
 // Language Tag
 .language-tag {
@@ -6,103 +8,6 @@
   padding: 6px;
   border: 1px solid $dark-blue;
   border-radius: 5px;
-}
-
-// NavBar
-.navbar-section {
-  opacity: 0.95;
-  display: flex;
-  position: fixed;
-  bottom: 0%;
-  font-family: $main-content-font;
-  font-size: 1.25rem;
-  width: auto;
-  height: auto;
-  z-index: 1;
-
-  .navbar-button {
-    padding: 0;
-    width: 1rem;
-    background: $button-blue;
-    color: $light-blue;
-    border:none;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    /* Shine effect */
-    &:after {
-      content: "";
-      position: absolute;
-      top: -110%;
-      left: -210%;
-      width: 200%;
-      height: 200%;
-      opacity: 0;
-      transform: rotate(30deg);
-      background: rgba(255, 255, 255, 0.13);
-      background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.13) 0%,
-        rgba(255, 255, 255, 0.13) 77%,
-        rgba(255, 255, 255, 0.5) 92%,
-        rgba(255, 255, 255, 0) 100%
-      );
-    }
-    /* On focus */
-    &:focus:after {
-      animation: shine 600ms 1 ease-out;
-      animation-delay: 1.5s;
-    }
-  }
-
-  .navbar-options {
-    button {
-      width: 5rem;
-      opacity: 0.95;
-      color: $button-blue;
-      background: $light-blue;
-      border: 0px;
-      display: block;
-      margin-top: .1rem;
-      margin-bottom: .1rem;
-      padding-top: .2rem;
-      padding-bottom: .2rem;
-
-      text-decoration: none;
-      color: $font-shadow;
-      &:hover {
-        background: $button-blue;
-        color: $light-blue;
-      }
-      &:visited {
-        color: $button-blue;
-      }
-      &:first-child {
-        border-top-right-radius: 0.5rem;
-      }
-      &:last-child {
-      border-bottom-right-radius: 0.5rem;
-      }
-    }
-  }
-}
-
-//Shine animation:
-@keyframes shine {
-  0% {
-    opacity: 1;
-    top: -110%;
-    left: -210%;
-  }
-  100% {
-    opacity: 1;
-    top: 30%;
-    left: -30%;
-  }
 }
 
 

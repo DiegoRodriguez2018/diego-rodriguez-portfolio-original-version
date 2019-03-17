@@ -39,22 +39,4 @@ p {
   line-height: 2rem;
 }
 
-.about-container,
-.stack,
-.skills,
-.contact,
-.education-container {
-  width: auto;
-  max-width: 80vw;
-  max-height: 80vh;
-  transform: translateY(-5vh);
-  border-radius: 5px;
-  background: $light-blue;
-  opacity: 0.8;
-  color: $font-shadow;
-  padding-left: 0.5rem;
-  padding-bottom: 0.5rem;
-  position: absolute;
-  overflow-y: auto;
-  hyphens: auto;
-}
+

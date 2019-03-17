@@ -13,6 +13,7 @@ import Contact from "./Sections/Contact";
 //Components
 import NavBar from "./Components/NavBar";
 import Socials from "./Components/Socials";
+import DiegoRodriguez from "./Components/DiegoRodriguez";
 
 class App extends Component {
   state = {
@@ -24,7 +25,8 @@ class App extends Component {
       <Portfolio />,
       <Contact />
     ],
-    currentIndex: 0
+    currentIndex: 0,
+    diegoRodriguezClass: "display-as-main-page"
   };
 
   setIndex = index => {
@@ -32,16 +34,29 @@ class App extends Component {
     this.setState({ currentIndex });
   };
 
+  setDiegoRodriguezClass = newClass => {
+    const diegoRodriguezClass = newClass;
+    this.setState({ diegoRodriguezClass });
+  };
+
   render() {
-    const { sections, currentIndex } = this.state;
+    const { sections, currentIndex, diegoRodriguezClass } = this.state;
     if (sections.length > 0) {
       return (
         <div>
-          <NavBar setIndex={this.setIndex} />
+          <NavBar
+            setIndex={this.setIndex}
+            setDiegoRodriguezClass={this.setDiegoRodriguezClass}
+          />
           <main>
             <canvas />
-            {sections[currentIndex]}
             <Socials />
+            <DiegoRodriguez
+              setIndex={this.setIndex}
+              display={diegoRodriguezClass}
+              setDiegoRodriguezClass={this.setDiegoRodriguezClass}
+            />
+            {sections[currentIndex]}
           </main>
           {/* footer */}
         </div>

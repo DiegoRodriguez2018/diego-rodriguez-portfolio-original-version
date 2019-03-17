@@ -1,0 +1,76 @@
+// Main Page
+.main-page {
+  background: $dark-blue;
+  opacity: 100;
+}
+
+.display-as-main-page {
+  .first-name {
+    font-family: $main-title-font;
+    font-size: 2rem;
+    color: $light-blue;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-90%);
+  }
+  .last-name {
+    font-family: $main-title-font;
+    font-size: 2rem;
+    color: $light-blue;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-40%);
+  }
+  .sub-heading {
+    color: $light-blue;
+    font-family: $main-content-font;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 55%;
+    left: 52%;
+    transform: translateX(-20%);
+  }
+  /* Media query for mobile */
+  @media only screen and (max-height: 400px) {
+    .first-name {
+      top: 10%;
+    }
+    .last-name {
+      top: 26%;
+    }
+    .sub-heading {
+      top: 46%;
+    }
+  }
+}
+
+.display-as-header {
+
+  display:flex;
+  justify-content: center;
+
+  .full-name{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    display: flex;
+    .first-name {
+      font-family: $main-title-font;
+      font-size: 1rem;
+      color: $light-blue;
+      padding-right: .5rem;
+    }
+    .last-name {
+      font-family: $main-title-font;
+      font-size: 1rem;
+      color: $light-blue;
+    }
+  }
+  .sub-heading{
+    display: none;
+  }
+}

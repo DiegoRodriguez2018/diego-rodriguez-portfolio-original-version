@@ -1,23 +1,20 @@
-.socials {
-  font-size: 2rem;
-  color: $light-blue;
-  a {
-    color: $light-blue;
-    margin: 0.3rem;
-    &:visited {
-      color: $light-blue;
-    }
-  }
-}
-
 .section-below {
     position: absolute;
     left: 50%;
     bottom: 2%;
     transform: translateX(-50%);
     display: flex;
-    div {
-      animation: zoom 800ms 1 ease;
+    animation: zoom 800ms 1 ease;
+    .socials {
+      font-size: 1.8rem;
+      color: $light-blue;
+      a {
+        color: $light-blue;
+        margin: 0.3rem;
+        &:visited {
+          color: $light-blue;
+        }
+      }
     }
 }
 /* button  animation */

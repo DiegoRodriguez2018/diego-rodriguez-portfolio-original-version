@@ -1,0 +1,68 @@
+/*
+Error: Undefined variable: "$dark-blue".
+        on line 8 of src/stylesheets/nodeGarden.scss
+
+3:   top: 0;
+4:   bottom: 0;
+5:   overflow: hidden;
+6:   width: 100vw;
+7:   height: 100vh;
+8:   background: $dark-blue;
+9:   opacity: 100;
+10: }
+
+Backtrace:
+src/stylesheets/nodeGarden.scss:8
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/script/tree/node.rb:50:in `perform'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:79:in `block in with_base'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:135:in `with_frame'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:79:in `with_base'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:440:in `map'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:79:in `block in with_base'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:135:in `with_frame'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/stack.rb:79:in `with_base'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:209:in `each'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:294:in `watch'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/plugin.rb:109:in `method_missing'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/exec/base.rb:50:in `parse'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/exec/base.rb:18:in `parse!'
+/home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/bin/sass:13:in `<top (required)>'
+/home/diego/.rbenv/versions/2.4.1/bin/sass:22:in `load'
+/home/diego/.rbenv/versions/2.4.1/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 8 of src/stylesheets/nodeGarden.scss\A \A 3:   top: 0;\A 4:   bottom: 0;\A 5:   overflow: hidden;\A 6:   width: 100vw;\A 7:   height: 100vh;\A 8:   background: $dark-blue;\A 9:   opacity: 100;\A 10: }"; }
