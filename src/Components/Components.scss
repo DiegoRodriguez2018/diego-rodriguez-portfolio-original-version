@@ -6,6 +6,8 @@
 // Close Button
 .close-button {
   cursor: pointer;
+  font-family: $main-content-font;
+  font-weight: 600;
   position:absolute;
   right: 0;
   top: 0;

@@ -12,7 +12,6 @@ export default class NavBar extends Component {
   render() {
     return (
       <nav className="navbar-section">
-
         <div className="navbar-options">
           <button href='#' id="1" onClick={this.renderComponent}>About</button>
           <button href='#' id="2" onClick={this.renderComponent}>Skillset</button>

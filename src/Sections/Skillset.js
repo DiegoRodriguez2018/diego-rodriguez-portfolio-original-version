@@ -4,27 +4,27 @@ import CloseButton from "../Components/CloseButton";
 const languages = {
   PostgreSQL: (
     <span>
-      <i class="devicons devicons-postgresql" /> PostgreSQL
+      <i className="devicons devicons-postgresql" /> PostgreSQL
     </span>
   ),
   SQLite: (
     <span>
-      <i class="devicons devicons-sqllite" />SQLite
+      <i className="devicons devicons-sqllite" />SQLite
     </span>
   ),
   MongoDB: (
     <span>
-      <i class="devicons devicons-mongodb" />MongoDB
+      <i className="devicons devicons-mongodb" />MongoDB
     </span>
   )
 };
 
 export default function Skillset(props) {
   return (
-    <section class="skills">
+    <section className="skills">
       <CloseButton resetDiegoRodriguez={props.resetDiegoRodriguez} />
       <h3>Skillset: </h3>
-      <div class="skillset">
+      <div className="skillset">
         <ul>
           <li> {languages.PostgreSQL} </li>
           <li> {languages.SQLite} </li>
@@ -32,49 +32,49 @@ export default function Skillset(props) {
         </ul>
         <ul>
           <li>
-            <i class="devicons devicons-github_badge" />Github
+            <i className="devicons devicons-github_badge" />Github
           </li>
           <li>
-            <i class="devicons devicons-python" />Python
+            <i className="devicons devicons-python" />Python
           </li>
           <li>
-            <i class="devicons devicons-java" />Java
+            <i className="devicons devicons-java" />Java
           </li>
         </ul>
         <ul>
           <li>
             {" "}
-            <i class="devicons devicons-ruby" />Ruby
+            <i className="devicons devicons-ruby" />Ruby
           </li>
           <li>
             {" "}
-            <i class="devicons devicons-ruby_on_rails" />Ruby on Rails
+            <i className="devicons devicons-ruby_on_rails" />Ruby on Rails
           </li>
           <li>
-            <i class="devicons devicons-javascript" />Javascript
+            <i className="devicons devicons-javascript" />Javascript
           </li>
         </ul>
         <ul>
           <li>
-            <i class="devicons devicons-javascript" />React.js
+            <i className="devicons devicons-javascript" />React.js
           </li>
           <li>
-            <i class="devicons devicons-javascript" />Node.js{" "}
+            <i className="devicons devicons-javascript" />Node.js{" "}
           </li>
           <li>
-            <i class="devicons devicons-javascript" />Express.js{" "}
+            <i className="devicons devicons-javascript" />Express.js{" "}
           </li>
         </ul>
         <ul>
           <li>
-            <i class="devicons devicons-javascript" />Vue.js{" "}
+            <i className="devicons devicons-javascript" />Vue.js{" "}
           </li>
           <li>
-            <i class="devicons devicons-css3" />CSS3/4{" "}
+            <i className="devicons devicons-css3" />CSS3/4{" "}
           </li>
           <li>
             {" "}
-            <i class="devicons devicons-html5" />HTML5
+            <i className="devicons devicons-html5" />HTML5
           </li>
         </ul>
       </div>

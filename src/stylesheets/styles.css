@@ -94,7 +94,7 @@ canvas {
   opacity: 0.95;
   position: absolute;
   display: flex;
-  bottom: 8%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Raleway", sans-serif;
@@ -126,6 +126,8 @@ canvas {
 
 .close-button {
   cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
   position: absolute;
   right: 0;
   top: 0;
@@ -209,7 +211,7 @@ main {
 .education-container {
   width: auto;
   max-width: 82vw;
-  max-height: 72vh;
+  max-height: 60vh;
   transform: translateY(-2%);
   border-radius: 5px;
   background: #c6d8e8;
