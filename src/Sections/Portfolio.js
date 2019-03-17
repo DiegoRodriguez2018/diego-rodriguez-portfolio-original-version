@@ -47,11 +47,8 @@ export default function Portfolio(props) {
   return (
     <section class="stack">
       <CloseButton resetDiegoRodriguez={props.resetDiegoRodriguez} />
-      <h3>Projects</h3>
-      <p>
-        Please check out some of my projects on Github:
-        <ProjectCarousel projects={projects} />
-      </p>
+      <ProjectCarousel projects={projects} />
+
     </section>
   );
 }

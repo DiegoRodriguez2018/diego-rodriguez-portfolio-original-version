@@ -11,7 +11,7 @@ canvas {
 .socials-section {
   position: absolute;
   left: 50%;
-  bottom: 8%;
+  bottom: 10%;
   transform: translateX(-50%);
   display: flex;
   animation: zoom 800ms 1 ease; }
@@ -80,12 +80,12 @@ canvas {
     display: flex; }
     .display-as-header .full-name .first-name {
       font-family: "Cinzel", serif;
-      font-size: 1rem;
+      font-size: 1.2rem;
       color: #c6d8e8;
       padding-right: .5rem; }
     .display-as-header .full-name .last-name {
       font-family: "Cinzel", serif;
-      font-size: 1rem;
+      font-size: 1.2rem;
       color: #c6d8e8; }
   .display-as-header .sub-heading {
     display: none; }
@@ -148,7 +148,10 @@ canvas {
 
 /* stack section */
 .projects-carousel-container {
-  margin-top: 1rem;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center; }
   .projects-carousel-container .projects-carousel {
@@ -174,16 +177,16 @@ canvas {
         .projects-carousel-container .projects-carousel .project-card a .project-name:hover {
           font-weight: bold; }
     .projects-carousel-container .projects-carousel .carousel-button {
+      width: 2vh;
+      height: 59vh;
       padding-left: 2vh;
       padding-right: 2vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #1f384d;
-      color: #c6d8e8;
+      background: transparent;
+      color: #1c3346;
       font-size: 1.3rem;
-      width: 2vh;
-      height: 60vh;
       transition: .3s; }
       .projects-carousel-container .projects-carousel .carousel-button.left {
         border-top-left-radius: 5px;
@@ -193,6 +196,7 @@ canvas {
         border-bottom-right-radius: 5px; }
       .projects-carousel-container .projects-carousel .carousel-button:hover {
         background: #1c3346;
+        color: #c6d8e8;
         font-size: 1.5rem; }
 
 main,
@@ -208,12 +212,11 @@ footer {
 .skills,
 .contact,
 .education-container {
-  max-width: 80vw;
+  width: 80vw;
   max-height: 60vh;
   position: absolute;
   top: 13%;
   left: 10%;
-  width: auto;
   border-radius: 5px;
   background: #c6d8e8;
   opacity: 0.8;
@@ -223,9 +226,16 @@ footer {
   overflow-y: auto;
   hyphens: auto; }
 
-.education-container li {
-  line-height: 1.5rem;
-  padding-bottom: 1rem; }
+.education-container {
+  overflow: hidden; }
+  .education-container ul {
+    width: 80vw; }
+    .education-container ul li {
+      line-height: 1.5rem;
+      padding-bottom: 1rem; }
+
+.stack {
+  padding: 0; }
 
 /* end formating seccions */
 .skillset {

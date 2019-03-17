@@ -26,6 +26,10 @@ class ProjectCarousel extends Component {
     this.setState({currentIndex});
   }
 
+      //   {/* <h3>Projects</h3>
+      // <p>
+      //   Please check out some of my projects on Github:
+      // </p> */}
   render() {
     const { projects } = this.props;
     const { currentIndex } = this.state;
