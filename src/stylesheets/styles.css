@@ -41,7 +41,7 @@ canvas {
     font-size: 2rem;
     color: #c6d8e8;
     position: absolute;
-    top: 30%;
+    top: 23%;
     left: 50%;
     transform: translateX(-90%); }
   .display-as-main-page .last-name {
@@ -49,7 +49,7 @@ canvas {
     font-size: 2rem;
     color: #c6d8e8;
     position: absolute;
-    top: 40%;
+    top: 33%;
     left: 50%;
     transform: translateX(-40%); }
   .display-as-main-page .sub-heading {
@@ -57,7 +57,7 @@ canvas {
     font-family: "Raleway", sans-serif;
     font-size: 0.8rem;
     position: absolute;
-    top: 55%;
+    top: 49%;
     left: 52%;
     transform: translateX(-20%); }
   @media only screen and (max-height: 400px) {
@@ -208,7 +208,7 @@ footer {
   max-width: 80vw;
   max-height: 60vh;
   position: absolute;
-  top: 15%;
+  top: 13%;
   left: 10%;
   width: auto;
   border-radius: 5px;
