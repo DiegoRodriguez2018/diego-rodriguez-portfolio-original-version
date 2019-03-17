@@ -146,15 +146,20 @@ canvas {
   border: 1px solid #1c3346;
   border-radius: 5px; }
 
-/* stack section */
-.projects-carousel-container {
+/* portfolio-section */
+.portfolio-component .projects-title {
+  width: 60vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+.portfolio-component .projects-carousel-container {
   width: auto;
   height: auto;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center; }
-  .projects-carousel-container .projects-carousel {
+  .portfolio-component .projects-carousel-container .projects-carousel {
     font-family: "Raleway", sans-serif;
     font-size: 1rem;
     background: #c6d8e8;
@@ -164,19 +169,19 @@ canvas {
     width: 100%;
     border: 1px solid #1c3346;
     border-radius: 5px; }
-    .projects-carousel-container .projects-carousel .project-card {
+    .portfolio-component .projects-carousel-container .projects-carousel .project-card {
       transition: 0.5s;
       text-align: center; }
-      .projects-carousel-container .projects-carousel .project-card a {
+      .portfolio-component .projects-carousel-container .projects-carousel .project-card a {
         text-decoration: none;
         color: #1c3346; }
-        .projects-carousel-container .projects-carousel .project-card a:hover {
+        .portfolio-component .projects-carousel-container .projects-carousel .project-card a:hover {
           color: #1c3346; }
-        .projects-carousel-container .projects-carousel .project-card a:visited {
+        .portfolio-component .projects-carousel-container .projects-carousel .project-card a:visited {
           color: #1c3346; }
-        .projects-carousel-container .projects-carousel .project-card a .project-name:hover {
+        .portfolio-component .projects-carousel-container .projects-carousel .project-card a .project-name:hover {
           font-weight: bold; }
-    .projects-carousel-container .projects-carousel .carousel-button {
+    .portfolio-component .projects-carousel-container .projects-carousel .carousel-button {
       width: 2vh;
       height: 59vh;
       padding-left: 2vh;
@@ -188,13 +193,13 @@ canvas {
       color: #1c3346;
       font-size: 1.3rem;
       transition: .3s; }
-      .projects-carousel-container .projects-carousel .carousel-button.left {
+      .portfolio-component .projects-carousel-container .projects-carousel .carousel-button.left {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px; }
-      .projects-carousel-container .projects-carousel .carousel-button.right {
+      .portfolio-component .projects-carousel-container .projects-carousel .carousel-button.right {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px; }
-      .projects-carousel-container .projects-carousel .carousel-button:hover {
+      .portfolio-component .projects-carousel-container .projects-carousel .carousel-button:hover {
         background: #1c3346;
         color: #c6d8e8;
         font-size: 1.5rem; }
@@ -208,7 +213,7 @@ footer {
   color: #0d0d0d; }
 
 .about-container,
-.stack,
+.portfolio-section,
 .skills,
 .contact,
 .education-container {
@@ -234,7 +239,7 @@ footer {
       line-height: 1.5rem;
       padding-bottom: 1rem; }
 
-.stack {
+.portfolio-section {
   padding: 0; }
 
 /* end formating seccions */

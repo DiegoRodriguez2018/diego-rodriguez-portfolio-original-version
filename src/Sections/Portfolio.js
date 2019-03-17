@@ -45,7 +45,7 @@ const projects = [
 
 export default function Portfolio(props) {
   return (
-    <section class="stack">
+    <section class="portfolio-section">
       <CloseButton resetDiegoRodriguez={props.resetDiegoRodriguez} />
       <ProjectCarousel projects={projects} />
 
