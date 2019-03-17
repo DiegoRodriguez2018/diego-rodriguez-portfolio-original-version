@@ -7,28 +7,25 @@ footer {
   color: $font-shadow;
 }
 
-main {
-  justify-content: center;
-  align-items: center;
-}
-
 // About, Stack, Skills, Education, Contact
 .about-container,
 .stack,
 .skills,
 .contact,
 .education-container {
-  width: auto;
-  max-width: 82vw;
+  max-width: 80vw;
   max-height: 60vh;
-  transform: translateY(-2%);
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  // transform: translateX(-50%);
+  width: auto;
   border-radius: 5px;
   background: $light-blue;
   opacity: 0.8;
   color: $font-shadow;
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;
-  position: absolute;
   overflow-y: auto;
   hyphens: auto;
 }

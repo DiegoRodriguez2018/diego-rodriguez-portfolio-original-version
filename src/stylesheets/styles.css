@@ -200,26 +200,23 @@ footer {
   opacity: 20%;
   color: #0d0d0d; }
 
-main {
-  justify-content: center;
-  align-items: center; }
-
 .about-container,
 .stack,
 .skills,
 .contact,
 .education-container {
-  width: auto;
-  max-width: 82vw;
+  max-width: 80vw;
   max-height: 60vh;
-  transform: translateY(-2%);
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: auto;
   border-radius: 5px;
   background: #c6d8e8;
   opacity: 0.8;
   color: #0d0d0d;
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;
-  position: absolute;
   overflow-y: auto;
   hyphens: auto; }
 

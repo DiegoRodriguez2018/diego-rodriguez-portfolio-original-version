@@ -11,7 +11,7 @@ Error: Undefined variable: "$light-blue".
 7:   color: $font-shadow;
 8: }
 9: 
-10: main {
+10: // About, Stack, Skills, Education, Contact
 
 Backtrace:
 src/Sections/Sections.scss:5
@@ -68,4 +68,4 @@ src/Sections/Sections.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light-blue\".\A         on line 5 of src/Sections/Sections.scss\A \A 1: main,\A 2: footer {\A 3:   display: flex;\A 4:   flex-wrap: wrap;\A 5:   background-color: $light-blue;\A 6:   opacity: 20%;\A 7:   color: $font-shadow;\A 8: }\A 9: \A 10: main {"; }
+  content: "Error: Undefined variable: \"$light-blue\".\A         on line 5 of src/Sections/Sections.scss\A \A 1: main,\A 2: footer {\A 3:   display: flex;\A 4:   flex-wrap: wrap;\A 5:   background-color: $light-blue;\A 6:   opacity: 20%;\A 7:   color: $font-shadow;\A 8: }\A 9: \A 10: // About, Stack, Skills, Education, Contact"; }
