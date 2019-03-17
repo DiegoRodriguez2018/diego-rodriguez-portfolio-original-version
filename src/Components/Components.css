@@ -1,9 +1,8 @@
 /*
 Error: Undefined variable: "$light-blue".
-        on line 9 of src/Components/Socials.scss
+        on line 10 of src/Components/Socials.scss
         from line 1 of src/Components/Components.scss
 
-4: 
 5: 
 6: // Close Button
 7: .close-button {
@@ -14,9 +13,10 @@ Error: Undefined variable: "$light-blue".
 12:   right: 0;
 13:   top: 0;
 14:   background: $dark-blue;
+15:   color: $light-blue;
 
 Backtrace:
-src/Components/Socials.scss:9
+src/Components/Socials.scss:10
 src/Components/Components.scss:1
 /home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/script/tree/node.rb:50:in `perform'
@@ -95,4 +95,4 @@ src/Components/Components.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light-blue\".\A         on line 9 of src/Components/Socials.scss\A         from line 1 of src/Components/Components.scss\A \A 4: \A 5: \A 6: // Close Button\A 7: .close-button {\A 8:   cursor: pointer;\A 9:   font-family: $main-content-font;\A 10:   font-weight: 600;\A 11:   position:absolute;\A 12:   right: 0;\A 13:   top: 0;\A 14:   background: $dark-blue;"; }
+  content: "Error: Undefined variable: \"$light-blue\".\A         on line 10 of src/Components/Socials.scss\A         from line 1 of src/Components/Components.scss\A \A 5: \A 6: // Close Button\A 7: .close-button {\A 8:   cursor: pointer;\A 9:   font-family: $main-content-font;\A 10:   font-weight: 600;\A 11:   position:absolute;\A 12:   right: 0;\A 13:   top: 0;\A 14:   background: $dark-blue;\A 15:   color: $light-blue;"; }

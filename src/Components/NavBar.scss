@@ -4,7 +4,7 @@
   opacity: 0.95;
   position: absolute;
   display: flex;
-  bottom: 5%;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
   font-family: $main-content-font;
@@ -16,10 +16,10 @@
   .navbar-options {
     display: flex;
     button {
+      cursor: pointer;
       margin-left: .3rem;
       // width: 5rem;
       opacity: 0.95;
-      color: $button-blue;
       background: $light-blue;
       border: 0px;
       border-radius: 4px;
@@ -28,12 +28,15 @@
       margin-bottom: .1rem;
       padding-top: .2rem;
       padding-bottom: .2rem;
-
+      height: 2rem;
+      font-weight: 600;
+      
       text-decoration: none;
-      color: $font-shadow;
+      color: $dark-blue;
       &:hover {
-        background: $button-blue;
+        background: $dark-blue;
         color: $light-blue;
+        border: 1px solid $light-blue;
       }
       &:visited {
         color: $button-blue;

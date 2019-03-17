@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$light-blue".
-        on line 9 of src/Components/Socials.scss
+        on line 10 of src/Components/Socials.scss
 
-4:     top: 2%;
-5:     display: flex;
-6:     animation: zoom 800ms 1 ease;
-7:     .socials {
-8:       font-size: 1.8rem;
-9:       color: $light-blue;
-10:       a {
-11:         color: $light-blue;
-12:         margin: 0.2rem;
-13:         &:visited {
-14:           color: $light-blue;
+5:     transform: translateX(-50%);
+6:     display: flex;
+7:     animation: zoom 800ms 1 ease;
+8:     .socials {
+9:       font-size: 2rem;
+10:       color: $light-blue;
+11:       a {
+12:         color: $light-blue;
+13:         margin: 0.2rem;
+14:         &:visited {
+15:           color: $light-blue;
 
 Backtrace:
-src/Components/Socials.scss:9
+src/Components/Socials.scss:10
 /home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/script/tree/node.rb:50:in `perform'
 /home/diego/.rvm/gems/ruby-2.5.1/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -80,4 +80,4 @@ src/Components/Socials.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light-blue\".\A         on line 9 of src/Components/Socials.scss\A \A 4:     top: 2%;\A 5:     display: flex;\A 6:     animation: zoom 800ms 1 ease;\A 7:     .socials {\A 8:       font-size: 1.8rem;\A 9:       color: $light-blue;\A 10:       a {\A 11:         color: $light-blue;\A 12:         margin: 0.2rem;\A 13:         &:visited {\A 14:           color: $light-blue;"; }
+  content: "Error: Undefined variable: \"$light-blue\".\A         on line 10 of src/Components/Socials.scss\A \A 5:     transform: translateX(-50%);\A 6:     display: flex;\A 7:     animation: zoom 800ms 1 ease;\A 8:     .socials {\A 9:       font-size: 2rem;\A 10:       color: $light-blue;\A 11:       a {\A 12:         color: $light-blue;\A 13:         margin: 0.2rem;\A 14:         &:visited {\A 15:           color: $light-blue;"; }
