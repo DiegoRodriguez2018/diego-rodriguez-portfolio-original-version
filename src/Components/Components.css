@@ -3,17 +3,17 @@ Error: Undefined variable: "$light-blue".
         on line 10 of src/Components/Socials.scss
         from line 1 of src/Components/Components.scss
 
-5: // Language Tag
-6: .language-tag {
-7:   margin: 6px;
-8:   padding: 6px;
-9:   border: 1px solid $dark-blue;
-10:   border-radius: 5px;
-11: }
-12: 
-13: 
-14: // Carousel and project card
-15: /* stack section *\/
+5: 
+6: // Close Button
+7: .close-button {
+8:   cursor: pointer;
+9:   position:absolute;
+10:   right: 0;
+11:   top: 0;
+12:   background: $dark-blue;
+13:   color: $light-blue;
+14:   padding:.2rem;
+15:   margin: .1rem;
 
 Backtrace:
 src/Components/Socials.scss:10
@@ -95,4 +95,4 @@ src/Components/Components.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light-blue\".\A         on line 10 of src/Components/Socials.scss\A         from line 1 of src/Components/Components.scss\A \A 5: // Language Tag\A 6: .language-tag {\A 7:   margin: 6px;\A 8:   padding: 6px;\A 9:   border: 1px solid $dark-blue;\A 10:   border-radius: 5px;\A 11: }\A 12: \A 13: \A 14: // Carousel and project card\A 15: /* stack section */"; }
+  content: "Error: Undefined variable: \"$light-blue\".\A         on line 10 of src/Components/Socials.scss\A         from line 1 of src/Components/Components.scss\A \A 5: \A 6: // Close Button\A 7: .close-button {\A 8:   cursor: pointer;\A 9:   position:absolute;\A 10:   right: 0;\A 11:   top: 0;\A 12:   background: $dark-blue;\A 13:   color: $light-blue;\A 14:   padding:.2rem;\A 15:   margin: .1rem;"; }

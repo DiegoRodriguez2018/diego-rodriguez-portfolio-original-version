@@ -1,17 +1,12 @@
 import React from "react";
 
 export default function DiegoRodriguez(props) {
-  const { display, setIndex, setDiegoRodriguezClass } = props;
-
-  const renderMainPage = () => {
-    setIndex(0);
-    setDiegoRodriguezClass("display-as-main-page");
-  };
+  const { display, resetDiegoRodriguez} = props;
 
   return (
     <section>
       <div className={display}>
-        <div className="full-name" onClick={renderMainPage}>
+        <div className="full-name" onClick={resetDiegoRodriguez}>
           <div className="first-name">
             <h1>Diego</h1>
           </div>

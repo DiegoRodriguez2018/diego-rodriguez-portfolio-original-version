@@ -2,6 +2,20 @@
 @import 'DiegoRodriguez';
 @import 'NavBar';
 
+
+// Close Button
+.close-button {
+  cursor: pointer;
+  position:absolute;
+  right: 0;
+  top: 0;
+  background: $dark-blue;
+  color: $light-blue;
+  padding:.2rem;
+  margin: .1rem;
+  border-radius: 4px
+}
+
 // Language Tag
 .language-tag {
   margin: 6px;

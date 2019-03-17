@@ -124,6 +124,17 @@ canvas {
       .navbar-section .navbar-options button:visited {
         color: #004179; }
 
+.close-button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #1c3346;
+  color: #c6d8e8;
+  padding: .2rem;
+  margin: .1rem;
+  border-radius: 4px; }
+
 .language-tag {
   margin: 6px;
   padding: 6px;

@@ -1,7 +1,10 @@
 import React from 'react';
-export default function About () {
+import CloseButton from '../Components/CloseButton';
+
+export default function About (props) {
   return (
-    <section class="about-container">
+    <section className="about-container">
+      <CloseButton resetDiegoRodriguez = {props.resetDiegoRodriguez} />
       <h3>
         About me
       </h3>

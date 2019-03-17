@@ -17,17 +17,23 @@ import DiegoRodriguez from "./Components/DiegoRodriguez";
 
 class App extends Component {
   state = {
-    sections: [
-      <MainPage />,
-      <About />,
-      <Skillset />,
-      <Education />,
-      <Portfolio />,
-      <Contact />
-    ],
+    sections: [],
     currentIndex: 0,
     diegoRodriguezClass: "display-as-main-page"
   };
+
+  componentDidMount() {
+    const sections = [
+      <MainPage />,
+      <About resetDiegoRodriguez={this.resetDiegoRodriguez} />,
+      <Skillset resetDiegoRodriguez={this.resetDiegoRodriguez}/>,
+      <Education resetDiegoRodriguez={this.resetDiegoRodriguez}/>,
+      <Portfolio resetDiegoRodriguez={this.resetDiegoRodriguez}/>,
+      <Contact resetDiegoRodriguez={this.resetDiegoRodriguez}/>
+    ]
+
+    this.setState({sections});
+  }
 
   setIndex = index => {
     const currentIndex = index;
@@ -38,6 +44,11 @@ class App extends Component {
     const diegoRodriguezClass = newClass;
     this.setState({ diegoRodriguezClass });
   };
+
+  resetDiegoRodriguez = () => {
+    this.setIndex(0);
+    this.setDiegoRodriguezClass('display-as-main-page');
+  }
 
   render() {
     const { sections, currentIndex, diegoRodriguezClass } = this.state;
@@ -52,9 +63,8 @@ class App extends Component {
             <canvas />
             <Socials />
             <DiegoRodriguez
-              setIndex={this.setIndex}
               display={diegoRodriguezClass}
-              setDiegoRodriguezClass={this.setDiegoRodriguezClass}
+              resetDiegoRodriguez = {this.resetDiegoRodriguez}
             />
             {sections[currentIndex]}
           </main>
