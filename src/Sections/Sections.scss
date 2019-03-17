@@ -1,0 +1,102 @@
+@import "MainPage";
+
+main,
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $light-blue;
+  opacity: 20%;
+  color: $font-shadow;
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-family: $main-content-font;
+  font-size: 1.2rem;
+  a {
+    color: $font-shadow;
+    &:visited {
+      color: $font-shadow;
+    }
+  }
+}
+
+#main-page {
+  width: 100vw;
+  height: 100vh;
+  background: $dark-blue;
+  opacity: 100;
+}
+
+.about-container,
+.stack,
+.skills,
+.contact,
+.education-container {
+  width: 80vw;
+  max-height: 80vw;
+  background: $light-blue;
+  opacity: 0.8;
+  color: $font-shadow;
+  padding-left: .3rem;
+  padding-bottom: .3rem;
+  position: absolute;
+  overflow-y: auto;
+}
+
+/* end formating seccions */
+.skillset {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li {
+    font-family: $main-content-font;
+    list-style: none;
+    font-size: 1rem;
+    min-width: auto;
+    i {
+      font-size: 2rem;
+    }
+  }
+}
+/* contact section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input,
+    textarea {
+      box-sizing: border-box;
+      font-family: $main-content-font;
+      padding: 2% 2% 5% 2%;
+      width: 15rem;
+    }
+    textarea {
+      height: 40%;
+      padding: 2% 2% 30% 2%;
+    }
+    button {
+      font-family: $main-content-font;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 0.3rem;
+      background: $button-blue;
+      color: $light-blue;
+      transition: 0.5s;
+      &:hover {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

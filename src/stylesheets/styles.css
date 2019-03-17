@@ -1,152 +1,12 @@
-/* nav-bar.scss deals with navigation bar on left styling and animation */
-nav {
-  opacity: 0.95;
-  display: flex;
-  position: fixed;
-  bottom: 0%;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.25rem;
-  width: auto;
-  height: auto;
-  z-index: 1; }
-  nav li {
-    opacity: 0.95;
-    list-style: none;
-    color: #004179;
-    background: #c6d8e8;
-    border: 0.8px groove #0d0d0d; }
-    nav li:first-child {
-      border-top-right-radius: 0.5rem; }
-      nav li:first-child a {
-        border-top-right-radius: 0.5rem; }
-    nav li:last-child {
-      border-bottom-right-radius: 0.5rem; }
-      nav li:last-child a {
-        border-bottom-right-radius: 0.5rem; }
-  nav a {
-    display: block;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-decoration: none;
-    color: #0d0d0d; }
-    nav a:hover {
-      background: #004179;
-      color: #c6d8e8; }
-    nav a:visited {
-      color: #004179; }
-
-#navBarButton {
-  padding: 0;
-  width: 1rem;
-  height: 9.7rem;
-  background: #004179;
-  color: #c6d8e8;
-  border: none;
+canvas {
   position: relative;
+  top: 0;
+  bottom: 0;
   overflow: hidden;
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  /* Shine effect */
-  /* On focus */ }
-  #navBarButton:after {
-    content: "";
-    position: absolute;
-    top: -110%;
-    left: -210%;
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-    transform: rotate(30deg);
-    background: rgba(255, 255, 255, 0.13);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%); }
-  #navBarButton:focus:after {
-    animation: shine 600ms 1 ease-out;
-    animation-delay: 1.5s; }
-
-@keyframes shine {
-  0% {
-    opacity: 1;
-    top: -110%;
-    left: -210%; }
-  100% {
-    opacity: 1;
-    top: 30%;
-    left: -30%; } }
-/* header.scss deals with top header styling */
-/* header */
-header {
-  position: fixed;
-  top: -100px;
   width: 100vw;
-  z-index: 1;
-  font-family: "Cinzel", serif;
-  font-size: 1.25rem;
-  text-align: center;
-  transition: 1s; }
-
-.headertop {
-  background: #1f384d;
-  color: #c6d8e8; }
-
-.headerbottom {
-  background: #0057a2;
-  color: #c6d8e8; }
-
-/* adding empty space on link class so header fits nicely */
-.link {
-  height: 60px;
-  width: 100%; }
-
-/* main-page-style.scss deals with styling of main page.  */
-.first-name {
-  font-family: "Cinzel", serif;
-  font-size: 2rem;
-  color: #c6d8e8;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-90%); }
-
-.last-name {
-  font-family: "Cinzel", serif;
-  font-size: 2rem;
-  color: #c6d8e8;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translateX(-40%); }
-
-.sub-heading {
-  color: #c6d8e8;
-  font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 55%;
-  left: 52%;
-  transform: translateX(-20%); }
-
-/* Media query for mobile */
-@media only screen and (max-height: 400px) {
-  .first-name {
-    top: 10%; }
-
-  .last-name {
-    top: 26%; }
-
-  .sub-heading {
-    top: 46%; } }
-/* links to about page, and socials */
-.to-about-page {
-  color: #c6d8e8;
-  font-size: 2rem; }
-  .to-about-page a {
-    text-decoration: none;
-    color: #c6d8e8; }
-    .to-about-page a:visited {
-      color: #c6d8e8; }
+  height: 100vh;
+  background: #1c3346;
+  opacity: 100; }
 
 .socials {
   font-size: 2rem;
@@ -172,7 +32,83 @@ header {
     font-size: 1rem; }
   100% {
     font-size: 2rem; } }
-/* main-page-style.scss deals with styling of main page.  */
+.language-tag {
+  margin: 6px;
+  padding: 6px;
+  border: 1px solid #1c3346;
+  border-radius: 5px; }
+
+.navbar-section {
+  opacity: 0.95;
+  display: flex;
+  position: fixed;
+  bottom: 0%;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  width: auto;
+  height: auto;
+  z-index: 1; }
+  .navbar-section .navbar-button {
+    padding: 0;
+    width: 1rem;
+    background: #004179;
+    color: #c6d8e8;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    /* Shine effect */
+    /* On focus */ }
+    .navbar-section .navbar-button:after {
+      content: "";
+      position: absolute;
+      top: -110%;
+      left: -210%;
+      width: 200%;
+      height: 200%;
+      opacity: 0;
+      transform: rotate(30deg);
+      background: rgba(255, 255, 255, 0.13);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%); }
+    .navbar-section .navbar-button:focus:after {
+      animation: shine 600ms 1 ease-out;
+      animation-delay: 1.5s; }
+  .navbar-section .navbar-options button {
+    width: 5rem;
+    opacity: 0.95;
+    color: #004179;
+    background: #c6d8e8;
+    border: 0px;
+    display: block;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    text-decoration: none;
+    color: #0d0d0d; }
+    .navbar-section .navbar-options button:hover {
+      background: #004179;
+      color: #c6d8e8; }
+    .navbar-section .navbar-options button:visited {
+      color: #004179; }
+    .navbar-section .navbar-options button:first-child {
+      border-top-right-radius: 0.5rem; }
+    .navbar-section .navbar-options button:last-child {
+      border-bottom-right-radius: 0.5rem; }
+
+@keyframes shine {
+  0% {
+    opacity: 1;
+    top: -110%;
+    left: -210%; }
+  100% {
+    opacity: 1;
+    top: 30%;
+    left: -30%; } }
 /* stack section */
 .projects-carousel-container {
   margin-top: 1rem;
@@ -222,42 +158,43 @@ header {
         background: #1c3346;
         font-size: 1.5rem; }
 
-.language-tag {
-  margin: 6px;
-  padding: 6px;
-  border: 1px solid #1c3346;
-  border-radius: 5px; }
-
-canvas {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  background: #1c3346;
-  opacity: 100; }
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; }
-
-h3 {
+.first-name {
   font-family: "Cinzel", serif;
-  font-size: 1.2rem; }
+  font-size: 2rem;
+  color: #c6d8e8;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-90%); }
 
-h4,
-p,
-ul {
+.last-name {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  color: #c6d8e8;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-40%); }
+
+.sub-heading {
+  color: #c6d8e8;
   font-family: "Raleway", sans-serif;
-  font-size: 1rem; }
+  font-size: 0.8rem;
+  position: absolute;
+  top: 55%;
+  left: 52%;
+  transform: translateX(-20%); }
 
-p {
-  line-height: 2rem; }
+/* Media query for mobile */
+@media only screen and (max-height: 400px) {
+  .first-name {
+    top: 10%; }
 
-/* formating seccions */
+  .last-name {
+    top: 26%; }
+
+  .sub-heading {
+    top: 46%; } }
 main,
 footer {
   display: flex;
@@ -295,10 +232,12 @@ footer {
   width: 80vw;
   max-height: 80vw;
   background: #c6d8e8;
-  opacity: .8;
+  opacity: 0.8;
   color: #0d0d0d;
-  padding: 2rem;
-  position: absolute; }
+  padding-left: .3rem;
+  padding-bottom: .3rem;
+  position: absolute;
+  overflow-y: auto; }
 
 /* end formating seccions */
 .skillset {
@@ -322,26 +261,62 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .contact button {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 0.3rem;
-    background: #004179;
-    color: #c6d8e8;
-    transition: 0.5s; }
-    .contact button:hover {
-      font-size: 1.4rem; }
+    .contact form input,
+    .contact form textarea {
+      box-sizing: border-box;
+      font-family: "Raleway", sans-serif;
+      padding: 2% 2% 5% 2%;
+      width: 15rem; }
+    .contact form textarea {
+      height: 40%;
+      padding: 2% 2% 30% 2%; }
+    .contact form button {
+      font-family: "Raleway", sans-serif;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 0.3rem;
+      background: #004179;
+      color: #c6d8e8;
+      transition: 0.5s; }
+      .contact form button:hover {
+        font-size: 1.4rem; }
 
-input,
-textarea {
-  box-sizing: border-box;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+h3 {
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem; }
+
+h4,
+p,
+ul {
   font-family: "Raleway", sans-serif;
-  padding: 2% 2% 5% 2%;
-  width: 15rem; }
+  font-size: 1rem; }
 
-textarea {
-  height: 40%;
-  padding: 2% 2% 30% 2%; }
+p {
+  line-height: 2rem; }
+
+.about-container,
+.stack,
+.skills,
+.contact,
+.education-container {
+  width: auto;
+  max-width: 80vw;
+  max-height: 80vh;
+  transform: translateY(-5vh);
+  border-radius: 5px;
+  background: #c6d8e8;
+  opacity: 0.8;
+  color: #0d0d0d;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: absolute;
+  overflow-y: auto;
+  hyphens: auto; }
 
 /*# sourceMappingURL=styles.css.map */

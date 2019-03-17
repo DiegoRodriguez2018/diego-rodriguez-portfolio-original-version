@@ -2,29 +2,27 @@
 $main-title-font: "Cinzel", serif;
 $main-content-font: "Raleway", sans-serif;
 
-
 //Modules:
-// colors.scss stores the main colors for the website
+// Colors
 @import "colors";
-/* nav-bar.scss deals with navigation bar on left styling and animation */
-@import "nav-bar";
-/* header.scss deals with top header styling */
-@import "header";
-/* main-page-style.scss deals with styling of main page.  */
-@import "main-page-style";
-/* main-page-style.scss deals with styling of main page.  */
-@import "ProjectCard";
-@import "LanguageTag";
+
+// Node Garden
 @import "nodeGarden";
 
+// Components
+@import "../Components/Components";
 
+// Sections
+@import "../Sections/Sections";
 
+// General Styling
 html,
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
+
 h3 {
   font-family: $main-title-font;
   font-size: 1.2rem;
@@ -37,102 +35,26 @@ ul {
   font-size: 1rem;
 }
 
-p{
+p {
   line-height: 2rem;
 }
 
-/* formating seccions */
-main,
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: $light-blue;
-  opacity: 20%;
-  color: $font-shadow;
-}
-main{
-  justify-content: center;
-  align-items: center;
-}
-footer {
-  display: block;
-  text-align: center;
-  width: 100%;
-  font-family: $main-content-font;
-  font-size: 1.2rem;
-  a {
-    color: $font-shadow;
-    &:visited {
-      color: $font-shadow;
-    }
-  }
-}
-#main-page {
-  width: 100vw;
-  height: 100vh;
-  background: $dark-blue;
-  opacity: 100;
-}
 .about-container,
 .stack,
 .skills,
 .contact,
 .education-container {
-  width: 80vw;
-  max-height: 80vw;
+  width: auto;
+  max-width: 80vw;
+  max-height: 80vh;
+  transform: translateY(-5vh);
+  border-radius: 5px;
   background: $light-blue;
-  opacity: .8;
+  opacity: 0.8;
   color: $font-shadow;
-  padding: 2rem;
-  position:absolute;
-}
-/* end formating seccions */
-.skillset {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  li {
-    font-family: $main-content-font;
-    list-style: none;
-    font-size: 1rem;
-    min-width: auto;
-    i {
-      font-size: 2rem;
-    }
-  }
-}
-/* contact section */
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  button {
-    font-family: $main-content-font;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 0.3rem;
-    background: $button-blue;
-    color: $light-blue;
-    transition: 0.5s;
-    &:hover {
-      font-size: 1.4rem;
-    }
-  }
-}
-
-input,
-textarea {
-  box-sizing: border-box;
-  font-family: $main-content-font;
-  padding: 2% 2% 5% 2%;
-  width: 15rem;
-}
-textarea {
-  height: 40%;
-  padding: 2% 2% 30% 2%;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: absolute;
+  overflow-y: auto;
+  hyphens: auto;
 }

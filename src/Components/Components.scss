@@ -1,0 +1,170 @@
+@import 'Socials';
+
+// Language Tag
+.language-tag {
+  margin: 6px;
+  padding: 6px;
+  border: 1px solid $dark-blue;
+  border-radius: 5px;
+}
+
+// NavBar
+.navbar-section {
+  opacity: 0.95;
+  display: flex;
+  position: fixed;
+  bottom: 0%;
+  font-family: $main-content-font;
+  font-size: 1.25rem;
+  width: auto;
+  height: auto;
+  z-index: 1;
+
+  .navbar-button {
+    padding: 0;
+    width: 1rem;
+    background: $button-blue;
+    color: $light-blue;
+    border:none;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    /* Shine effect */
+    &:after {
+      content: "";
+      position: absolute;
+      top: -110%;
+      left: -210%;
+      width: 200%;
+      height: 200%;
+      opacity: 0;
+      transform: rotate(30deg);
+      background: rgba(255, 255, 255, 0.13);
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.13) 0%,
+        rgba(255, 255, 255, 0.13) 77%,
+        rgba(255, 255, 255, 0.5) 92%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    /* On focus */
+    &:focus:after {
+      animation: shine 600ms 1 ease-out;
+      animation-delay: 1.5s;
+    }
+  }
+
+  .navbar-options {
+    button {
+      width: 5rem;
+      opacity: 0.95;
+      color: $button-blue;
+      background: $light-blue;
+      border: 0px;
+      display: block;
+      margin-top: .1rem;
+      margin-bottom: .1rem;
+      padding-top: .2rem;
+      padding-bottom: .2rem;
+
+      text-decoration: none;
+      color: $font-shadow;
+      &:hover {
+        background: $button-blue;
+        color: $light-blue;
+      }
+      &:visited {
+        color: $button-blue;
+      }
+      &:first-child {
+        border-top-right-radius: 0.5rem;
+      }
+      &:last-child {
+      border-bottom-right-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+//Shine animation:
+@keyframes shine {
+  0% {
+    opacity: 1;
+    top: -110%;
+    left: -210%;
+  }
+  100% {
+    opacity: 1;
+    top: 30%;
+    left: -30%;
+  }
+}
+
+
+// Carousel and project card
+/* stack section */
+.projects-carousel-container {
+  margin-top: 1rem;
+  display:flex;
+  justify-content: center;
+  .projects-carousel {
+    font-family: $main-content-font;
+    font-size: 1rem;
+    background: $light-blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid $dark-blue;
+    border-radius: 5px;
+    .project-card {
+      transition: 0.5s;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: $dark-blue;      
+        &:hover {
+          color: $dark-blue;
+        }
+        &:visited {
+          color: $dark-blue;
+        }
+        .project-name{
+          &:hover{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .carousel-button {
+      padding-left: 2vh;
+      padding-right: 2vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:lighten($dark-blue, 2%);
+      color: $light-blue;
+      font-size: 1.3rem;
+      width: 2vh;
+      height: 60vh;
+      transition: .3s;
+      &.left {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      &.right {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      &:hover{
+        background:$dark-blue;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
