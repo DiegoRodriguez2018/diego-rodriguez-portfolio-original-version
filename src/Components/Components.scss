@@ -30,7 +30,7 @@
 /* portfolio-section */
 .portfolio-component {
   .projects-title{
-    width: 60vh;
+    width: auto;
     position: absolute;
     left:50%;
     transform: translateX(-50%);
@@ -92,9 +92,7 @@
           border-bottom-right-radius: 5px;
         }
         &:hover{
-          background:$dark-blue;
-          color: $light-blue;
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
       }
     }

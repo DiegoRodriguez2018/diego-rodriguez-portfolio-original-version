@@ -148,7 +148,7 @@ canvas {
 
 /* portfolio-section */
 .portfolio-component .projects-title {
-  width: 60vh;
+  width: auto;
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
@@ -200,9 +200,7 @@ canvas {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px; }
       .portfolio-component .projects-carousel-container .projects-carousel .carousel-button:hover {
-        background: #1c3346;
-        color: #c6d8e8;
-        font-size: 1.5rem; }
+        font-size: 2rem; }
 
 main,
 footer {
@@ -231,14 +229,6 @@ footer {
   overflow-y: auto;
   hyphens: auto; }
 
-.education-container {
-  overflow: hidden; }
-  .education-container ul {
-    width: 80vw; }
-    .education-container ul li {
-      line-height: 1.5rem;
-      padding-bottom: 1rem; }
-
 .portfolio-section {
   padding: 0; }
 
@@ -258,6 +248,10 @@ footer {
     .skillset li i {
       font-size: 2rem; }
 
+.education-list li {
+  line-height: 1.5rem;
+  padding-bottom: 1rem; }
+
 /* contact section */
 .contact-section {
   display: flex;
@@ -273,7 +267,7 @@ footer {
     align-items: center; }
     .contact-section form input,
     .contact-section form textarea {
-      margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
       box-sizing: border-box;
       font-family: "Raleway", sans-serif;
       font-size: 1rem;
@@ -313,6 +307,6 @@ ul {
   font-size: 1rem; }
 
 p {
-  line-height: 2rem; }
+  line-height: 1.8rem; }
 
 /*# sourceMappingURL=styles.css.map */

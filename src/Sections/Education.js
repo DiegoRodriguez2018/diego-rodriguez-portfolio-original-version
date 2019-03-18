@@ -5,7 +5,7 @@ export default function Education(props) {
   return (
     <section class="education-container">
       <CloseButton resetDiegoRodriguez={props.resetDiegoRodriguez} />
-      <h3>Academic Background:</h3>
+      <h3>Academic Background</h3>
       <ul className="education-list">
         <li> Diploma in Information Technology. Coder Academy 2018.</li>
         <li>

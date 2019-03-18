@@ -30,17 +30,6 @@ footer {
   hyphens: auto;
 }
 
-.education-container {
-  overflow: hidden;
-  ul {
-    width: 80vw;
-    li {
-      line-height: 1.5rem;
-      padding-bottom: 1rem;
-    }
-  }
-}
-
 .portfolio-section {
   padding: 0;
 }
@@ -63,6 +52,14 @@ footer {
     }
   }
 }
+
+.education-list {
+  li {
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
 /* contact section */
 .contact-section {
   display: flex;
@@ -80,7 +77,7 @@ footer {
     align-items: center;
     input,
     textarea {
-      margin-bottom: .8rem;
+      margin-bottom: 0.8rem;
       box-sizing: border-box;
       font-family: $main-content-font;
       font-size: 1rem;
@@ -88,7 +85,7 @@ footer {
       padding-top: 2%;
       padding-bottom: 2%;
       width: 15rem;
-      height:auto;
+      height: auto;
     }
     textarea {
       height: 40%;

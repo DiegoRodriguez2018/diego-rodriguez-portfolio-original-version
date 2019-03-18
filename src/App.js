@@ -27,7 +27,6 @@ class App extends Component {
       <MainPage />,
       <About resetDiegoRodriguez={this.resetDiegoRodriguez} />,
       <Skillset resetDiegoRodriguez={this.resetDiegoRodriguez}/>,
-      <Education resetDiegoRodriguez={this.resetDiegoRodriguez}/>,
       <Portfolio resetDiegoRodriguez={this.resetDiegoRodriguez}/>,
       <Contact resetDiegoRodriguez={this.resetDiegoRodriguez}/>
     ]
