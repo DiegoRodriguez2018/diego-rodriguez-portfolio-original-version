@@ -30,7 +30,7 @@ canvas {
     font-size: 1rem; }
   100% {
     font-size: 2rem; } }
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .socials-section {
     left: 70%;
     bottom: 2%;
