@@ -4,7 +4,7 @@ import CloseButton from "../Components/CloseButton";
 
 export default function Contact(props) {
   return (
-    <section class="contact">
+    <section class="contact-section">
       <CloseButton resetDiegoRodriguez={props.resetDiegoRodriguez} />
       <h3>Contact</h3>
       <p>
