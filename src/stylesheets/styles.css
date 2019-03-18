@@ -239,7 +239,8 @@ footer {
   .portfolio-section,
   .experience-section,
   .contact-section {
-    width: 50vw; } }
+    width: 50vw;
+    max-height: 65vh; } }
 .portfolio-section {
   padding: 0; }
 

@@ -13,18 +13,13 @@
     NODES_QTY = 0;
     // avoid nodes spreading
     ANCHOR_LENGTH = 20;
-    // highlight radius
-    MOUSE_RADIUS = 1000;
 
     circ = 2 * Math.PI;
     nodes = [];
 
     canvas = document.querySelector('canvas');
     resizeWindow();
-    mouse = {
-      x: canvas.width / 2,
-      y: canvas.height / 2
-    };
+
     ctx = canvas.getContext('2d');
     if (!ctx) {
       alert("Sorry your browser does not support html5 canvas.");
@@ -40,7 +35,7 @@
       this.energy = Math.random() * 100;
       this.radius = Math.random();
       this.siblings = [];
-      this.brightness = 0;
+      this.brightness = .5;
     }
 
     Node.prototype.drawNode = function() {
@@ -139,43 +134,23 @@
       resizeWindow();
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       findSiblings();
-      var i, node, distance;
-      for (i = 0; i < NODES_QTY; i++) {
-        node = nodes[i];
-        distance = calcDistance({
-          x: mouse.x,
-          y: mouse.y
-        }, node);
-        if (distance < MOUSE_RADIUS) {
-          node.brightness = 0.7 - distance / MOUSE_RADIUS;
-        } else {
-          node.brightness = 0;
-        }
-      }
-      for (i = 0; i < NODES_QTY; i++) {
-        node = nodes[i];
+      nodes.forEach (node => {
         if (node.brightness) {
           node.drawNode();
           node.drawConnections();
         }
         node.moveNode();
-      }
+      });
       requestAnimationFrame(redrawScene);
     }
 
     function initHandlers() {
       document.addEventListener('resize', resizeWindow, false);
-      canvas.addEventListener('mousemove', mousemoveHandler, false);
     }
 
     function resizeWindow() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-    }
-
-    function mousemoveHandler(e) {
-      mouse.x = e.clientX;
-      mouse.y = e.clientY;
     }
 
     initHandlers();
