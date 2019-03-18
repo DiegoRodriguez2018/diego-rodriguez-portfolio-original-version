@@ -108,7 +108,9 @@ footer {
       color: $light-blue;
       transition: 0.5s;
       &:hover {
-        font-size: 1.4rem;
+        background: $light-blue;
+        color: $dark-blue;
+        border: 1px solid $dark-blue;
       }
     }
   }

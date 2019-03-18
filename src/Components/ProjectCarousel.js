@@ -31,19 +31,18 @@ class ProjectCarousel extends Component {
     const { currentIndex } = this.state;
     return (
       <div className="portfolio-component">
-        <div className="projects-title"> 
+        <div className="projects-title">
           <h3>Projects</h3>
-          {/* <p>Please check out some of my projects on Github:</p> */}
-        </div> 
+        </div>
         <div className="projects-carousel-container">
           <div className="projects-carousel">
-            <a className="carousel-button left" onClick={this.renderPrevious}>
+            <div className="carousel-button left" onClick={this.renderPrevious}>
               &#x25C0;
-            </a>
+            </div>
             <ProjectCard project={projects[currentIndex]} />
-            <a className="carousel-button right" onClick={this.renderNext}>
+            <div className="carousel-button right" onClick={this.renderNext}>
               &#x25B6;
-            </a>
+            </div>
           </div>
         </div>
       </div>

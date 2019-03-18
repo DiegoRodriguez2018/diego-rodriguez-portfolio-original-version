@@ -1,5 +1,5 @@
     // Node Garden:
-    var canvas, ctx, circ, nodes, mouse, SENSITIVITY, SIBLINGS_LIMIT, DENSITY, NODES_QTY, ANCHOR_LENGTH, MOUSE_RADIUS;
+    var canvas, ctx, circ, nodes, SENSITIVITY, SIBLINGS_LIMIT, DENSITY, NODES_QTY, ANCHOR_LENGTH;
 
     // how close next node must be to activate connection (in px)
     // shorter distance == better connection (line width)

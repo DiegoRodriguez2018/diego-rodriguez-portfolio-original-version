@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function DiegoRodriguez(props) {
-  const { display, resetDiegoRodriguez} = props;
+  const { display, resetDiegoRodriguez } = props;
 
   return (
     <section>
@@ -16,9 +16,7 @@ export default function DiegoRodriguez(props) {
         </div>
 
         <div className="sub-heading">
-          <h2>
-            Software Developer with background in Engineering and Science.
-          </h2>
+          <h2>Software Developer with background <br></br> in Engineering and Science</h2>
         </div>
       </div>
     </section>

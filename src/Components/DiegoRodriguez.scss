@@ -5,6 +5,7 @@
 }
 
 .display-as-main-page {
+  @include noSelect();
   .first-name {
     font-family: $main-title-font;
     font-size: 2rem;
@@ -52,7 +53,7 @@
   justify-content: center;
 
   .full-name{
-    cursor: pointer;
+    @include makeClickable();
     position: absolute;
     top: 0;
     left: 50vw;

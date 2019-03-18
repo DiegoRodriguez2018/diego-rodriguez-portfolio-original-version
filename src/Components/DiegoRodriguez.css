@@ -9,7 +9,7 @@ Error: Undefined variable: "$dark-blue".
 5: }
 6: 
 7: .display-as-main-page {
-8:   .first-name {
+8:   @include noSelect();
 
 Backtrace:
 src/Components/DiegoRodriguez.scss:3
@@ -66,4 +66,4 @@ src/Components/DiegoRodriguez.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 3 of src/Components/DiegoRodriguez.scss\A \A 1: // Main Page\A 2: .main-page {\A 3:   background: $dark-blue;\A 4:   opacity: 100;\A 5: }\A 6: \A 7: .display-as-main-page {\A 8:   .first-name {"; }
+  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 3 of src/Components/DiegoRodriguez.scss\A \A 1: // Main Page\A 2: .main-page {\A 3:   background: $dark-blue;\A 4:   opacity: 100;\A 5: }\A 6: \A 7: .display-as-main-page {\A 8:   @include noSelect();"; }
