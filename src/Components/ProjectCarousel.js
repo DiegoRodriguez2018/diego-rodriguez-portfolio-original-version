@@ -33,7 +33,7 @@ class ProjectCarousel extends Component {
       <div className="portfolio-component">
         <div className="projects-title"> 
           <h3>Projects</h3>
-          <p>Please check out some of my projects on Github:</p>
+          {/* <p>Please check out some of my projects on Github:</p> */}
         </div> 
         <div className="projects-carousel-container">
           <div className="projects-carousel">

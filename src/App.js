@@ -6,7 +6,6 @@ import "./index";
 import MainPage from "./Sections/MainPage";
 import About from "./Sections/About";
 import Skillset from "./Sections/Skillset";
-import Education from "./Sections/Education";
 import Portfolio from "./Sections/Portfolio";
 import Contact from "./Sections/Contact";
 
