@@ -178,8 +178,8 @@ canvas {
   top: 0;
   background: #1c3346;
   color: #c6d8e8;
-  padding: .2rem;
-  margin: .1rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
   border-radius: 4px;
   width: 1rem;
   text-align: center;
@@ -216,29 +216,75 @@ canvas {
     border-radius: 5px; }
     .portfolio-component .projects-carousel-container .projects-carousel .project-card {
       transition: 0.5s;
-      text-align: center; }
-      .portfolio-component .projects-carousel-container .projects-carousel .project-card a {
-        -webkit-touch-callout: none;
-        /* iOS Safari */
-        -webkit-user-select: none;
-        /* Safari */
-        -khtml-user-select: none;
-        /* Konqueror HTML */
-        -moz-user-select: none;
-        /* Firefox */
-        -ms-user-select: none;
-        /* Internet Explorer/Edge */
-        user-select: none;
-        /* Non-prefixed version, currently supported by Chrome and Opera */
-        cursor: pointer;
-        text-decoration: none;
-        color: #1c3346; }
-        .portfolio-component .projects-carousel-container .projects-carousel .project-card a:hover {
-          color: #1c3346; }
-        .portfolio-component .projects-carousel-container .projects-carousel .project-card a:visited {
-          color: #1c3346; }
-        .portfolio-component .projects-carousel-container .projects-carousel .project-card a .project-name:hover {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .portfolio-component .projects-carousel-container .projects-carousel .project-card .placeholder {
+        background: grey;
+        width: 100%;
+        height: 25vh;
+        border-radius: 4px; }
+      .portfolio-component .projects-carousel-container .projects-carousel .project-card .project-name {
+        margin: 1rem; }
+        .portfolio-component .projects-carousel-container .projects-carousel .project-card .project-name:hover {
           font-weight: bold; }
+      .portfolio-component .projects-carousel-container .projects-carousel .project-card .url-links {
+        display: flex;
+        justify-content: center; }
+        .portfolio-component .projects-carousel-container .projects-carousel .project-card .url-links .github-link {
+          -webkit-touch-callout: none;
+          /* iOS Safari */
+          -webkit-user-select: none;
+          /* Safari */
+          -khtml-user-select: none;
+          /* Konqueror HTML */
+          -moz-user-select: none;
+          /* Firefox */
+          -ms-user-select: none;
+          /* Internet Explorer/Edge */
+          user-select: none;
+          /* Non-prefixed version, currently supported by Chrome and Opera */
+          cursor: pointer;
+          text-decoration: none;
+          border: 1px solid #1c3346;
+          border-radius: 4px;
+          font-size: 2rem; }
+          .portfolio-component .projects-carousel-container .projects-carousel .project-card .url-links .github-link:hover {
+            color: #1c3346; }
+          .portfolio-component .projects-carousel-container .projects-carousel .project-card .url-links .github-link:visited {
+            color: #1c3346; }
+        .portfolio-component .projects-carousel-container .projects-carousel .project-card .url-links .live-link {
+          -webkit-touch-callout: none;
+          /* iOS Safari */
+          -webkit-user-select: none;
+          /* Safari */
+          -khtml-user-select: none;
+          /* Konqueror HTML */
+          -moz-user-select: none;
+          /* Firefox */
+          -ms-user-select: none;
+          /* Internet Explorer/Edge */
+          user-select: none;
+          /* Non-prefixed version, currently supported by Chrome and Opera */
+          cursor: pointer;
+          border-radius: 4px;
+          width: auto;
+          font-weight: 600;
+          margin-left: 0.5rem;
+          border: 1px solid #1c3346;
+          font-size: 0.8rem; }
+          .portfolio-component .projects-carousel-container .projects-carousel .project-card .url-links .live-link a {
+            line-height: 2rem;
+            text-decoration: none;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem; }
+            .portfolio-component .projects-carousel-container .projects-carousel .project-card .url-links .live-link a:visited {
+              color: #1c3346; }
+      .portfolio-component .projects-carousel-container .projects-carousel .project-card .language-tags {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%); }
     .portfolio-component .projects-carousel-container .projects-carousel .carousel-button {
       -webkit-touch-callout: none;
       /* iOS Safari */
@@ -264,7 +310,7 @@ canvas {
       color: #1c3346;
       opacity: 0.95;
       font-size: 1.3rem;
-      transition: .3s; }
+      transition: 0.3s; }
       .portfolio-component .projects-carousel-container .projects-carousel .carousel-button.left {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px; }

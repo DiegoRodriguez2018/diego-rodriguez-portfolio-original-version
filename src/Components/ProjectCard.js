@@ -7,13 +7,31 @@ class ProjectCard extends Component {
     const { techstack } = project;
     return (
       <div className="project-card">
-        <a target="blank" href={project.url}>
-          <div className="project-name">{project.name}</div>
-          <br />
+        <div className="placeholder"></div>
+        <div className="project-name">{project.name}</div>
+        <div className="url-links">
+          {project.githubUrl && (
+            <a
+              className="github-link devicons devicons-github_badge"
+              target="blank"
+              href={project.githubUrl}
+            />
+          )}
+
+          {project.liveUrl && (
+            <div className="live-link">
+              <a target="blank" href={project.liveUrl}>
+                <span>LIVE</span>
+              </a>
+            </div>
+          )}
+        </div>
+
+        <div className="language-tags">
           {techstack.map(language => {
             return <LanguageTag language={language} />;
           })}
-        </a>
+        </div>
       </div>
     );
   }

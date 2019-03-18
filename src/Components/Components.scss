@@ -1,7 +1,6 @@
-@import 'Socials';
-@import 'DiegoRodriguez';
-@import 'NavBar';
-
+@import "Socials";
+@import "DiegoRodriguez";
+@import "NavBar";
 
 // Close Button
 .close-button {
@@ -9,18 +8,17 @@
   z-index: 1;
   font-family: $main-content-font;
   font-weight: 600;
-  position:absolute;
+  position: absolute;
   right: 0;
   top: 0;
   background: $dark-blue;
   color: $light-blue;
-  padding:.2rem;
-  margin: .1rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
   border-radius: 4px;
   width: 1rem;
   text-align: center;
   opacity: 0.9;
-
 }
 
 // Language Tag
@@ -34,10 +32,10 @@
 // Carousel and project card
 /* portfolio-section */
 .portfolio-component {
-  .projects-title{
+  .projects-title {
     width: auto;
     position: absolute;
-    left:50%;
+    left: 50%;
     transform: translateX(-50%);
   }
   .projects-carousel-container {
@@ -45,7 +43,7 @@
     height: auto;
     margin: 0;
     padding: 0;
-    display:flex;
+    display: flex;
     justify-content: center;
     .projects-carousel {
       font-family: $main-content-font;
@@ -59,22 +57,65 @@
       border-radius: 5px;
       .project-card {
         transition: 0.5s;
-        text-align: center;
-        a {
-          @include makeClickable();
-          text-decoration: none;
-          color: $dark-blue;      
+        // text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .placeholder {
+          background: grey;
+          width: 100%;
+          height: 25vh;
+          border-radius: 4px;
+        }
+
+        .project-name {
+          margin: 1rem;
           &:hover {
-            color: $dark-blue;
+            font-weight: bold;
           }
-          &:visited {
-            color: $dark-blue;
-          }
-          .project-name{
-            &:hover{
-              font-weight: bold;
+        }
+        .url-links {
+          display: flex;
+          justify-content: center;
+          .github-link {
+            @include makeClickable();
+            text-decoration: none;
+            border: 1px solid $dark-blue;
+            border-radius: 4px;
+            font-size: 2rem;
+            &:hover {
+              color: $dark-blue;
+            }
+            &:visited {
+              color: $dark-blue;
             }
           }
+
+          .live-link {
+            @include makeClickable();
+            border-radius: 4px;
+            width: auto;
+            font-weight: 600;
+            margin-left: 0.5rem;
+            border: 1px solid $dark-blue;
+            font-size: 0.8rem;
+            a {
+              line-height: 2rem;
+              text-decoration: none;
+              padding-left: 0.1rem;
+              padding-right: 0.1rem;
+              &:visited {
+                color: $dark-blue;
+              }
+            }
+          }
+        }
+
+        .language-tags {
+          position: absolute;
+          bottom: 5%;
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
       .carousel-button {
@@ -86,11 +127,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background:transparent;
+        background: transparent;
         color: $dark-blue;
         opacity: 0.95;
         font-size: 1.3rem;
-        transition: .3s;
+        transition: 0.3s;
         &.left {
           border-top-left-radius: 5px;
           border-bottom-left-radius: 5px;
@@ -99,10 +140,10 @@
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
         }
-        &:hover{
+        &:hover {
           font-size: 2rem;
         }
       }
     }
-  }  
+  }
 }
