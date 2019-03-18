@@ -23,7 +23,7 @@ const languages = {
 
 export default function Skillset(props) {
   return (
-    <section className="skills">
+    <section className="experience-section">
       <CloseButton resetDiegoRodriguez={props.resetDiegoRodriguez} />
       <h3>Skillset </h3>
       <ul className="skillset">

@@ -8,25 +8,33 @@ footer {
 }
 
 // About, Stack, Skills, Education, Contact
-.about-container,
+.about-section,
 .portfolio-section,
-.skills,
+.experience-section,
 .contact-section {
   width: 80vw;
   max-height: 60vh;
   position: absolute;
-  top: 13%;
-  left: 10%;
-  // transform: translateX(-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   border-radius: 5px;
   background: $light-blue;
   opacity: 0.8;
   color: $font-shadow;
-
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;
   overflow-y: auto;
   hyphens: auto;
+}
+
+@media only screen and (min-width: 1224px) {
+  .about-section,
+  .portfolio-section,
+  .experience-section,
+  .contact-section {
+    width: 50vw;
+  }
 }
 
 .portfolio-section {

@@ -2,17 +2,17 @@
 Error: Undefined variable: "$light-blue".
         on line 10 of src/Components/Socials.scss
 
-5:     transform: translateX(-50%);
-6:     display: flex;
-7:     animation: zoom 800ms 1 ease;
-8:     .socials {
-9:       font-size: 2rem;
-10:       color: $light-blue;
-11:       a {
-12:         color: $light-blue;
-13:         margin: 0.2rem;
-14:         &:visited {
-15:           color: $light-blue;
+5:   transform: translateX(-50%);
+6:   display: flex;
+7:   animation: zoom 800ms 1 ease;
+8:   .socials {
+9:     font-size: 2rem;
+10:     color: $light-blue;
+11:     a {
+12:       color: $light-blue;
+13:       margin: 0.2rem;
+14:       &:visited {
+15:         color: $light-blue;
 
 Backtrace:
 src/Components/Socials.scss:10
@@ -80,4 +80,4 @@ src/Components/Socials.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$light-blue\".\A         on line 10 of src/Components/Socials.scss\A \A 5:     transform: translateX(-50%);\A 6:     display: flex;\A 7:     animation: zoom 800ms 1 ease;\A 8:     .socials {\A 9:       font-size: 2rem;\A 10:       color: $light-blue;\A 11:       a {\A 12:         color: $light-blue;\A 13:         margin: 0.2rem;\A 14:         &:visited {\A 15:           color: $light-blue;"; }
+  content: "Error: Undefined variable: \"$light-blue\".\A         on line 10 of src/Components/Socials.scss\A \A 5:   transform: translateX(-50%);\A 6:   display: flex;\A 7:   animation: zoom 800ms 1 ease;\A 8:   .socials {\A 9:     font-size: 2rem;\A 10:     color: $light-blue;\A 11:     a {\A 12:       color: $light-blue;\A 13:       margin: 0.2rem;\A 14:       &:visited {\A 15:         color: $light-blue;"; }

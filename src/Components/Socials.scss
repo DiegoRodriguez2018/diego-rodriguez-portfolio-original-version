@@ -1,21 +1,21 @@
 .socials-section {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translateX(-50%);
-    display: flex;
-    animation: zoom 800ms 1 ease;
-    .socials {
-      font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  display: flex;
+  animation: zoom 800ms 1 ease;
+  .socials {
+    font-size: 2rem;
+    color: $light-blue;
+    a {
       color: $light-blue;
-      a {
+      margin: 0.2rem;
+      &:visited {
         color: $light-blue;
-        margin: 0.2rem;
-        &:visited {
-          color: $light-blue;
-        }
       }
     }
+  }
 }
 /* button  animation */
 @keyframes zoom {
@@ -24,5 +24,13 @@
   }
   100% {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  .socials-section {
+    left: 70%;
+    bottom: 2%;
+    transform: translateX(0%);
   }
 }

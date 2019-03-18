@@ -3,7 +3,7 @@ import CloseButton from '../Components/CloseButton';
 
 export default function About (props) {
   return (
-    <section className="about-container">
+    <section className="about-section">
       <CloseButton resetDiegoRodriguez = {props.resetDiegoRodriguez} />
       <h3>
         About me

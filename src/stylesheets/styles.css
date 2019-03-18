@@ -30,6 +30,11 @@ canvas {
     font-size: 1rem; }
   100% {
     font-size: 2rem; } }
+@media only screen and (min-width: 1224px) {
+  .socials-section {
+    left: 70%;
+    bottom: 2%;
+    transform: translateX(0%); } }
 .main-page {
   background: #1c3346;
   opacity: 100; }
@@ -210,15 +215,16 @@ footer {
   opacity: 20%;
   color: #0d0d0d; }
 
-.about-container,
+.about-section,
 .portfolio-section,
-.skills,
+.experience-section,
 .contact-section {
   width: 80vw;
   max-height: 60vh;
   position: absolute;
-  top: 13%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 5px;
   background: #c6d8e8;
   opacity: 0.8;
@@ -228,6 +234,12 @@ footer {
   overflow-y: auto;
   hyphens: auto; }
 
+@media only screen and (min-width: 1224px) {
+  .about-section,
+  .portfolio-section,
+  .experience-section,
+  .contact-section {
+    width: 50vw; } }
 .portfolio-section {
   padding: 0; }
 
