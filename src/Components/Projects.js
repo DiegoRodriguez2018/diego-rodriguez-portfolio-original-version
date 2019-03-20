@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import ProjectCard from "./ProjectCard";
 
-class ProjectCarousel extends Component {
+
+export default class Projects extends Component {
   state = {
     currentIndex: 0
   };
@@ -49,5 +50,3 @@ class ProjectCarousel extends Component {
     );
   }
 }
-
-export default ProjectCarousel;

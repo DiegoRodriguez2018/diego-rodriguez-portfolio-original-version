@@ -24,8 +24,9 @@ main {
   padding-bottom: 0.5rem;
   overflow-y: auto;
   hyphens: auto;
-  // light on top
-  box-shadow: inset 0 2px 0 $white-shadow-1;
+  // box-shadows:
+  @include createShadows();
+
 }
 
 @media only screen and (min-width: 768px) {

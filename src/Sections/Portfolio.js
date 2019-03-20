@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCarousel from "../Components/ProjectCarousel";
+import Projects from "../Components/Projects";
 import CloseButton from "../Components/CloseButton";
 
 const projects = [
@@ -48,7 +48,7 @@ export default function Portfolio(props) {
   return (
     <section class="portfolio-section">
       <CloseButton resetDiegoRodriguez={props.resetDiegoRodriguez} />
-      <ProjectCarousel projects={projects} />
+      <Projects projects={projects} />
 
     </section>
   );

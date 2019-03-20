@@ -156,41 +156,6 @@ canvas {
       .navbar-section .navbar-options button:visited {
         color: #1c3346; }
 
-.close-button {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently supported by Chrome and Opera */
-  cursor: pointer;
-  z-index: 1;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: #1c3346;
-  color: #c6d8e8;
-  padding: 0.2rem;
-  margin: 0.1rem;
-  border-radius: 4px;
-  width: 1rem;
-  text-align: center;
-  opacity: 0.9; }
-
-.language-tag {
-  margin: 6px;
-  padding: 6px;
-  border: 1px solid #1c3346;
-  border-radius: 5px; }
-
 /* portfolio-section */
 .portfolio-component .projects-title {
   width: auto;
@@ -321,6 +286,41 @@ canvas {
       .portfolio-component .projects-carousel-container .projects-carousel .carousel-button:hover {
         font-size: 2rem; }
 
+.close-button {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+  cursor: pointer;
+  z-index: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #1c3346;
+  color: #c6d8e8;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 4px;
+  width: 1rem;
+  text-align: center;
+  opacity: 0.9; }
+
+.language-tag {
+  margin: 6px;
+  padding: 6px;
+  border: 1px solid #1c3346;
+  border-radius: 5px; }
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -345,7 +345,7 @@ main {
   padding-bottom: 0.5rem;
   overflow-y: auto;
   hyphens: auto;
-  box-shadow: inset 0 2px 0 white; }
+  box-shadow: inset 0 2px 2px white, inset 0 -1px 3px #0d0d0d; }
 
 @media only screen and (min-width: 768px) {
   .about-section,
