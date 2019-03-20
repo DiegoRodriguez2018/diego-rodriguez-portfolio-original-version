@@ -1,6 +1,6 @@
 // Main Page
 .main-page {
-  background: $dark-blue;
+  background: $primary-color;
   opacity: 100;
 }
 
@@ -9,7 +9,7 @@
   .first-name {
     font-family: $main-title-font;
     font-size: 2rem;
-    color: $light-blue;
+    color: $secondary-color;
     position: absolute;
     top: 23%;
     left: 50%;
@@ -18,14 +18,14 @@
   .last-name {
     font-family: $main-title-font;
     font-size: 2rem;
-    color: $light-blue;
+    color: $secondary-color;
     position: absolute;
     top: 33%;
     left: 50%;
     transform: translateX(-40%);
   }
   .sub-heading {
-    color: $light-blue;
+    color: $secondary-color;
     font-family: $main-content-font;
     font-size: 0.8rem;
     position: absolute;
@@ -62,13 +62,13 @@
     .first-name {
       font-family: $main-title-font;
       font-size: 1.2rem;
-      color: $light-blue;
+      color: $secondary-color;
       padding-right: .5rem;
     }
     .last-name {
       font-family: $main-title-font;
       font-size: 1.2rem;
-      color: $light-blue;
+      color: $secondary-color;
     }
   }
   .sub-heading{

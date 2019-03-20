@@ -20,7 +20,7 @@
       margin-left: .3rem;
       // width: 5rem;
       opacity: 0.95;
-      background: $light-blue;
+      background: $secondary-color;
       border: 0px;
       border-radius: 4px;
       display: block;
@@ -32,14 +32,14 @@
       font-weight: 600;
       
       text-decoration: none;
-      color: $dark-blue;
+      color: $primary-color;
       &:hover {
-        background: $dark-blue;
-        color: $light-blue;
-        border: 1px solid $light-blue;
+        background: $primary-color;
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
       }
       &:visited {
-        color: $button-blue;
+        color: $primary-color;
       }
     }
   }

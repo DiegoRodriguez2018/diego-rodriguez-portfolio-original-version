@@ -1,5 +1,9 @@
-$font-shadow: #0d0d0d;
-$dark-blue: #1c3346;
-$button-blue: #004179;
-$light-blue:lighten($dark-blue, 65%) ;
+$text-color: #0d0d0d;
 
+$primary-color: #1c3346;
+$secondary-color:lighten($primary-color, 65%) ;
+
+$white-shadow-1 :  lighten($secondary-color, 60%);
+
+
+$dark-shadow-1: darken($secondary-color, 20%);

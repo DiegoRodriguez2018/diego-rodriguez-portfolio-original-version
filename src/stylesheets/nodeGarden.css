@@ -1,5 +1,5 @@
 /*
-Error: Undefined variable: "$dark-blue".
+Error: Undefined variable: "$primary-color".
         on line 8 of src/stylesheets/nodeGarden.scss
 
 3:   top: 0;
@@ -7,7 +7,7 @@ Error: Undefined variable: "$dark-blue".
 5:   overflow: hidden;
 6:   width: 100vw;
 7:   height: 100vh;
-8:   background: $dark-blue;
+8:   background: $primary-color;
 9:   opacity: 100;
 10: }
 
@@ -65,4 +65,4 @@ src/stylesheets/nodeGarden.scss:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 8 of src/stylesheets/nodeGarden.scss\A \A 3:   top: 0;\A 4:   bottom: 0;\A 5:   overflow: hidden;\A 6:   width: 100vw;\A 7:   height: 100vh;\A 8:   background: $dark-blue;\A 9:   opacity: 100;\A 10: }"; }
+  content: "Error: Undefined variable: \"$primary-color\".\A         on line 8 of src/stylesheets/nodeGarden.scss\A \A 3:   top: 0;\A 4:   bottom: 0;\A 5:   overflow: hidden;\A 6:   width: 100vw;\A 7:   height: 100vh;\A 8:   background: $primary-color;\A 9:   opacity: 100;\A 10: }"; }

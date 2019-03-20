@@ -154,7 +154,7 @@ canvas {
         color: #c6d8e8;
         border: 1px solid #c6d8e8; }
       .navbar-section .navbar-options button:visited {
-        color: #004179; }
+        color: #1c3346; }
 
 .close-button {
   -webkit-touch-callout: none;
@@ -205,6 +205,7 @@ canvas {
   display: flex;
   justify-content: center; }
   .portfolio-component .projects-carousel-container .projects-carousel {
+    box-shadow: inset 0 2px 2px white, inset 0 -1px 3px #0d0d0d;
     font-family: "Raleway", sans-serif;
     font-size: 1rem;
     background: #c6d8e8;
@@ -320,13 +321,11 @@ canvas {
       .portfolio-component .projects-carousel-container .projects-carousel .carousel-button:hover {
         font-size: 2rem; }
 
-main,
-footer {
+main {
   display: flex;
   flex-wrap: wrap;
   background-color: #c6d8e8;
-  opacity: 20%;
-  color: #0d0d0d; }
+  opacity: 20%; }
 
 .about-section,
 .portfolio-section,
@@ -345,7 +344,8 @@ footer {
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;
   overflow-y: auto;
-  hyphens: auto; }
+  hyphens: auto;
+  box-shadow: inset 0 2px 0 white; }
 
 @media only screen and (min-width: 768px) {
   .about-section,
@@ -409,7 +409,7 @@ footer {
       font-size: 1.2rem;
       border: none;
       border-radius: 0.3rem;
-      background: #004179;
+      background: #1c3346;
       color: #c6d8e8;
       transition: 0.5s; }
       .contact-section form button:hover {

@@ -7,12 +7,12 @@
   animation: zoom 800ms 1 ease;
   .socials {
     font-size: 2rem;
-    color: $light-blue;
+    color: $secondary-color;
     a {
-      color: $light-blue;
+      color: $secondary-color;
       margin: 0.2rem;
       &:visited {
-        color: $light-blue;
+        color: $secondary-color;
       }
     }
   }
