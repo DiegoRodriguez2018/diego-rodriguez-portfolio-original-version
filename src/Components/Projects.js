@@ -31,7 +31,7 @@ export default class Projects extends Component {
     const { projects } = this.props;
     const { currentIndex } = this.state;
     return (
-      <div className="portfolio-component">
+      <div className="projects-container">
         <div className="projects-title">
           <h3>Projects</h3>
         </div>
