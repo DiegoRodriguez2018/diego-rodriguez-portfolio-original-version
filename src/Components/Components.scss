@@ -2,25 +2,9 @@
 @import "DiegoRodriguez";
 @import "NavBar";
 @import "Projects";
+@import "CloseButton";
 
-// Close Button
-.close-button {
-  @include makeClickable();
-  z-index: 1;
-  font-family: $main-content-font;
-  font-weight: 600;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: $primary-color;
-  color: $secondary-color;
-  padding: 0.2rem;
-  margin: 0.1rem;
-  border-radius: 4px;
-  width: 1rem;
-  text-align: center;
-  opacity: 0.9;
-}
+
 
 // Language Tag
 .language-tag {
