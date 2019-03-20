@@ -35,6 +35,11 @@ canvas {
     left: 70%;
     bottom: 2%;
     transform: translateX(0%); } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .main-page {
   background: #1c3346;
   opacity: 100; }
@@ -52,6 +57,7 @@ canvas {
   /* Internet Explorer/Edge */
   user-select: none;
   /* Non-prefixed version, currently supported by Chrome and Opera */
+  animation: fadeIn 5s ease 1;
   /* Media query for mobile */ }
   .display-as-main-page .first-name {
     font-family: "Cinzel", serif;
@@ -86,6 +92,7 @@ canvas {
       top: 46%; } }
 
 .display-as-header {
+  transition: opacity 1s;
   display: flex;
   justify-content: center; }
   .display-as-header .full-name {

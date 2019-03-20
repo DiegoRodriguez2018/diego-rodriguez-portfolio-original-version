@@ -1,3 +1,8 @@
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+
 // Main Page
 .main-page {
   background: $primary-color;
@@ -6,6 +11,8 @@
 
 .display-as-main-page {
   @include noSelect();
+  animation: fadeIn 5s ease 1;
+
   .first-name {
     font-family: $main-title-font;
     font-size: 2rem;
@@ -48,7 +55,7 @@
 }
 
 .display-as-header {
-
+  transition: opacity 1s;
   display:flex;
   justify-content: center;
 
@@ -75,3 +82,5 @@
     display: none;
   }
 }
+
+
