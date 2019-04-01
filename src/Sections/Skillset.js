@@ -1,25 +1,6 @@
 import React from "react";
 import CloseButton from "../Components/CloseButton";
-
-const languages = {
-  PostgreSQL: (
-    <span>
-      <i className="devicons devicons-postgresql" /> PostgreSQL
-    </span>
-  ),
-  SQLite: (
-    <span>
-      <i className="devicons devicons-sqllite" />
-      SQLite
-    </span>
-  ),
-  MongoDB: (
-    <span>
-      <i className="devicons devicons-mongodb" />
-      MongoDB
-    </span>
-  )
-};
+import techStach from '../data/techStack';
 
 export default function Skillset(props) {
   return (
@@ -27,60 +8,10 @@ export default function Skillset(props) {
       <CloseButton resetDiegoRodriguez={props.resetDiegoRodriguez} />
       <h3>Skillset </h3>
       <ul className="skillset">
-        <li> {languages.PostgreSQL} </li>
-        <li> {languages.SQLite} </li>
-        <li> {languages.MongoDB} </li>
-
-        <li>
-          <i className="devicons devicons-github_badge" />
-          Github
-        </li>
-        <li>
-          <i className="devicons devicons-python" />
-          Python
-        </li>
-        <li>
-          <i className="devicons devicons-java" />
-          Java
-        </li>
-
-        <li>
-          <i className="devicons devicons-ruby" />
-          Ruby
-        </li>
-        <li>
-          <i className="devicons devicons-ruby_on_rails" />
-          Ruby on Rails
-        </li>
-        <li>
-          <i className="devicons devicons-javascript" />
-          Javascript
-        </li>
-
-        <li>
-          <i className="devicons devicons-javascript" />
-          React.js
-        </li>
-        <li>
-          <i className="devicons devicons-javascript" />
-          Node.js
-        </li>
-        <li>
-          <i className="devicons devicons-javascript" />
-          Express.js
-        </li>
-        <li>
-          <i className="devicons devicons-javascript" />
-          Vue.js
-        </li>
-        <li>
-          <i className="devicons devicons-css3" />
-          CSS3/4
-        </li>
-        <li>
-          <i className="devicons devicons-html5" />
-          HTML5
-        </li>
+        {/* Note we are adding the icon class as well. */}
+        {techStach.map(tech=>{
+          return (<li><span className={tech.className + " icon"}></span>  {tech.description}</li>)
+        })}
       </ul>
       <br />
       <p>

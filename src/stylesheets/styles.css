@@ -378,7 +378,7 @@ main {
     list-style: none;
     font-size: 1rem;
     min-width: auto; }
-    .skillset li i {
+    .skillset li .icon {
       font-size: 2rem; }
 
 .education-list li {
