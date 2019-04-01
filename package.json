@@ -11,7 +11,7 @@
     "react-transition-group": "^2.6.1"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"sass --watch src\"",
+    "start": "concurrently \"react-scripts start\" \"sass --watch src/stylesheets/styles.scss\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
