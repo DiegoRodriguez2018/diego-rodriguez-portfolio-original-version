@@ -11,6 +11,7 @@ class ProjectCard extends Component {
         <div className="project-name">{project.name}</div>
         <div className="url-links">
           {project.githubUrl && (
+            // eslint-disable-next-line 
             <a
               className="github-link devicons devicons-github_badge"
               target="blank"
@@ -29,7 +30,7 @@ class ProjectCard extends Component {
 
         <div className="language-tags">
           {techstack.map(language => {
-            return <LanguageTag language={language} />;
+            return <LanguageTag language={language} key={language}/>;
           })}
         </div>
       </div>

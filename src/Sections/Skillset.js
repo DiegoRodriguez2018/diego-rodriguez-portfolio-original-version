@@ -10,7 +10,7 @@ export default function Skillset(props) {
       <ul className="skillset">
         {/* Note we are adding the icon class as well. */}
         {techStach.map(tech=>{
-          return (<li><span className={tech.className + " icon"}></span>  {tech.description}</li>)
+          return (<li key={tech.description}><span className={tech.className + " icon"}></span>  {tech.description}</li>)
         })}
       </ul>
       <br />

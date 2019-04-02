@@ -35,7 +35,7 @@ class Form extends Component {
 
     return (
       <form onSubmit={this.handleSubmit}>
-        <label for="name" value="name" />
+        <label htmlFor="name" value="name" />
         <input
           type="text"
           name="name"
@@ -43,7 +43,7 @@ class Form extends Component {
           value={name}
           onChange={this.handleChange}
         />
-        <label for="email" value="email" />
+        <label htmlFor="email" value="email" />
         <input
           type="email"
           name="email"
@@ -51,7 +51,7 @@ class Form extends Component {
           value={email}
           onChange={this.handleChange}
         />
-        <label for="message" value="message" />
+        <label htmlFor="message" value="message" />
         <textarea
           name="message"
           placeholder="Message"

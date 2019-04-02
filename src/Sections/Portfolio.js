@@ -5,7 +5,7 @@ import projects from '../data/projects';
 
 export default function Portfolio(props) {
   return (
-    <section class="portfolio-section">
+    <section className="portfolio-section">
       <CloseButton resetDiegoRodriguez={props.resetDiegoRodriguez} />
       <Projects projects={projects} />
     </section>
