@@ -191,19 +191,30 @@ canvas {
       transition: 0.5s;
       display: flex;
       align-items: center;
-      flex-direction: column; }
-      .projects-container .projects-carousel-container .projects-carousel .project-card .placeholder {
-        background: grey;
-        width: 100%;
-        height: 25vh;
-        border-radius: 4px; }
-      .projects-container .projects-carousel-container .projects-carousel .project-card .project-name {
-        margin: 1rem; }
-        .projects-container .projects-carousel-container .projects-carousel .project-card .project-name:hover {
-          font-weight: bold; }
-      .projects-container .projects-carousel-container .projects-carousel .project-card .url-links {
+      flex-direction: column;
+      background: #1c3346;
+      border-radius: 4px;
+      position: relative; }
+      .projects-container .projects-carousel-container .projects-carousel .project-card .tech-icons {
         display: flex;
-        justify-content: center; }
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        width: 50vh;
+        height: 20vh; }
+        .projects-container .projects-carousel-container .projects-carousel .project-card .tech-icons .icon {
+          color: #c6d8e8;
+          font-size: 3rem; }
+      .projects-container .projects-carousel-container .projects-carousel .project-card .project-name {
+        color: #c6d8e8;
+        font-weight: bold;
+        margin: 1rem; }
+      .projects-container .projects-carousel-container .projects-carousel .project-card .url-links {
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        display: flex;
+        justify-content: left; }
         .projects-container .projects-carousel-container .projects-carousel .project-card .url-links .github-link {
           -webkit-touch-callout: none;
           /* iOS Safari */
@@ -219,13 +230,13 @@ canvas {
           /* Non-prefixed version, currently supported by Chrome and Opera */
           cursor: pointer;
           text-decoration: none;
-          border: 1px solid #1c3346;
+          border: 1px solid #c6d8e8;
           border-radius: 4px;
           font-size: 2rem; }
           .projects-container .projects-carousel-container .projects-carousel .project-card .url-links .github-link:hover {
-            color: #1c3346; }
+            color: #c6d8e8; }
           .projects-container .projects-carousel-container .projects-carousel .project-card .url-links .github-link:visited {
-            color: #1c3346; }
+            color: #c6d8e8; }
         .projects-container .projects-carousel-container .projects-carousel .project-card .url-links .live-link {
           -webkit-touch-callout: none;
           /* iOS Safari */
@@ -244,7 +255,7 @@ canvas {
           width: auto;
           font-weight: 600;
           margin-left: 0.5rem;
-          border: 1px solid #1c3346;
+          border: 1px solid #c6d8e8;
           font-size: 0.8rem; }
           .projects-container .projects-carousel-container .projects-carousel .project-card .url-links .live-link a {
             line-height: 2rem;
@@ -252,7 +263,7 @@ canvas {
             padding-left: 0.1rem;
             padding-right: 0.1rem; }
             .projects-container .projects-carousel-container .projects-carousel .project-card .url-links .live-link a:visited {
-              color: #1c3346; }
+              color: #c6d8e8; }
       .projects-container .projects-carousel-container .projects-carousel .project-card .language-tags {
         position: absolute;
         bottom: 5%;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import LanguageTag from "./LanguageTag";
+import techList from "../data/techStack";
 
 class ProjectCard extends Component {
   render() {
@@ -7,11 +7,9 @@ class ProjectCard extends Component {
     const { techstack } = project;
     return (
       <div className="project-card">
-        <div className="placeholder"></div>
-        <div className="project-name">{project.name}</div>
         <div className="url-links">
           {project.githubUrl && (
-            // eslint-disable-next-line 
+            // eslint-disable-next-line
             <a
               className="github-link devicons devicons-github_badge"
               target="blank"
@@ -28,11 +26,19 @@ class ProjectCard extends Component {
           )}
         </div>
 
-        <div className="language-tags">
+        <div className="tech-icons">
           {techstack.map(language => {
-            return <LanguageTag language={language} key={language}/>;
+            const filteredList = techList.filter(item => {
+              return item.description === language;
+            });
+            const iconInfo = filteredList[0];
+            if (iconInfo) {
+              return <span className={iconInfo.className + " icon"} />;
+            }
           })}
+
         </div>
+        <div className="project-name">{project.name}</div>
       </div>
     );
   }

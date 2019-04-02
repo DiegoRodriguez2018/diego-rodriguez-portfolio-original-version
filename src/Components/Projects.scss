@@ -33,33 +33,46 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        .placeholder {
-          background: grey;
-          width: 100%;
-          height: 25vh;
-          border-radius: 4px;
+        background: $primary-color;
+        border-radius: 4px;
+        position:relative;
+        .tech-icons {
+          
+          display:flex;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+          width: 50vh;
+          height: 20vh;
+          
+          .icon{
+            color: $secondary-color;
+            font-size: 3rem;
+          }
         }
 
         .project-name {
+          color: $secondary-color;          
+          font-weight: bold;
           margin: 1rem;
-          &:hover {
-            font-weight: bold;
-          }
         }
         .url-links {
+          position: absolute;
+          left:1%;
+          top: 1%;
           display: flex;
-          justify-content: center;
+          justify-content: left;
           .github-link {
             @include makeClickable();
             text-decoration: none;
-            border: 1px solid $primary-color;
+            border: 1px solid $secondary-color;
             border-radius: 4px;
             font-size: 2rem;
             &:hover {
-              color: $primary-color;
+              color: $secondary-color;
             }
             &:visited {
-              color: $primary-color;
+              color: $secondary-color;
             }
           }
 
@@ -69,7 +82,7 @@
             width: auto;
             font-weight: 600;
             margin-left: 0.5rem;
-            border: 1px solid $primary-color;
+            border: 1px solid $secondary-color;
             font-size: 0.8rem;
             a {
               line-height: 2rem;
@@ -77,7 +90,7 @@
               padding-left: 0.1rem;
               padding-right: 0.1rem;
               &:visited {
-                color: $primary-color;
+                color: $secondary-color;
               }
             }
           }
