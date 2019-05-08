@@ -38,7 +38,26 @@ const projects = [
     techstack: ["Ruby"],
     githubUrl:
       "https://github.com/DiegoRodriguez2018/real-time-currency-converter-terminal-app"
-  }
+  },
+  {
+    name: "Shape Analyser implementing OpenCV library",
+    techstack: ["Python"],
+    githubUrl:
+      "https://github.com/DiegoRodriguez2018/shape-analyser"
+  },
+  {
+    name: "Ask Izzy Plus Prototype (Server)",
+    techstack: ["Node.js"],
+    githubUrl:
+      "https://github.com/DiegoRodriguez2018/ask-izzy-plus-server"
+  },
+  {
+    name: "Ask Izzy Plus Prototype (Client)",
+    techstack: ["React.js"],
+    githubUrl:
+    "https://github.com/DiegoRodriguez2018/ask-izzy-plus-client"
+  },
+
 ];
 
 export default projects;
