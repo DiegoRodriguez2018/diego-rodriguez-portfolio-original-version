@@ -37,9 +37,8 @@
       this.siblings = [];
       this.brightness = .5;
     }
-
     Node.prototype.drawNode = function() {
-      var color = "rgba(184, 214, 229, " + this.brightness + ")";
+      var color = "rgba(0, 152, 254, " + this.brightness + ")";
       ctx.beginPath();
       ctx.arc(this.x, this.y, 2 * this.radius + 2 * this.siblings.length / SIBLINGS_LIMIT, 0, circ);
       ctx.fillStyle = color;
