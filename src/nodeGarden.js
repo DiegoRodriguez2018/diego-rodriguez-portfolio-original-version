@@ -38,7 +38,7 @@
       this.brightness = .5;
     }
     Node.prototype.drawNode = function() {
-      var color = "rgba(0, 152, 254, " + this.brightness + ")";
+      var color = "rgba(198, 216, 232, " + this.brightness + ")";
       ctx.beginPath();
       ctx.arc(this.x, this.y, 2 * this.radius + 2 * this.siblings.length / SIBLINGS_LIMIT, 0, circ);
       ctx.fillStyle = color;
