@@ -68,11 +68,9 @@
             border: 1px solid $secondary-color;
             border-radius: 4px;
             font-size: 2rem;
+            color: $secondary-color;
             &:hover {
-              color: $secondary-color;
-            }
-            &:visited {
-              color: $secondary-color;
+              opacity: .8;
             }
           }
 

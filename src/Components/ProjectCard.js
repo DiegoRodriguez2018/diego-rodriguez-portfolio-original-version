@@ -32,9 +32,7 @@ class ProjectCard extends Component {
               return item.description === language;
             });
             const iconInfo = filteredList[0];
-            if (iconInfo) {
-              return <span className={iconInfo.className + " icon"} />;
-            }
+            return iconInfo ? <span className={iconInfo.className + " icon"} /> : null;
           })}
 
         </div>

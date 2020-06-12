@@ -8,8 +8,7 @@ const projects = [
   {
     name: "A Two-Sided Marketplace",
     techstack: ["Ruby on Rails"],
-    githubUrl: "https://github.com/DiegoRodriguez2018/market-place-rails-project",
-    liveUrl: "https://camo-market.herokuapp.com/"
+    githubUrl: "https://github.com/DiegoRodriguez2018/market-place-rails-project"
   },
   {
     name: "A URL-shortener",
