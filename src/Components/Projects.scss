@@ -64,17 +64,13 @@
           justify-content: left;
           .github-link {
             @include makeClickable();
-            color: $secondary-color;
-            // text-decoration: none;
+            text-decoration: none;
             border: 1px solid $secondary-color;
             border-radius: 4px;
             font-size: 2rem;
+            color: $secondary-color;
             &:hover {
               opacity: .8;
-
-            }
-            &:visited {
-              color: $secondary-color;
             }
           }
 
